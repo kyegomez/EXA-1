@@ -1,0 +1,13 @@
+valle.egg-info/
+__pycache__
+path.sh
+exp
+exp*/
+*.pt
+log
+.DS_Store
+.vscode
+egs/*/data
+egs/libritts/prompts/*.png
+valle/version.py
+infer/

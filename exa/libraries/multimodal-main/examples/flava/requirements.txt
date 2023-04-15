@@ -1,0 +1,9 @@
+Pillow==9.3.0
+pytorch-lightning==1.8.6
+datasets==2.9.0
+requests==2.27.1
+DALL-E==0.1
+omegaconf==2.1.2
+hydra-core==1.1.2
+transformers==4.16.0
+pycocotools==2.0.4
