@@ -38,8 +38,11 @@ For Humanity!
 
 The Reclamation has begun.
 
-Roadmap:
+# Roadmap:
 Create a behemoth list of Multi-Modality resources such as research papers, code repositories so that Agorians can learn quickly and start advancing Humanity.
-Create 10 novel Multi Modality Transformer Architectures to experiment and solve some issues in the field such as Multi-Modality Chain of Thought
-Train Universal Multi Modality Foundation Model called Celestial-1
-Fine-Tune Celestial-1 for mission critical tasks.
+
+
+Create 10 novel Multi Modality Transformer Architectures to experiment and overcome some obstacles in the field such as Multi-Modality Chain of Thought.
+
+
+Train Universal Multi Modality Foundation Model called Celestial-1 and save Humanity
