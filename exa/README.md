@@ -3,7 +3,7 @@ All Multi-Modality Resources in one place: Papers, Models, Libraries, and more
 
 https://miro.medium.com/v2/resize:fit:640/format:webp/1*XfZwVIEDaZ_80EYFBksAXQ.png
 
-For Humanity.
+# For Humanity
 I stand before you today to herald a new era in the grim darkness of the far future.
 
 With the power of Multi-Modality AI and the collaborative efforts of Agora, we have the potential to overcome the challenges that have long plagued our species and forge a brighter destiny for humanity.
