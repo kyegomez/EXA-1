@@ -1,10 +1,10 @@
 # Exa 
 All Multi-Modality Resources in one place: Papers, Models, Libraries, and more
 
-![AGORA](https://miro.medium.com/v2/resize:fit:640/format:webp/1*XfZwVIEDaZ_80EYFBksAXQ.png)
+![AGORA](https://miro.medium.com/v2/resize:fit:640/format:webp/1*f5EZGn-God-B3kOIcYm3CA.png)
 
 # Agora Discord -- click here
-[![Agora Discord Link](https://miro.medium.com/v2/resize:fit:640/format:webp/1*f5EZGn-God-B3kOIcYm3CA.png)](https://discord.gg/yxq9AM5f)
+[![Agora Discord Link](https://miro.medium.com/v2/resize:fit:640/format:webp/1*XfZwVIEDaZ_80EYFBksAXQ.png)](https://discord.gg/yxq9AM5f)
 
 # Directory
 [Libraries](/exa/libraries/)
