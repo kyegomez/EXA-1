@@ -13,10 +13,10 @@ All Multi-Modality Resources in one place: Papers, Models, Libraries, and more
 
 [papers](/exa/papers)
 
-[modular_components](/exa/modular_components/)
+[Modular Components](/exa/modular_components/)
 
    [Optimizers](/exa/modular_components/optimizers)
-   [attentions](/exa/modular_components/attentions/)
+   [Attentions](/exa/modular_components/attentions/)
 
 
 
