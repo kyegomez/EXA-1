@@ -4,7 +4,7 @@ All Multi-Modality Resources in one place: Papers, Models, Libraries, and more
 ![AGORA](https://miro.medium.com/v2/resize:fit:640/format:webp/1*XfZwVIEDaZ_80EYFBksAXQ.png)
 
 # Discord
-[Agora Discord Link](https://discord.gg/yxq9AM5f)
+[![Agora Discord Link](https://discord.gg/yxq9AM5f)](https://images.unsplash.com/photo-1643330683233-ff2ac89b002c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzB8fGVhcnRofGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=400&q=60)
 
 # For Humanity
 I stand before you today to herald a new era in the grim darkness of the far future.
