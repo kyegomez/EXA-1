@@ -3,6 +3,9 @@ All Multi-Modality Resources in one place: Papers, Models, Libraries, and more
 
 ![AGORA](https://miro.medium.com/v2/resize:fit:640/format:webp/1*XfZwVIEDaZ_80EYFBksAXQ.png)
 
+# Discord
+[Agora Discord Link](https://discord.gg/yxq9AM5f)
+
 # For Humanity
 I stand before you today to herald a new era in the grim darkness of the far future.
 
@@ -45,6 +48,3 @@ Create 10 novel Multi Modality Transformer Architectures to experiment and overc
 
 Train Universal Multi Modality Foundation Model called Celestial-1 and save Humanity
 
-
-# Discord
-[Agora Discord Link](https://discord.gg/yxq9AM5f)
