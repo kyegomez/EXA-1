@@ -19,6 +19,8 @@ All Multi-Modality Resources in one place: Papers, Models, Libraries, and more
 
    [Attentions](/exa/modular_components/attentions/)
 
+   [Post-Quantization](/exa/modular_components/gptq/)
+
 
 # Training Kosmos
 We are actively configuring a training strategy for KOSMOS-1, a model that can "that can perceive general modalities, learn in context (i.e., few-shot), and follow instructions (i.e., zero-shot)."
