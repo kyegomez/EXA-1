@@ -20,6 +20,12 @@ All Multi-Modality Resources in one place: Papers, Models, Libraries, and more
    [Attentions](/exa/modular_components/attentions/)
 
 
+# Training Kosmos
+We are actively configuring a training strategy for KOSMOS-1, a model that can "that can perceive general modalities, learn in context (i.e., few-shot), and follow instructions (i.e., zero-shot)."
+
+[Kosmos-1](/exa/models/KOSMOS_reimplementation-main/)
+
+[KOSMOS-1 PAPER](https://paperswithcode.com/paper/language-is-not-all-you-need-aligning)
 
 # For Humanity
 I stand before you today to herald a new era in the grim darkness of the far future.
