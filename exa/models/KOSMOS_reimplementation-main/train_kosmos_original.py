@@ -121,6 +121,10 @@ def train(args):
 
     model = model.to(accelerator.device)
 
+    #device count
+    if torch.cuda.device_count() > 1:
+        print(f"Let's use ${torch.cuda.device_count()} GPUS")
+
     # model = model.to(accelerator.device)
 
     #V2 with FullyShardedData Parallel
@@ -158,31 +162,19 @@ def train(args):
     # remove_columns = ['id', 'img_id', 'question', 'answer',
     #                   'explanation', 'none', 'image', 'target_text']
 
-    # dataset = load_dataset("HuggingFaceM4/VQAv2")
+    dataset = load_dataset("HuggingFaceM4/VQAv2", split="train[:30000]")
 
-    # # dataset = dataset.map(prep_sample, num_proc=8)
     # dataset = dataset.map(prep_sample, num_proc=8)
-
-    # #old removed columns
-    # # remove_columns = ['id', 'img_id', 'question', 'answer',
-    # #                   'explanation', 'none', 'image', 'target_text']
-
-    # #new removed columns
-    # remove_columns = ['question_type', 'multiple_choice_answer', 'answers', 'image_id', 'answer_type', 'question_id', 'question', 'image']
-
-
-    # dataset = dataset.map(tokenizer.tokenize, batched=True,
-    #                       batch_size=128, remove_columns=remove_columns)
-
-    # train_dataloader = DataLoader(
-    #     dataset, collate_fn=default_data_collator, batch_size=args.batch_size, pin_memory=True
-    # )
-
-    dataset = load_dataset("bjoernp/vqax", split="test")
-    #dataset = dataset.cast_column("URL", Image)
     dataset = dataset.map(prep_sample, num_proc=8)
-    remove_columns = ['id', 'img_id', 'question', 'answer',
-                      'explanation', 'none', 'image', 'target_text']
+
+    #old removed columns
+    # remove_columns = ['id', 'img_id', 'question', 'answer',
+    #                   'explanation', 'none', 'image', 'target_text']
+
+    #new removed columns
+    remove_columns = ['question_type', 'multiple_choice_answer', 'answers', 'image_id', 'answer_type', 'question_id', 'question', 'image']
+
+
     dataset = dataset.map(tokenizer.tokenize, batched=True,
                           batch_size=128, remove_columns=remove_columns)
 
@@ -190,8 +182,20 @@ def train(args):
         dataset, collate_fn=default_data_collator, batch_size=args.batch_size, pin_memory=True
     )
 
-    model, train_dataloader, optimizer, lr_scheduler = accelerator.prepare(model, train_dataloader, optimizer,
-                                                                           lr_scheduler)
+    # dataset = load_dataset("bjoernp/vqax", split="test")
+    # #dataset = dataset.cast_column("URL", Image)
+    # dataset = dataset.map(prep_sample, num_proc=8)
+    # remove_columns = ['id', 'img_id', 'question', 'answer',
+    #                   'explanation', 'none', 'image', 'target_text']
+    # dataset = dataset.map(tokenizer.tokenize, batched=True,
+    #                       batch_size=128, remove_columns=remove_columns)
+
+    # train_dataloader = DataLoader(
+    #     dataset, collate_fn=default_data_collator, batch_size=args.batch_size, pin_memory=True
+    # )
+
+    # model, train_dataloader, optimizer, lr_scheduler = accelerator.prepare(model, train_dataloader, optimizer,
+    #                                                                        lr_scheduler)
 
     #====================> load data #====================> load data #====================> load data #====================> load data 
 
