@@ -16,6 +16,9 @@ from datasets import Image
 from bitsandbytes.optim import AdamW8bit
 
 
+from torch.nn.parallel import DataParallel, DistributedDataParallel
+import torch.distributed as dist
+
 # from torch.distributed.dsdp import (
 #     FullyShardedDataParallel,
 #     CPUOffload,
@@ -91,6 +94,11 @@ def prep_sample(sample):
 
 
 def train(args):
+
+    if args.use_ddp:
+        dist.init_process_group(backend="nccl")
+
+
     accelerator = Accelerator(
         mixed_precision="fp16"
     )
@@ -101,7 +109,14 @@ def train(args):
 
     #v1
     model = Kosmos()
+    if args.use_ddp:
+        model = DistributedDataParallel(model)
+    else:
+        model = DataParallel(model)
+
     model = model.to(accelerator.device)
+
+    # model = model.to(accelerator.device)
 
     #V2 with FullyShardedData Parallel
     # model = DistributedDataParallel(Kosmos())
@@ -284,6 +299,8 @@ if __name__ == "__main__":
     parser.add_argument("--log_every", type=int, default=1)
     parser.add_argument("--save_every", type=int, default=100)
     parser.add_argument("--seed", type=int, default=None)
+    parser.add_argument("--use_ddp", action="store_true", help="Use DistributedDataParallel")
+
     args = parser.parse_args()
 
     train(args)
