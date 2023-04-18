@@ -16,6 +16,11 @@ from datasets import Image
 from bitsandbytes.optim import AdamW8bit
 
 
+# to use Fullyshardeddataparalle
+#from torch.distributed.dsdp import FullyShardedDataParalle, CPUOffload
+#from torch.distributed.fsdp.wrap import default_auto_wrap_policy
+
+
 from torch.nn.parallel import DataParallel, DistributedDataParallel
 import torch.distributed as dist
 
@@ -123,6 +128,14 @@ def train(args):
 
     # model = FullyShardedDataParallel(
     #     model(),
+    #     fsdp_auto_wrap_policy=default_auto_wrap_policy,
+    #     cpu_offload=CPUOffload(offload_params=True),
+    # )
+
+    #v3
+    # model = Kosmos()
+    # model = FullyShardedDataParallel(
+    #     model,
     #     fsdp_auto_wrap_policy=default_auto_wrap_policy,
     #     cpu_offload=CPUOffload(offload_params=True),
     # )
