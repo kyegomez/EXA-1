@@ -11,3 +11,5 @@ wandb
 boto3
 SentencePiece
 lion-pytorch
+wandb
+fairscale

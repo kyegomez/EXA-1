@@ -49,7 +49,7 @@ class Kosmos(Module):
         # Instantiate Clip Vit-l/14
         self.clip_model = CLIPModel.from_pretrained("laion/CLIP-ViT-L-14-laion2B-s32B-b82K").vision_model
 
-        self.embed = bitsandbytes.nn.Embedding(
+        self.embed = bitsandbytes.nn.modules.Embedding(
             32002,
             2048,
             padding_idx=1

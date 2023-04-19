@@ -8,14 +8,13 @@ from torch.utils.data import DataLoader
 from transformers import get_scheduler, default_data_collator, get_linear_schedule_with_warmup
 from torch.optim import AdamW
 
-from .kosmos import Kosmos, KosmosTokenizer
+from kosmos import Kosmos, KosmosTokenizer
 from accelerate import Accelerator
 
 from rich.progress import Progress
 from datasets import Image
 from bitsandbytes.optim import AdamW8bit
-
-
+from lion_pytorch import Lion
 
 
 from torch.nn.parallel import DataParallel, DistributedDataParallel
@@ -49,6 +48,18 @@ def count_number_of_parameters(model, only_trainable: bool = True) -> int:
         num_params: int = sum(p.numel() for p in model.parameters() if p)
     return int(num_params)
 
+
+# def load_alpaca_cot_dataset(data_dir: str) -> DatasetDict:
+#     data_dir = Path(data_dir)
+#     dataset = {"train": [], "validation": []}
+
+#     for split in dataset.keys():
+#         for file in (data_dir / split).glob("*json"):
+#             with open(file, "r") as f:
+#                 data = json.load(f)
+#                 dataset[split].extend(data)
+    
+#     return DatasetDict({split: Dataset.from_dict({"data": data}) for split, data in dataset.items()})
 
 
 def prep_sample(sample):
@@ -101,26 +112,17 @@ def train(args):
     tokenizer = KosmosTokenizer()
 
 
-    dataset = load_dataset("QingyiSi/Alpaca-CoT", split="train")
+    dataset = load_dataset("QingyiSi/Alpaca-CoT", split="train[:1%]")
 
     # dataset = dataset.map(prep_sample, num_proc=8)
     dataset = dataset.map(prep_sample, num_proc=8)
 
-    #old removed columns
-    # remove_columns = ['id', 'img_id', 'question', 'answer',
-    #                   'explanation', 'none', 'image', 'target_text']
+    dataset = dataset.map(lambda sample: tokenizer(sample["target_text"]), batched=True, batch_size=128, remove_columns=["instruction", "input", "output"])
 
-    #new removed columns
-    remove_columns = ['question_type', 'multiple_choice_answer', 'answers', 'image_id', 'answer_type', 'question_id', 'question', 'image']
-
-
-    dataset = dataset.map(tokenizer.tokenize, batched=True,
-                          batch_size=128, remove_columns=remove_columns)
 
     train_dataloader = DataLoader(
         dataset, collate_fn=default_data_collator, batch_size=args.batch_size, pin_memory=True
     )
-
 
     #====================> load data #====================> load data #====================> load data #====================> load data 
 
