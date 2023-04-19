@@ -10,3 +10,4 @@ tensorboard
 wandb
 boto3
 SentencePiece
+lion-pytorch
