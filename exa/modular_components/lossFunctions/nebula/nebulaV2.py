@@ -86,6 +86,8 @@ class Nebula(LossFunction):
         self.loss_function = None
         self.domain_knowledge = domain_knowledge
         self.user_input = user_input
+        self.loss_function_cache = {}
+
 
     def determine_loss_function(self, y_pred, y_true):
         #op 1 check range of values in y_true
@@ -225,8 +227,16 @@ class Nebula(LossFunction):
             self.loss_function = MSELoss()
 
     def compute_loss(self, y_pred, y_true):
-        self.determine_loss_function(y_pred, y_true)
-        return self.loss_function.compute_loss(y_pred, y_true)
+        dataset_id = id(y_true)
+        if dataset_id not in self.loss_function.cache:
+            self.determine_loss_function(y_pred, y_true)
+            self.loss_function_cache[dataset_id] = self.loss_function
+
+        # self.determine_loss_function(y_pred, y_true)
+        # return self.loss_function.compute_loss(y_pred, y_true)
+
+        cached_loss_function = self.loss_function_cache[dataset_id]
+        return cached_loss_function.compute_loss(y_pred, y_true)
     
         
 
