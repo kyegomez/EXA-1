@@ -2,7 +2,9 @@ import torch
 from torchscale.architecture.config import DecoderConfig
 from torchscale.architecture.decoder import Decoder
 from torchscale.component.embedding import PositionalEmbedding
-from transformers import T5Tokenizer, CLIPProcessor, CLIPModel
+from transformers import T5Tokenizer, CLIPProcessor, CLIPModel, PreTrainedTokenizerFast
+from tokenizers import SentencePieceBPETokenizer
+
 from flamingo_pytorch import PerceiverResampler
 from PIL import Image
 from torch.nn import Embedding, Module
@@ -76,7 +78,7 @@ class Kosmos(Module):
             dropout=0.1,
             activation_fn="gelu",
             attention_dropout=0.1,
-            vocab_size=32002,
+            vocab_size=64007,
             subln=True,
             xpos_rel_pos=True,
             max_rel_pos=2048
