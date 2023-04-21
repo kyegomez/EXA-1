@@ -1,8 +1,12 @@
 import torch
 import numpy as np
 from scipy.integrate import solve_ivp
-
+import torch.optim
 import sympy as sp
+import torch.nn as nn
+import torch.optim as optim
+
+
 
 def jones_polynomial_torus_knot(m, n):
     t = sp.symbols('t')
@@ -59,6 +63,36 @@ def knot_gelu(x):
     return knot_gelu_output
 
 
-input_values = torch.tensor([-1.0, 0.0, 1.0])
-output_values = torch.tensor([knot_gelu(x) for x in input_values])
-print("Output values after applying KnotGELU activation function:", output_values)
+#input_values = torch.tensor([-1.0, 0.0, 1.0])
+#output_values = torch.tensor([knot_gelu(x) for x in input_values])
+#print("Output values after applying KnotGELU activation function:", output_values)
+
+# Simple Neural Network
+class SimpleNN(nn.Module):
+    def __init__(self, input_size, hidden_size, output_size, activation_type='gelu'):
+        super(SimpleNN, self).__init__()
+        self.input_layer = nn.Linear(input_size, hidden_size)
+        self.activation = knot_gelu(activation_type)
+        self.output_layer = nn.Linear(hidden_size, output_size)
+
+    def forward(self, x):
+        x = self.input_layer(x)
+        x = self.activation(x)
+        x = self.output_layer(x)
+        return x
+
+# Define input_size, hidden_size, and output_size based on your data and problem
+input_size = 10
+hidden_size = 20
+output_size = 2
+
+# Initialize Simple Neural Networks with GELU and KnotGELU activations
+nn_gelu = SimpleNN(input_size, hidden_size, output_size, activation_type='gelu')
+nn_knot_gelu = SimpleNN(input_size, hidden_size, output_size, activation_type='knot_gelu')
+
+# Define loss function and optimizer
+criterion = nn.CrossEntropyLoss()
+optimizer_gelu = optim.SGD(nn_gelu.parameters(), lr=0.01)
+optimizer_knot_gelu = optim.SGD(nn_knot_gelu.parameters(), lr=0.01)
+
+# Train the networks and compare their performance on your dataset
