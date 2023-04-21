@@ -71,11 +71,22 @@ def dynamical_systems_modeling(knot_representation):
 #     knot_inv = torch.tensor(knot_inv_list, dtype=torch.float32, device=x.device).view_as(x_flat)
 #     return 0.5 * x * (1 + torch.tanh(math.sqrt(2 / math.pi) * (x + 0.044715 * knot_inv**3))).view_as(x)
 
+#with gelu
+# def knot_gelu(x):
+#     x_flat = x.view(-1)
+#     knot_inv_list = [knot_invariant(val.item()) for val in x_flat]
+#     knot_inv = torch.tensor(knot_inv_list, dtype=torch.float32, device=x.device).view_as(x_flat)
+#     return 0.5 * x * (1 + torch.tanh(math.sqrt(2 / math.pi) * (x + 0.044715 * knot_inv.view_as(x)**3)))
+
+
+
+#without gelu
 def knot_gelu(x):
     x_flat = x.view(-1)
     knot_inv_list = [knot_invariant(val.item()) for val in x_flat]
     knot_inv = torch.tensor(knot_inv_list, dtype=torch.float32, device=x.device).view_as(x_flat)
-    return 0.5 * x * (1 + torch.tanh(math.sqrt(2 / math.pi) * (x + 0.044715 * knot_inv.view_as(x)**3)))
+    lorenz_output = 1 + torch.tanh(knot_inv.view_as(x)**3)
+    return x * lorenz_output
 
 # # Custom Activation Layer
 class CustomActivation(nn.Module):
