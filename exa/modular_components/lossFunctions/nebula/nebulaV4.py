@@ -262,16 +262,31 @@ class Nebula(LossFunction):
         else:
             self.loss_function = MSELoss()
 
+    # def compute_loss(self, y_pred, y_true):
+        #v1
+        # dataset_id = id(y_true)
+        # if dataset_id not in self.loss_function.cache:
+        #     self.determine_loss_function(y_pred, y_true)
+        #     self.loss_function_cache[dataset_id] = self.loss_function
+
+        # # self.determine_loss_function(y_pred, y_true)
+        # # return self.loss_function.compute_loss(y_pred, y_true)
+
+        # cached_loss_function = self.loss_function_cache[dataset_id]
+        # return cached_loss_function.compute_loss(y_pred, y_true)
+     
+     #2
     def compute_loss(self, y_pred, y_true):
         dataset_id = id(y_true)
-        if dataset_id not in self.loss_function.cache:
+        if dataset_id not in self.loss_function_cache:  # Fix the attribute name here
             self.determine_loss_function(y_pred, y_true)
             self.loss_function_cache[dataset_id] = self.loss_function
 
-        # self.determine_loss_function(y_pred, y_true)
-        # return self.loss_function.compute_loss(y_pred, y_true)
-
         cached_loss_function = self.loss_function_cache[dataset_id]
         return cached_loss_function.compute_loss(y_pred, y_true)
+
+    
+
+
     
         

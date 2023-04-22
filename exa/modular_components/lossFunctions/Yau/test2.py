@@ -46,7 +46,8 @@ import numpy as np
 from sklearn.datasets import make_classification
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import log_loss
-from polymorphicv2 import calabi_yau_loss
+# from polymorphicv2 import calabi_yau_loss
+# from nebulaV4 import Nebula
 # from p3 import calabi_yau_loss
 
 # Create a synthetic dataset
@@ -97,7 +98,7 @@ y_pred_2d = torch.cat((X_test, y_pred), dim=1)
 y_true_2d = torch.cat((X_test, y_test.view(-1, 1)), dim=1)
 
 # Evaluate the model using the Calabi-Yau inspired loss function
-calabi_yau_loss_value = calabi_yau_loss(model, X_test, y_test, perturbations)
+calabi_yau_loss_value = Nebula(model, X_test, y_test, perturbations)
 
 print(f'Cross-entropy loss: {cross_entropy_loss}')
 print(f'Calabi-Yau inspired loss: {calabi_yau_loss_value}')
