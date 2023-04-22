@@ -58,6 +58,13 @@ The Nebula loss function supports a variety of optimization techniques, such as:
 9. Model selection techniques (requires a model and a dataset)
 10. Utilizing user input or metadata
 
+# Roadmap
+1. Add in 5 more detections to effectively determine which loss function to utilize
+
+2. Add in 5 more loss functions that the detections map to.
+
+3. Create an entirely polymorphic version that has no shape whatsoever and fills up the data, task, model environment at runtime.
+
 ## Contributing 🤝
 
 We welcome contributions! If you'd like to contribute, feel free to open a pull request with your changes or additions. For major changes, please open an issue first to discuss your proposed changes.
