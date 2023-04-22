@@ -75,13 +75,13 @@ def fast_tanh(x):
 
 # ===========================+>
 #batch processing of multiple inputs 
-async def parallel_lorenz_solver_batch(inital_states, batch_size=10):
+def parallel_lorenz_solver_batch(inital_states, batch_size=10):
     num_batches = len(initial_states) // batch_size
     results = []
 
     for i in range(num_batches):
         batch = initial_states[i * batch_size: (i + 1) * batch_size]
-        batch_results = await parallel_lorenz_solver(batch)
+        batch_results = parallel_lorenz_solver(batch)
         results.extend(batch_results)
 
     return results
@@ -96,11 +96,12 @@ async def parallel_lorenz_solver_batch(inital_states, batch_size=10):
 #         results = list(executor.map(dynamical_systems_modeling, initial_states))
 #     return results
 
-async def parallel_lorenz_solver(initial_states):
+#removed async
+def parallel_lorenz_solver(initial_states):
     loop = asyncio.get_event_loop()
     with concurrent.futures.ThreadPoolExecutor() as executor:
         tasks = [loop.run_in_executor(executor, dynamical_systems_modeling, state) for state in initial_states]
-        results = await asyncio.gather(*tasks)
+        results = asyncio.gather(*tasks)
     return results
 
 
@@ -117,15 +118,27 @@ async def parallel_lorenz_solver(initial_states):
 
 
 #v2 --> converts a numpy array into a torch tensor
+# def knotx(x, device):
+#     x_flat = x.view(-1)
+#     x_flat = x_flat.to(device)  # Move the tensor to the GPU if available
+
+#     knot_inv = vectorized_knot_invariant(x_flat.detach().cpu().numpy())
+#     knot_inv_tensor = torch.tensor(knot_inv, dtype=torch.float32, device=x.device)  # Convert the NumPy array to a tensor
+#     lorenz_output = 1 + fast_tanh(knot_inv_tensor**3).view_as(x_flat)  # Use the tensor in fast_tanh
+
+#     return x * lorenz_output.view_as(x)
+
+
+#v3 -> call lorenz ode solution
 def knotx(x, device):
     x_flat = x.view(-1)
     x_flat = x_flat.to(device)  # Move the tensor to the GPU if available
 
-    knot_inv = vectorized_knot_invariant(x_flat.detach().cpu().numpy())
-    knot_inv_tensor = torch.tensor(knot_inv, dtype=torch.float32, device=x.device)  # Convert the NumPy array to a tensor
-    lorenz_output = 1 + fast_tanh(knot_inv_tensor**3).view_as(x_flat)  # Use the tensor in fast_tanh
+    knot_representation = np.array([convert_to_knot_representation(val.item()) for val in x_flat])
+    lorenz_output = parallel_lorenz_solver(knot_representation)
+    lorenz_output = torch.tensor(lorenz_output, dtype=torch.float32, device=x.device).view_as(x_flat)
 
-    return x * lorenz_output.view_as(x)
+    return x * (1 + lorenz_output)
 
 
 from torch.profiler import profile, record_function
@@ -137,6 +150,8 @@ def profile_knotx(x):
     print(prof.key_averages().table(sort_by="self_cpu_time_total"))
     return result
 
+
+#v1
 # def optimized_knotx(x):
 #     x_flat = x.view(-1).to(device)
 #     knot_inv = vectorized_knot_invariant(x_flat.detach().cpu().numpy())
@@ -147,6 +162,8 @@ def profile_knotx(x):
 #     x.mul_(lorenz_output.view_as(x))
 #     return x
 
+
+#v2
 # def optimized_knotx(x):
 #     x_flat = x.view(-1)
 #     x_flat = x_flat.to(device)  # Move the tensor to the GPU if available
@@ -156,7 +173,7 @@ def profile_knotx(x):
 
 #     return x * lorenz_output.view_as(x)
 
-
+#v3
 #optimized knotx for torch jit
 # @torch.jit.script
 # def optimized_knotx(x: torch.Tensor, device: torch.device) -> torch.Tensor:
@@ -169,7 +186,7 @@ def profile_knotx(x):
 #     return x * lorenz_output.view_as(x)
 
 
-#v2
+#v4
 # def optimized_knotx(x, device):
 #     x_flat = x.view(-1)
 #     x_flat = x_flat.to(device)  # Move the tensor to the GPU if available
@@ -180,7 +197,7 @@ def profile_knotx(x):
 #     return x * lorenz_output.view_as(x)
 
 
-#v3 --> transforming numpy array into torch tensor
+#v35--> transforming numpy array into torch tensor
 def optimized_knotx(x: torch.Tensor, device: torch.device) -> torch.Tensor:
     x_flat = x.view(-1)
     x_flat = x_flat.to(device)  # Move the tensor to the GPU if available
@@ -204,6 +221,7 @@ import os
 x = torch.randn(1000, device=device)  # Create a random tensor of shape (1000,) for testing
 
 # Update the measure_time_and_memory function to pass the device as an argument
+# Update the measure_time_and_memory function to pass the device as an argument
 def measure_time_and_memory(func, x, device, num_runs=100):
     start_time = timeit.default_timer()
     start_memory = psutil.Process(os.getpid()).memory_info().rss
@@ -226,3 +244,9 @@ print(f"Original function: Time elapsed = {time_elapsed:.6f} s, Memory used = {m
 
 time_elapsed, memory_used = measure_time_and_memory(optimized_knotx, x, device)
 print(f"Optimized function: Time elapsed = {time_elapsed:.6f} s, Memory used = {memory_used / 1024} KiB")
+
+
+
+
+
+
