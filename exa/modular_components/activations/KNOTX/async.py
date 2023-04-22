@@ -77,14 +77,53 @@ def profile_knotx(x):
     print(prof.key_averages().table(sort_by="self_cpu_time_total"))
     return result
 
+# def optimized_knotx(x):
+#     x_flat = x.view(-1).to(device)
+#     knot_inv = vectorized_knot_invariant(x_flat.detach().cpu().numpy())
+#     lorenz_output = torch.tesnor(fast_tanh(knot_inv **3), dtype=torch.float32, device=x.device).view_as(x_flat)
+
+
+#     #in place multiplication
+#     x.mul_(lorenz_output.view_as(x))
+#     return x
+
 def optimized_knotx(x):
-    x_flat = x.view(-1).to(device)
+    x_flat = x.view(-1)
+    x_flat = x_flat.to(device)  # Move the tensor to the GPU if available
+
     knot_inv = vectorized_knot_invariant(x_flat.detach().cpu().numpy())
-    lorenz_output = torch.tesnor(fast_tanh(knot_inv **3), dtype=torch.float32, device=x.device).view_as(x_flat)
+    lorenz_output = 1 + torch.tensor(fast_tanh(knot_inv**3), dtype=torch.float32, device=x.device).view_as(x_flat)
+
+    return x * lorenz_output.view_as(x)
 
 
-    #in place multiplication
-    x.mul_(lorenz_output.view_as(x))
-    return x
+
+import timeit
+import psutil
+import os
+
+def measure_time_and_memory(func, x, num_runs=100):
+    start_time = timeit.default_timer()
+    start_memory = psutil.Process(os.getpid()).memory_info().rss
+
+    for _ in range(num_runs):
+        result = func(x.clone())  # Use a clone of x to avoid modifying the original tensor
+
+    end_time = timeit.default_timer()
+    end_memory = psutil.Process(os.getpid()).memory_info().rss
+
+    time_elapsed = (end_time - start_time) / num_runs
+    memory_used = end_memory - start_memory
+
+    return time_elapsed, memory_used
 
 
+x = torch.tensor([0.5, 1.0, 1.5], device=device)
+
+# Test original function
+time_elapsed, memory_used = measure_time_and_memory(knotx, x)
+print(f"Original function: Time elapsed = {time_elapsed:.6f} s, Memory used = {memory_used / 1024} KiB")
+
+# Test optimized function
+time_elapsed, memory_used = measure_time_and_memory(optimized_knotx, x)
+print(f"Optimized function: Time elapsed = {time_elapsed:.6f} s, Memory used = {memory_used / 1024} KiB")
