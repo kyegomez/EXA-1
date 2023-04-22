@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: nebula
+Version: 0.2.0
+Summary: 1 Loss Function to rule them all!
+Home-page: https://github.com/kyegomez/EXA/tree/master/exa/modular_components/lossFunctions/nebula
+Author: Agora
+Author-email: kye@apac.ai
+License: MIT
+Keywords: artificial intelligence,deep learning,transformers,attention mechanism,jax,loss ffunction,Multi-Modality AI
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
