@@ -1,6 +1,6 @@
 # Nebula Loss Function: One Loss Function to Rule Them All! 🌌
 
-<img src="./nebula.png" width="450px"></img>
+<img src="./nebula.png" width="1000px"></img>
 
 
 Welcome to the **Nebula Loss Function**! A versatile and adaptive loss function that works with any model, dataset, or task. Experience the magic of a single loss function that dynamically adapts to your needs, making it easy and efficient to use in any deep learning project.
