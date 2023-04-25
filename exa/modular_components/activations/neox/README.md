@@ -10,19 +10,21 @@ Perfect for space enthusiasts, math lovers, and AI researchers alike! 🪐
 Installation 🛰️
 To start using the Neox activation function, simply clone this repository:
 
+
+Below does not work, will have to download from source, Exa
 bash
 Copy code
 git clone https://github.com/yourusername/neox-activation-function.git
 Then, import the FractionalActivation class and other required functions into your project:
 
-python
-Copy code
+```
 from neox_activation_function import FractionalActivation, fractional_derivative
+````
+
 Usage 🌌
 Using Neox in your neural network is as easy as instantiating the FractionalActivation class and adding it to your model architecture. Here's a quick example:
 
-python
-Copy code
+```
 import torch
 import torch.nn as nn
 from neox_activation_function import FractionalActivation, fractional_derivative
@@ -41,6 +43,8 @@ class MyAwesomeModel(nn.Module):
         x = self.fc2(x)
 
         return x
+
+```
 
 # Example parameters
 input_size = 784
