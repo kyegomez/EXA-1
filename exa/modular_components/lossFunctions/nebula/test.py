@@ -94,12 +94,14 @@
 # print("\nLoss Comparison for Regression:")
 # plot_loss_comparison(loss_functions, regression_losses)
 
-from nebulaV4 import one_hot_encoding
-from nebulaV4 import Nebula
+# from nebulaV4 import one_hot_encoding
+# from nebulaV4 import Nebula
 import torch
 import numpy as np
 import matplotlib.pyplot as plt
 import torch.nn as nn
+from nebulav2 import Nebula
+from nebulav2 import one_hot_encoding
 
 class LossFunction:
     def compute_loss(self, y_pred, y_true):
