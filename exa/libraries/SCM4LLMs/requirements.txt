@@ -1,0 +1,7 @@
+openai>=0.27.0
+numpy
+torch
+tiktoken
+langdetect
+transformers
+gradio>=3.27.0
