@@ -2,7 +2,7 @@
 
 # Distributed:
 
-Deepspeed
+## Deepspeed
 
 https://huggingface.co/docs/accelerate/usage_guides/deepspeed
 
@@ -14,11 +14,11 @@ ZeRO: Memory Optimizations Toward Training Trillion Parameter Models: https://ar
 
 code: https://github.com/microsoft/DeepSpeed
 
-Eleuter/DeeperSpeed:
+## Eleuter/DeeperSpeed:
 
 repo: https://github.com/EleutherAI/DeeperSpeed
 
-HuggingFace Accelerate:
+## HuggingFace Accelerate:
 
 🤗 Accelerate is a library that enables the same PyTorch code to be run across any distributed configuration by adding just four lines of code! In short, training and inference at scale made simple, efficient and adaptable.
 
@@ -30,13 +30,13 @@ To accelerate training huge models on larger batch sizes, we can use a fully sha
 
 https://huggingface.co/docs/accelerate/usage_guides/fsdp
 
-AutoTrain:
+## AutoTrain:
 
 🤗 AutoTrain is a no-code tool for training state-of-the-art models for Natural Language Processing (NLP) tasks, for Computer Vision (CV) tasks, and for Speech tasks and even for Tabular tasks. It is built on top of the awesome tools developed by the Hugging Face team, and it is designed to be easy to use.
 
 https://huggingface.co/docs/autotrain/index
 
-Onnx Runtime:
+## Onnx Runtime:
 
 ONNX Runtime inference can enable faster customer experiences and lower costs, supporting models from deep learning frameworks such as PyTorch and TensorFlow/Keras as well as classical machine learning libraries such as scikit-learn, LightGBM, XGBoost, etc. ONNX Runtime is compatible with different hardware, drivers, and operating systems, and provides optimal performance by leveraging hardware accelerators where applicable alongside graph optimizations and transforms. Learn more →
 
@@ -44,7 +44,7 @@ code: https://github.com/microsoft/onnxruntime
 
 docs: https://onnxruntime.ai/docs/
 
-NVIDIA APEX:
+## NVIDIA APEX:
 
 A PyTorch Extension: Tools for easy mixed precision and distributed training in Pytorch
 
@@ -54,13 +54,13 @@ docs: https://nvidia.github.io/apex/
 
 https://github.com/microsoft/DeepSpeed
 
-Nvidia DALI:
+## Nvidia DALI:
 
 A GPU-accelerated library containing highly optimized building blocks and an execution engine for data processing to accelerate deep learning training and inference applications.
 
 REPO: https://github.com/NVIDIA/DALI
 
-ColossalAI:
+## ColossalAI:
 
 repo: https://github.com/hpcaitech/ColossalAI
 
@@ -74,7 +74,7 @@ trlX is a distributed training framework designed from the ground up to focus on
 
 https://github.com/CarperAI/trlx
 
-TRL - Transformer Reinforcement Learning
+### TRL - Transformer Reinforcement Learning
 
 repo: https://github.com/lvwerra/trl/
 
@@ -89,7 +89,7 @@ code: https://github.com/microsoft/LoRA
 
 # Language:
 
-Triton by openai:
+## Triton by openai:
 
 An Intermediate Language and Compiler for Tiled Neural Network Computations
 
@@ -97,7 +97,7 @@ repo: https://github.com/openai/triton
 
 paper: http://www.eecs.harvard.edu/~htk/publication/2019-mapl-tillet-kung-cox.pdf
 
-Jax:
+## Jax:
 
 Composable transformations of Python+NumPy programs: differentiate, vectorize, JIT to GPU/TPU, and more
 
@@ -107,7 +107,7 @@ docs: https://jax.readthedocs.io/en/latest/
 
 # Compilers:
 
-Hidet
+## Hidet
 
 Hidet is an open-source deep learning compiler, written in Python. It supports end-to-end compilation of DNN models from PyTorch and ONNX to efficient cuda kernels. A series of graph-level and operator-level optimizations are applied to optimize the performance.
 
