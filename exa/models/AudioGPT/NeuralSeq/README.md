@@ -1,0 +1,1 @@
+In this directory, we support FastSpeech, GenerSpeech, SyntaSpeech, DiffSinger
