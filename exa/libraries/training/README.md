@@ -1,4 +1,4 @@
-# An list for Training Neural Nets!
+# An Awesome List for AI-Training!
 
 # Distributed:
 
@@ -119,23 +119,23 @@ docs: https://docs.hidet.org/stable/index.html
 
 LLM.int8(): 8-bit Matrix Multiplication for Transformers at Scale: https://arxiv.org/abs/2208.07339
 
-GPTQ: Accurate Post-Training Quantization for Generative Pre-trained Transformers: https://arxiv.org/abs/2210.17323
+## GPTQ: Accurate Post-Training Quantization for Generative Pre-trained Transformers: https://arxiv.org/abs/2210.17323
 
 code: https://github.com/IST-DASLab/gptq
 
-GPTQ-for-LLaMa:
+## GPTQ-for-LLaMa:
 
 GPTQ is SOTA one-shot weight quantization method
 
 CODE: https://github.com/qwopqwop200/GPTQ-for-LLaMa
 
-bitsandbytes:
+## bitsandbytes:
 
 The bitsandbytes is a lightweight wrapper around CUDA custom functions, in particular 8-bit optimizers, matrix multiplication (LLM.int8()), and quantization functions.
 
 repo: https://github.com/TimDettmers/bitsandbytes
 
-AutoGPTQ
+## AutoGPTQ
 
 An easy-to-use model quantization package with user-friendly apis, based on GPTQ algorithm.
 
