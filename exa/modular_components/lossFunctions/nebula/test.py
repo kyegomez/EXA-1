@@ -102,6 +102,15 @@ import matplotlib.pyplot as plt
 import torch.nn as nn
 from nebulav2 import Nebula
 from nebulav2 import one_hot_encoding
+import torch.nn.functional as F
+
+
+def generate_multilabel_classification_data(num_samples, num_classes):
+    y_true = torch.randint(0, 2, (num_samples, num_classes)).float()
+    y_pred = torch.rand(num_samples, num_classes)
+    return y_pred, y_true
+
+
 
 class LossFunction:
     def compute_loss(self, y_pred, y_true):
@@ -127,6 +136,37 @@ class CrossEntropyLoss(LossFunction):
 
     def compute_loss(self, y_pred, y_true):
         return self.loss_function(y_pred, y_true)
+    
+
+
+class MultiLabelSoftMarginLoss(LossFunction):
+    def __init__(self):
+        self.loss_function = nn.MultiLabelSoftMarginLoss()
+
+    def compute_loss(self, y_pred, y_true):
+        return self.loss_function(y_pred, y_true)
+    
+
+class PoissonNLLoss(LossFunction):
+    def __init__(self):
+        self.loss_function = nn.PoissonNLLLoss()
+
+    def compute_loss(self, y_pred, y_true):
+        return self.loss_function(y_pred, y_true)
+    
+class KLDivLoss(LossFunction):
+    def __init__(self):
+        self.loss_function = nn.KLDivLoss()
+
+    def compute_loss(self, y_pred, y_true):
+        return self.loss_function(F.log_softmax(y_pred, dim=1), y_true)
+    
+class PoissonNLLLoss(LossFunction):
+    def __init__(self):
+        self.loss_function = nn.PoissonNLLLoss()
+
+    def compute_loss(self, y_pred, y_true):
+        return self.loss_function(y_pred, y_true)
 
 # def prepare_targets(loss_function, y_true, num_classes=None):
 #     if isinstance(loss_function, L1Loss) and num_classes is not None:
@@ -135,26 +175,45 @@ class CrossEntropyLoss(LossFunction):
 def prepare_targets(loss_function, y_true, num_classes=None):
     if (isinstance(loss_function, L1Loss) or isinstance(loss_function, MSELoss)) and num_classes is not None:
         return one_hot_encoding(y_true, num_classes)
+    if isinstance(loss_function, PoissonNLLLoss):
+        return y_true.view(-1, 1).expand(-1, num_classes)
+    if isinstance(loss_function, KLDivLoss):
+        return y_true.float()
     return y_true
 
-
-def generate_classification_data(num_samples, num_classes):
+def generate_classification_data(num_samples, num_classes, for_poisson_nll=False):
     y_true = torch.randint(0, num_classes, (num_samples,))
+    if for_poisson_nll:
+        y_true = y_true.view(-1, 1).expand(-1, num_classes).float()
     y_pred = torch.rand(num_samples, num_classes)
     return y_pred, y_true
+
 
 def generate_regression_data(num_samples):
     y_true = torch.abs(torch.randn(num_samples))
     y_pred = torch.randn(num_samples)
     return y_pred, y_true
 
+# def test_loss_functions(loss_functions, y_pred, y_true, num_classes=None):
+#     results = []
+#     for loss_function in loss_functions:
+#         prepared_y_true = prepare_targets(loss_function, y_true, num_classes)
+#         loss = loss_function.compute_loss(y_pred, prepared_y_true)
+#         results.append(loss.item())
+#     return results
+
 def test_loss_functions(loss_functions, y_pred, y_true, num_classes=None):
-    results = []
+    losses = []
     for loss_function in loss_functions:
+        for_poisson_nll = isinstance(loss_function, PoissonNLLLoss)
+        if num_classes is not None and not for_poisson_nll:
+            y_true = y_true.squeeze()
+        elif for_poisson_nll:
+            y_true = y_true.view(-1, 1).expand(-1, num_classes)
         prepared_y_true = prepare_targets(loss_function, y_true, num_classes)
         loss = loss_function.compute_loss(y_pred, prepared_y_true)
-        results.append(loss.item())
-    return results
+        losses.append(loss.item())
+    return losses
 
 def plot_loss_comparison(loss_functions, losses):
     loss_function_names = [loss_function.__class__.__name__ for loss_function in loss_functions]
@@ -171,12 +230,14 @@ num_classes = y_true_classification.max().item() + 1
 
 # Generate classification data
 y_pred_classification, y_true_classification = generate_classification_data(batch_size, num_classes)
+y_pred_multilabel_classification, y_true_multilabel_classification = generate_multilabel_classification_data(batch_size, num_classes)
+
 
 # Generate regression data
 y_pred_regression, y_true_regression = generate_regression_data(batch_size)
 
 # Loss functions to compare
-loss_functions = [Nebula(), L1Loss(), MSELoss(), CrossEntropyLoss()]
+loss_functions = [Nebula(), L1Loss(), MSELoss(), CrossEntropyLoss(), PoissonNLLoss(), KLDivLoss(), PoissonNLLLoss()]
 
 # Test classification data
 # # Test classification data
@@ -193,3 +254,11 @@ plot_loss_comparison(loss_functions, classification_losses)
 
 print("\nLoss Comparison for Regression:")
 plot_loss_comparison(loss_functions, regression_losses)
+
+# Test multi-label classification data
+print("Multi-label Classification Losses:")
+multilabel_classification_losses = test_loss_functions(loss_functions, y_pred_multilabel_classification, y_true_multilabel_classification, num_classes=num_classes)
+
+# Plot comparison
+print("\nLoss Comparison for Multi-label Classification:")
+plot_loss_comparison(loss_functions, multilabel_classification_losses)
