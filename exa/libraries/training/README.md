@@ -1,6 +1,6 @@
-# A place for a list of traing resources and best practices.
+# An list for Training Neural Nets!
 
-Distributed:
+# Distributed:
 
 Deepspeed
 
@@ -66,7 +66,7 @@ repo: https://github.com/hpcaitech/ColossalAI
 
 https://colossalai.org/
 
-Reinforcement:
+# Reinforcement:
 
 carperai/trlx:
 
@@ -78,7 +78,7 @@ TRL - Transformer Reinforcement Learning
 
 repo: https://github.com/lvwerra/trl/
 
-Efficiency:
+# Efficiency:
 
 LoRA: Low-Rank Adaptation of Large Language Models
 
@@ -87,7 +87,7 @@ paper: https://arxiv.org/abs/2106.09685
 code: https://github.com/microsoft/LoRA
 
 
-Language:
+# Language:
 
 Triton by openai:
 
@@ -105,7 +105,7 @@ code: https://github.com/google/jax
 
 docs: https://jax.readthedocs.io/en/latest/
 
-Compilers:
+# Compilers:
 
 Hidet
 
@@ -115,7 +115,7 @@ code: https://github.com/hidet-org/hidet
 
 docs: https://docs.hidet.org/stable/index.html
 
-Quantization:
+# Quantization:
 
 LLM.int8(): 8-bit Matrix Multiplication for Transformers at Scale: https://arxiv.org/abs/2208.07339
 
@@ -141,7 +141,7 @@ An easy-to-use model quantization package with user-friendly apis, based on GPTQ
 
 https://github.com/PanQiWei/AutoGPTQ
 
-Frameworks:
+# Frameworks:
 
 Ray: 
 
