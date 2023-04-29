@@ -15,20 +15,22 @@ import bitsandbytes
 class KosmosTokenizer:
     def __init__(self):
         self.processor = CLIPProcessor.from_pretrained("laion/CLIP-ViT-L-14-laion2B-s32B-b82K")
+        self.audio_tokenizer = Wav2Vec2Processor.from_pretrained("facebook/data2vec-audio-base-960h")
 
         self.tokenizer = T5Tokenizer.from_pretrained(
             "t5-large",
-            additional_special_tokens=["<image>", "</image>"],
+            additional_special_tokens=["<image>", "</image>", "<audio>", "</audio>"],
             extra_ids=0,
             model_max_length=1984
         )
+        self.audio_idx, self.audio_end_idx = self.tokenizer.convert_tokens_to_ids(["<audio>", "</audio>"])
         self.im_idx, self.im_end_idx = self.tokenizer.convert_tokens_to_ids(["<image>", "</image>"])
-        self.audio_tokenizer = Wav2Vec2Processor.from_pretrained("facebook/data2vec-audio-base-960h")
 
     def tokenize_texts(self, texts):
         texts =  self.tokenizer(texts, return_tensors="pt", padding=True, truncation=True).input_ids
-        image_tokens = torch.tensor([[self.im_idx, self.im_end_idx]] * texts.shape[0])
-        return torch.cat([texts[:, 0:1], image_tokens, texts[:, 1:]], dim=1), texts
+        # Add image and audio tokens to text as "<s> <image> </image> <audio> </audio> text </s>"
+        media_tokens = torch.tensor([[self.im_idx, self.im_end_idx, self.audio_idx, self.audio_end_idx]] * texts.shape[0])
+        return torch.cat([texts[:, 0:1], media_tokens, texts[:, 1:]], dim=1), texts
 
     def tokenize_images(self, images):
         return self.processor(images=images, return_tensors="pt").pixel_values
@@ -49,14 +51,16 @@ class KosmosTokenizer:
             "audios": self.tokenize_audio(sample["audio"]),
         }
     
-    
 
 class Kosmos(Module):
     def __init__(self):
         super().__init__()
         # Instantiate Clip Vit-l/14
         self.clip_model = CLIPModel.from_pretrained("laion/CLIP-ViT-L-14-laion2B-s32B-b82K").vision_model
-        # self.audio_model = Data2VecForCTC.from_pretrained("facebook/data2vec-audio-base-960h")
+
+        #audio model
+        self.audio_model = Data2VecForCTC.from_pretrained("facebook/data2vec-audio-base-960h")
+
 
         self.embed = bitsandbytes.nn.modules.Embedding(
             32002,
@@ -111,8 +115,6 @@ class Kosmos(Module):
             self.image_proj.weight, mean=0, std=2048**-0.5
         )
 
-        # Add audio integration
-        self.audio_model = Data2VecForCTC.from_pretrained("facebook/data2vec-audio-base-960h")
         self.audio_proj = torch.nn.Linear(768, 2048, bias=False)
         torch.nn.init.normal_(
             self.audio_proj.weight, mean=0, std=2048 ** -0.5
