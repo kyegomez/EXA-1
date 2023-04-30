@@ -153,3 +153,17 @@ Deep learning framework to train, deploy, and ship AI products Lightning fast.
 
 https://github.com/Lightning-AI/lightning
 
+
+
+
+# Model Tricks
+
+## U-ViT
+💡This codebase supports useful techniques for efficient training and sampling of diffusion models:
+
+Mixed precision training with the huggingface accelerate library (🥰automatically turned on)
+Efficient attention computation with the facebook xformers library (needs additional installation)
+Gradient checkpointing trick, which reduces ~65% memory (🥰automatically turned on)
+With these techniques, we are able to train our largest U-ViT-H on ImageNet at high resolutions such as 256x256 and 512x512 using a large batch size of 1024 with only 2 A100❗
+
+We highly suggest install xformers, which would greatly speed up the attention computation for both training and inference.

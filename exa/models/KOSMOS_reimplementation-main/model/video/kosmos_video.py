@@ -43,7 +43,7 @@ class KosmosTokenizer:
     def tokenize_texts(self, texts):
         texts =  self.tokenizer(texts, return_tensors="pt", padding=True, truncation=True).input_ids
         # Add image and audio tokens to text as "<s> <image> </image> <audio> </audio> text </s>"
-        media_tokens = torch.tensor([[self.im_idx, self.im_end_idx, self.audio_idx, self.audio_end_idx]] * texts.shape[0])
+        media_tokens = torch.tensor([[self.im_idx, self.im_end_idx, self.audio_idx, self.audio_end_idx, self.vid_idx, self.vid_end_idx]] * texts.shape[0])        
         return torch.cat([texts[:, 0:1], media_tokens, texts[:, 1:]], dim=1), texts
 
     def tokenize_images(self, images):
@@ -65,7 +65,6 @@ class KosmosTokenizer:
         attention_mask = text_tokens != self.tokenizer.pad_token_id
         dummy_image_features = torch.ones((text_tokens.shape[0], 64))
         attention_mask = torch.cat([dummy_image_features, attention_mask], dim=1)
-        media_tokens = torch.tensor([[self.im_idx, self.im_end_idx, self.audio_idx, self.audio_end_idx, self.vid_idx, self.vid_end_idx]] * texts.shape[0])        
         return {
             "text_tokens": text_tokens,
             "images": self.tokenize_images(sample["image"]),
