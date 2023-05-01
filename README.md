@@ -29,6 +29,8 @@ We are actively configuring a training strategy for KOSMOS-1, a model that can "
 
 [KOSMOS-1 PAPER](https://paperswithcode.com/paper/language-is-not-all-you-need-aligning)
 
+We are looking for highly motivated students to join us as interns to create more superintelligent AIs together. Please contact kye@apac.ai
+
 # For Humanity
 I stand before you today to herald a new era in the grim darkness of the far future.
 

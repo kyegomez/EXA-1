@@ -1,1 +1,0 @@
-#  1 Model for Lengthy Multi-Modal Tasks:
