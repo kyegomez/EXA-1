@@ -1,6 +1,6 @@
 # Infinity Warp
 
-![InfinityWarp Conduct Inference While Training](/InfinityWarp.png)
+![InfinityWarp Conduct Inference While Training](InfinityWarp.png)
 
 
 Infinity Warp is a flexible and extensible framework that enables seamless integration of custom training and inference functions for deep learning models. It leverages the power of `torch.multiprocessing` to perform concurrent training and inference, while ensuring minimal interference between the two processes.
