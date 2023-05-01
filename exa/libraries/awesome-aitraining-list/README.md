@@ -154,7 +154,25 @@ Deep learning framework to train, deploy, and ship AI products Lightning fast.
 https://github.com/Lightning-AI/lightning
 
 
+##  Transformer Engine
 
+A library for accelerating Transformer models on NVIDIA GPUs, including using 8-bit floating point (FP8) precision on Hopper GPUs, to provide better performance with lower memory utilization in both training and inference.
+
+https://github.com/NVIDIA/TransformerEngine
+
+
+# papers
+
+## TRAINING LARGE LANGUAGE MODELS EFFICIENTLY WITH SPARSITY AND DATAFLOW 
+
+https://arxiv.org/pdf/2304.05511.pdf
+
+
+# Blogs
+
+## How to train your own Large Language Models
+
+https://blog.replit.com/llm-training
 
 # Model Tricks
 
