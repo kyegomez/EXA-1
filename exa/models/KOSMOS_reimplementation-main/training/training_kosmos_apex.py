@@ -16,17 +16,7 @@ from datasets import Image
 from bitsandbytes.optim import AdamW8bit
 
 
-# from torch.distributed.dsdp import (
-#     FullyShardedDataParallel,
-#     CPUOffload,
-# )
-# from torch.distributed.fsdp.wrap import (
-#     default_auto_wrap_policy,
-# )
 
-# from torch.nn.parallel import (
-#     DistributedDataParallel,
-# )
 
 #logging
 import boto3

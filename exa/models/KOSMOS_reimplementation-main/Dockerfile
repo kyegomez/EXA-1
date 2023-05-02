@@ -86,10 +86,6 @@ CMD ["python3", "train_kosmos.py"]
 
 # #set the environment variables
 # # Set environment variables for AWS credentials
-# ENV AWS_ACCESS_KEY_ID=AKIA5K4H36GT37MZCXNT
-# ENV AWS_SECRET_ACCESS_KEY=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
-# ENV WANDB_API_KEY=0fc08bb0e90314a2bb602afa0b2e6cf56abc3f49
-
 
 # #copy the train_kosmos.py /app/
 # COPY train_kosmos.py /app/
