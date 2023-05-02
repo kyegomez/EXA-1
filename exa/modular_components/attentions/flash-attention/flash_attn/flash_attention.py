@@ -99,3 +99,29 @@ class FlashMHA(nn.Module):
         context, attn_weights = self.inner_attn(qkv, key_padding_mask=key_padding_mask,
                                                 need_weights=need_weights, causal=self.causal)
         return self.out_proj(rearrange(context, 'b s h d -> b s (h d)')), attn_weights
+
+
+"""
+The FlashAttention class provided in the code implements the Flash Attention mechanism, which is a faster and more memory-efficient alternative to the standard Scaled Dot-Product Attention. Here's a step-by-step breakdown of the forward function:
+
+The input tensor qkv has shape (B, S, 3, H, D), where B is the batch size, S is the sequence length, H is the number of attention heads, and D is the head dimension. qkv contains the query, key, and value tensors.
+
+If cu_seqlens is None, the implementation computes the cumulative sequence lengths cu_seqlens and reshapes the input tensor as required for the Flash Attention function.
+
+If key_padding_mask is not None, the input tensor is first unpadded using the unpad_input function, then reshaped accordingly. After applying the Flash Attention function, the output tensor is padded back using the pad_input function.
+
+The Flash Attention function (flash_attn_unpadded_qkvpacked_func) is called with the processed input tensor, cumulative sequence lengths, dropout rate (if in training mode), softmax scaling factor, and a flag indicating whether causal attention is required.
+
+The output tensor of the Flash Attention function is reshaped as needed, and the attention weights are returned as None since the need_weights flag is set to False.
+
+The FlashMHA class integrates the FlashAttention mechanism into a multi-head attention (MHA) module. The forward function in FlashMHA consists of the following steps:
+
+The input tensor x is passed through the Wqkv linear layer, which computes the query, key, and value tensors. The output tensor is reshaped using the rearrange function to match the expected shape for the Flash Attention module.
+
+The reshaped tensor is passed through the inner_attn layer, which is an instance of the FlashAttention class. The need_weights flag is set to False, indicating that the attention weights are not needed in the output.
+
+The output tensor from the inner_attn layer is reshaped again using the rearrange function to match the expected shape for the out_proj linear layer.
+
+The reshaped tensor is passed through the out_proj linear layer, which returns the final output tensor. The attention weights are returned as None since the need_weights flag is set to False.
+
+"""

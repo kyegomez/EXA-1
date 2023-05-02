@@ -1,4 +1,7 @@
 # KOSMOS-1 Multimodal LLM
+
+![Kosmos by apac.ai](kosmos-banner.png)
+
 This repository is a rudimentary reimplementation of the KOSMOS-1 model described in Microsofts recent paper [Language Is Not All You Need: Aligning Perception
 with Language Models](https://arxiv.org/pdf/2302.14045.pdf). Since the code is yet to be published at
 [microsoft/unilm](https://github.com/microsoft/unilm), this is an attempt to follow what is described in the paper as close as possible.
@@ -159,3 +162,11 @@ I had to make some slight changes to the decoder to allow it to accept already e
 ### Training
 Since we have neither the data nor the capacity to do actual training, the details of the training process are omitted here (even though these might be the most interesting parts of the paper). We provide
 code for a very simple single dataset training loop using [accelerate](https://github.com/huggingface/accelerate) in `train_kosmos.py`. This part is still very much WIP.
+
+### TODO
+
+- Integrate Flash MultiHead Attention, with xpos, and rel_pos in forward pass for fast and ultra long sequences
+
+- Train primiitve text verision on G8WIKI
+
+- Prepare datasets, training strategies, and infrastructure for massive production level traning
