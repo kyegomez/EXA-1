@@ -8,13 +8,13 @@ from transformers import Wav2Vec2Tokenizer
 from transformers import Wav2Vec2Model
 
 from flamingo_pytorch import PerceiverResampler
-from PIL import Image
-from torch.nn import Embedding, Module
+from torch.nn import Module
 import bitsandbytes
 
 
 class KosmosTokenizer:
-    def __init__(self):
+    def __init__(self, modalities=["text", "image", "audio"]):
+        self.modalities = modalities
         self.processor = CLIPProcessor.from_pretrained("laion/CLIP-ViT-L-14-laion2B-s32B-b82K")
 
         # T5 uses SentencePiece tokenizer
@@ -44,20 +44,30 @@ class KosmosTokenizer:
     def tokenize(self, sample):
         text_tokens, only_text_tokens = self.tokenize_texts(sample["target_text"])
         attention_mask = text_tokens != self.tokenizer.pad_token_id
-        dummy_image_features = torch.ones((text_tokens.shape[0], 64))
-        attention_mask = torch.cat([dummy_image_features, attention_mask], dim=1)
+
+        if "image" in self.modalities:
+            images = self.tokenize_images(sample["image"])
+        else:
+            images = None
+
+        if "audio" in self.modalities:
+            audios = self.tokenize_audio(sample["audio"])
+        else:
+            audios = None
+
         return {
             "text_tokens": text_tokens,
-            "images": self.tokenize_images(sample["image"]),
+            "images": images,
             "labels": only_text_tokens,
             "attention_mask": attention_mask,
-            "audios": self.tokenize_audio(sample["audio"]),
+            "audios": audios,
         }
 
 class Kosmos(Module):
-    def __init__(self):
+    def __init__(self, modalities=["text", "image", "audio"]):
         super().__init__()
         # Instantiate Clip Vit-l/14
+        self.modalities = modalities
         self.clip_model = CLIPModel.from_pretrained("laion/CLIP-ViT-L-14-laion2B-s32B-b82K").vision_model
         self.audio_model = Wav2Vec2Model.from_pretrained("facebook/wav2vec2-base-960h")
 
@@ -122,15 +132,15 @@ class Kosmos(Module):
         )
 
     def forward(self, text_tokens, images, audios, **kwargs):
-        images = self.clip_model(pixel_values=images)["last_hidden_state"]
-        images = self.perceive(images).squeeze(1)
-        images = self.image_proj(images)
+        if "image" in self.modalities:
+            images = self.clip_model(pixel_values=images)["last_hidden_state"]
+            images = self.perceive(images).squeeze(1)
+            images = self.image_proj(images)
 
-        #process audio tokens
-        audios = self.audio_model(input_ids=audios).last_hidden_state
-        audios = audios.mean(dim=1)
-        audios = self.audio_proj(audios)
-
+        if "audio" in self.modalities:
+            audios = self.audio_model(input_ids=audios).last_hidden_state
+            audios = audios.mean(dim=1)
+            audios = self.audio_proj(audios)
 
         model_input = self.decoder.forward_embedding(text_tokens)[1]
         model_input = torch.cat([model_input[:, 0:3], images, audios, model_input[:, 3:]], dim=1)
