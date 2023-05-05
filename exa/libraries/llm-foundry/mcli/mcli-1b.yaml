@@ -1,0 +1,34 @@
+integrations:
+- integration_type: git_repo
+  git_repo: mosaicml/llm-foundry
+  # git_branch: # use your branch
+  # git_commit: # OR use your commit hash
+  pip_install: -e .[gpu]
+  ssh_clone: false # Should be true if using a private repo
+
+# We are fetching, converting, and training on the 'val' split
+# as it is small and quick to get going for this demo.
+# For real training runs, follow the instructions in `llm-foundry/scripts/train/README.md`
+# to convert and host the full 'train' dataset.
+command: |
+  cd llm-foundry/scripts
+  python data_prep/convert_dataset_hf.py \
+    --dataset c4 --data_subset en \
+    --out_root ./my-copy-c4 --splits train_small val_small \
+    --concat_tokens 2048 --tokenizer EleutherAI/gpt-neox-20b --eos_text '<|endoftext|>'
+  composer train/train.py train/yamls/mpt/1b.yaml \
+    train_loader.dataset.split=train_small \
+    eval_loader.dataset.split=val_small \
+    max_duration=100ba \
+    eval_interval=0
+image: mosaicml/pytorch:1.13.1_cu117-python3.10-ubuntu20.04
+# Mosaic Cloud will use run_name (with a unique suffix) to populate the env var $COMPOSER_RUN_NAME
+run_name: mosaic-gpt-1b-gpus-8
+
+gpu_num: 8
+gpu_type: a100_40gb
+cluster: r0z0 # replace with your cluster here!
+
+# The below is injected as a YAML file: /mnt/config/parameters.yaml
+# but is not used in this example.
+parameters: {}

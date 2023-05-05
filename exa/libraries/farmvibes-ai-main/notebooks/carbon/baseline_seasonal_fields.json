@@ -1,0 +1,5592 @@
+[
+    {
+        "id": "25e96fa0-9cf8-4b31-ac9e-24e30c37aeaf",
+        "time_range": [
+            "2000-02-15T00:00:00+00:00",
+            "2000-09-05T00:00:00+00:00"
+        ],
+        "bbox": [
+            -87.414918,
+            37.463251,
+            -87.393499,
+            37.479898
+        ],
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        -87.414918,
+                        37.463251
+                    ],
+                    [
+                        -87.399025,
+                        37.470226
+                    ],
+                    [
+                        -87.393499,
+                        37.472569
+                    ],
+                    [
+                        -87.39827,
+                        37.479898
+                    ],
+                    [
+                        -87.405993,
+                        37.478046
+                    ],
+                    [
+                        -87.407538,
+                        37.47761
+                    ],
+                    [
+                        -87.408122,
+                        37.477501
+                    ],
+                    [
+                        -87.408636,
+                        37.477092
+                    ],
+                    [
+                        -87.409048,
+                        37.476602
+                    ],
+                    [
+                        -87.414918,
+                        37.463251
+                    ]
+                ]
+            ]
+        },
+        "assets": [],
+        "crop_name": "Alfalfa",
+        "crop_type": "annual",
+        "properties": {
+            "pre_1980": "Lowland Non-Irrigated (Pre 1980s)",
+            "crp_type": "None",
+            "crp_start": "",
+            "crp_end": "",
+            "year_1980_2000": "Irrigated: Continuous Hay",
+            "year_1980_2000_tillage": "Intensive Tillage"
+        },
+        "fertilizers": [
+            {
+                "start_date": "2000-06-12T00:00:00Z",
+                "end_date": "2000-06-12T00:00:00Z",
+                "application_type": "Ammonium Nitrate (34-0-0)",
+                "total_nitrogen": 4.0,
+                "enhanced_efficiency_phosphorus": "None"
+            }
+        ],
+        "harvests": [
+            {
+                "is_grain": true,
+                "start_date": "2000-09-05T00:00:00Z",
+                "end_date": "2000-09-05T00:00:00Z",
+                "crop_yield": 39.0,
+                "stray_stover_hay_removal": "0"
+            },
+            {
+                "is_grain": true,
+                "start_date": "2000-09-05T00:00:00Z",
+                "end_date": "2000-09-05T00:00:00Z",
+                "crop_yield": 39.0,
+                "stray_stover_hay_removal": "0"
+            },
+            {
+                "is_grain": true,
+                "start_date": "2000-09-05T00:00:00Z",
+                "end_date": "2000-09-05T00:00:00Z",
+                "crop_yield": 39.0,
+                "stray_stover_hay_removal": "0"
+            }
+        ],
+        "tillages": [
+            {
+                "start_date": "2000-05-05T00:00:00Z",
+                "end_date": "2000-05-05T00:00:00Z",
+                "implement": "Reduced Tillage"
+            },
+            {
+                "start_date": "2000-06-23T00:00:00Z",
+                "end_date": "2000-06-23T00:00:00Z",
+                "implement": "Reduced Tillage"
+            },
+            {
+                "start_date": "2000-08-14T00:00:00Z",
+                "end_date": "2000-08-14T00:00:00Z",
+                "implement": "Reduced Tillage"
+            }
+        ],
+        "organic_amendments": [
+            {
+                "start_date": "2000-05-03T00:00:00Z",
+                "end_date": "2000-05-03T00:00:00Z",
+                "organic_amendment_type": "Soybean Meal",
+                "organic_amendment_amount": "100",
+                "organic_amendment_percent_nitrogen": "1",
+                "organic_amendment_carbon_nitrogen_ratio": "1.3"
+            }
+        ]
+    },
+    {
+        "id": "52b9cb9c-988c-4aaa-a487-cc55e9361d31",
+        "time_range": [
+            "2001-02-15T00:00:00+00:00",
+            "2001-09-05T00:00:00+00:00"
+        ],
+        "bbox": [
+            -87.414918,
+            37.463251,
+            -87.393499,
+            37.479898
+        ],
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        -87.414918,
+                        37.463251
+                    ],
+                    [
+                        -87.399025,
+                        37.470226
+                    ],
+                    [
+                        -87.393499,
+                        37.472569
+                    ],
+                    [
+                        -87.39827,
+                        37.479898
+                    ],
+                    [
+                        -87.405993,
+                        37.478046
+                    ],
+                    [
+                        -87.407538,
+                        37.47761
+                    ],
+                    [
+                        -87.408122,
+                        37.477501
+                    ],
+                    [
+                        -87.408636,
+                        37.477092
+                    ],
+                    [
+                        -87.409048,
+                        37.476602
+                    ],
+                    [
+                        -87.414918,
+                        37.463251
+                    ]
+                ]
+            ]
+        },
+        "assets": [],
+        "crop_name": "Alfalfa",
+        "crop_type": "cover",
+        "properties": {
+            "pre_1980": "Lowland Non-Irrigated (Pre 1980s)",
+            "crp_type": "None",
+            "crp_start": "",
+            "crp_end": "",
+            "year_1980_2000": "Irrigated: Continuous Hay",
+            "year_1980_2000_tillage": "Intensive Tillage"
+        },
+        "fertilizers": [
+            {
+                "start_date": "2001-04-16T00:00:00Z",
+                "end_date": "2001-04-16T00:00:00Z",
+                "application_type": "Ammonium Nitrate (34-0-0)",
+                "total_nitrogen": 4.0,
+                "enhanced_efficiency_phosphorus": "None"
+            }
+        ],
+        "harvests": [
+            {
+                "is_grain": true,
+                "start_date": "2001-09-05T00:00:00Z",
+                "end_date": "2001-09-05T00:00:00Z",
+                "crop_yield": 39.0,
+                "stray_stover_hay_removal": "0"
+            },
+            {
+                "is_grain": true,
+                "start_date": "2001-09-05T00:00:00Z",
+                "end_date": "2001-09-05T00:00:00Z",
+                "crop_yield": 39.0,
+                "stray_stover_hay_removal": "0"
+            },
+            {
+                "is_grain": true,
+                "start_date": "2001-09-05T00:00:00Z",
+                "end_date": "2001-09-05T00:00:00Z",
+                "crop_yield": 39.0,
+                "stray_stover_hay_removal": "0"
+            }
+        ],
+        "tillages": [
+            {
+                "start_date": "2001-08-07T00:00:00Z",
+                "end_date": "2001-08-07T00:00:00Z",
+                "implement": "Reduced Tillage"
+            },
+            {
+                "start_date": "2001-06-01T00:00:00Z",
+                "end_date": "2001-06-01T00:00:00Z",
+                "implement": "Reduced Tillage"
+            },
+            {
+                "start_date": "2001-04-22T00:00:00Z",
+                "end_date": "2001-04-22T00:00:00Z",
+                "implement": "Reduced Tillage"
+            }
+        ],
+        "organic_amendments": [
+            {
+                "start_date": "2001-05-02T00:00:00Z",
+                "end_date": "2001-05-02T00:00:00Z",
+                "organic_amendment_type": "Soybean Meal",
+                "organic_amendment_amount": "100",
+                "organic_amendment_percent_nitrogen": "1",
+                "organic_amendment_carbon_nitrogen_ratio": "1.3"
+            }
+        ]
+    },
+    {
+        "id": "0e8a547a-5c83-4e59-aaec-5435313c9b06",
+        "time_range": [
+            "2002-02-15T00:00:00+00:00",
+            "2002-09-05T00:00:00+00:00"
+        ],
+        "bbox": [
+            -87.414918,
+            37.463251,
+            -87.393499,
+            37.479898
+        ],
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        -87.414918,
+                        37.463251
+                    ],
+                    [
+                        -87.399025,
+                        37.470226
+                    ],
+                    [
+                        -87.393499,
+                        37.472569
+                    ],
+                    [
+                        -87.39827,
+                        37.479898
+                    ],
+                    [
+                        -87.405993,
+                        37.478046
+                    ],
+                    [
+                        -87.407538,
+                        37.47761
+                    ],
+                    [
+                        -87.408122,
+                        37.477501
+                    ],
+                    [
+                        -87.408636,
+                        37.477092
+                    ],
+                    [
+                        -87.409048,
+                        37.476602
+                    ],
+                    [
+                        -87.414918,
+                        37.463251
+                    ]
+                ]
+            ]
+        },
+        "assets": [],
+        "crop_name": "Alfalfa",
+        "crop_type": "annual",
+        "properties": {
+            "pre_1980": "Lowland Non-Irrigated (Pre 1980s)",
+            "crp_type": "None",
+            "crp_start": "",
+            "crp_end": "",
+            "year_1980_2000": "Irrigated: Continuous Hay",
+            "year_1980_2000_tillage": "Intensive Tillage"
+        },
+        "fertilizers": [
+            {
+                "start_date": "2002-06-26T00:00:00Z",
+                "end_date": "2002-06-26T00:00:00Z",
+                "application_type": "Ammonium Nitrate (34-0-0)",
+                "total_nitrogen": 4.0,
+                "enhanced_efficiency_phosphorus": "None"
+            }
+        ],
+        "harvests": [
+            {
+                "is_grain": true,
+                "start_date": "2002-09-05T00:00:00Z",
+                "end_date": "2002-09-05T00:00:00Z",
+                "crop_yield": 39.0,
+                "stray_stover_hay_removal": "0"
+            },
+            {
+                "is_grain": true,
+                "start_date": "2002-09-05T00:00:00Z",
+                "end_date": "2002-09-05T00:00:00Z",
+                "crop_yield": 39.0,
+                "stray_stover_hay_removal": "0"
+            },
+            {
+                "is_grain": true,
+                "start_date": "2002-09-05T00:00:00Z",
+                "end_date": "2002-09-05T00:00:00Z",
+                "crop_yield": 39.0,
+                "stray_stover_hay_removal": "0"
+            }
+        ],
+        "tillages": [
+            {
+                "start_date": "2002-05-15T00:00:00Z",
+                "end_date": "2002-05-15T00:00:00Z",
+                "implement": "Reduced Tillage"
+            },
+            {
+                "start_date": "2002-05-01T00:00:00Z",
+                "end_date": "2002-05-01T00:00:00Z",
+                "implement": "Reduced Tillage"
+            },
+            {
+                "start_date": "2002-08-29T00:00:00Z",
+                "end_date": "2002-08-29T00:00:00Z",
+                "implement": "Reduced Tillage"
+            }
+        ],
+        "organic_amendments": [
+            {
+                "start_date": "2002-07-31T00:00:00Z",
+                "end_date": "2002-07-31T00:00:00Z",
+                "organic_amendment_type": "Soybean Meal",
+                "organic_amendment_amount": "100",
+                "organic_amendment_percent_nitrogen": "1",
+                "organic_amendment_carbon_nitrogen_ratio": "1.3"
+            }
+        ]
+    },
+    {
+        "id": "08bcf6fc-6dfd-4ffb-91a8-6fcc1bbb7580",
+        "time_range": [
+            "2003-02-15T00:00:00+00:00",
+            "2003-09-05T00:00:00+00:00"
+        ],
+        "bbox": [
+            -87.414918,
+            37.463251,
+            -87.393499,
+            37.479898
+        ],
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        -87.414918,
+                        37.463251
+                    ],
+                    [
+                        -87.399025,
+                        37.470226
+                    ],
+                    [
+                        -87.393499,
+                        37.472569
+                    ],
+                    [
+                        -87.39827,
+                        37.479898
+                    ],
+                    [
+                        -87.405993,
+                        37.478046
+                    ],
+                    [
+                        -87.407538,
+                        37.47761
+                    ],
+                    [
+                        -87.408122,
+                        37.477501
+                    ],
+                    [
+                        -87.408636,
+                        37.477092
+                    ],
+                    [
+                        -87.409048,
+                        37.476602
+                    ],
+                    [
+                        -87.414918,
+                        37.463251
+                    ]
+                ]
+            ]
+        },
+        "assets": [],
+        "crop_name": "Alfalfa",
+        "crop_type": "annual",
+        "properties": {
+            "pre_1980": "Lowland Non-Irrigated (Pre 1980s)",
+            "crp_type": "None",
+            "crp_start": "",
+            "crp_end": "",
+            "year_1980_2000": "Irrigated: Continuous Hay",
+            "year_1980_2000_tillage": "Intensive Tillage"
+        },
+        "fertilizers": [
+            {
+                "start_date": "2003-03-10T00:00:00Z",
+                "end_date": "2003-03-10T00:00:00Z",
+                "application_type": "Ammonium Nitrate (34-0-0)",
+                "total_nitrogen": 4.0,
+                "enhanced_efficiency_phosphorus": "None"
+            }
+        ],
+        "harvests": [
+            {
+                "is_grain": true,
+                "start_date": "2003-09-05T00:00:00Z",
+                "end_date": "2003-09-05T00:00:00Z",
+                "crop_yield": 39.0,
+                "stray_stover_hay_removal": "0"
+            },
+            {
+                "is_grain": true,
+                "start_date": "2003-09-05T00:00:00Z",
+                "end_date": "2003-09-05T00:00:00Z",
+                "crop_yield": 39.0,
+                "stray_stover_hay_removal": "0"
+            },
+            {
+                "is_grain": true,
+                "start_date": "2003-09-05T00:00:00Z",
+                "end_date": "2003-09-05T00:00:00Z",
+                "crop_yield": 39.0,
+                "stray_stover_hay_removal": "0"
+            }
+        ],
+        "tillages": [
+            {
+                "start_date": "2003-08-16T00:00:00Z",
+                "end_date": "2003-08-16T00:00:00Z",
+                "implement": "Reduced Tillage"
+            },
+            {
+                "start_date": "2003-05-13T00:00:00Z",
+                "end_date": "2003-05-13T00:00:00Z",
+                "implement": "Reduced Tillage"
+            },
+            {
+                "start_date": "2003-04-02T00:00:00Z",
+                "end_date": "2003-04-02T00:00:00Z",
+                "implement": "Reduced Tillage"
+            }
+        ],
+        "organic_amendments": [
+            {
+                "start_date": "2003-04-14T00:00:00Z",
+                "end_date": "2003-04-14T00:00:00Z",
+                "organic_amendment_type": "Soybean Meal",
+                "organic_amendment_amount": "100",
+                "organic_amendment_percent_nitrogen": "1",
+                "organic_amendment_carbon_nitrogen_ratio": "1.3"
+            }
+        ]
+    },
+    {
+        "id": "5fe6c97e-de86-4efe-b3e3-5ca173de07ed",
+        "time_range": [
+            "2004-02-15T00:00:00+00:00",
+            "2004-09-05T00:00:00+00:00"
+        ],
+        "bbox": [
+            -87.414918,
+            37.463251,
+            -87.393499,
+            37.479898
+        ],
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        -87.414918,
+                        37.463251
+                    ],
+                    [
+                        -87.399025,
+                        37.470226
+                    ],
+                    [
+                        -87.393499,
+                        37.472569
+                    ],
+                    [
+                        -87.39827,
+                        37.479898
+                    ],
+                    [
+                        -87.405993,
+                        37.478046
+                    ],
+                    [
+                        -87.407538,
+                        37.47761
+                    ],
+                    [
+                        -87.408122,
+                        37.477501
+                    ],
+                    [
+                        -87.408636,
+                        37.477092
+                    ],
+                    [
+                        -87.409048,
+                        37.476602
+                    ],
+                    [
+                        -87.414918,
+                        37.463251
+                    ]
+                ]
+            ]
+        },
+        "assets": [],
+        "crop_name": "Alfalfa",
+        "crop_type": "annual",
+        "properties": {
+            "pre_1980": "Lowland Non-Irrigated (Pre 1980s)",
+            "crp_type": "None",
+            "crp_start": "",
+            "crp_end": "",
+            "year_1980_2000": "Irrigated: Continuous Hay",
+            "year_1980_2000_tillage": "Intensive Tillage"
+        },
+        "fertilizers": [
+            {
+                "start_date": "2004-08-22T00:00:00Z",
+                "end_date": "2004-08-22T00:00:00Z",
+                "application_type": "Ammonium Nitrate (34-0-0)",
+                "total_nitrogen": 4.0,
+                "enhanced_efficiency_phosphorus": "None"
+            }
+        ],
+        "harvests": [
+            {
+                "is_grain": true,
+                "start_date": "2004-09-05T00:00:00Z",
+                "end_date": "2004-09-05T00:00:00Z",
+                "crop_yield": 39.0,
+                "stray_stover_hay_removal": "0"
+            },
+            {
+                "is_grain": true,
+                "start_date": "2004-09-05T00:00:00Z",
+                "end_date": "2004-09-05T00:00:00Z",
+                "crop_yield": 39.0,
+                "stray_stover_hay_removal": "0"
+            },
+            {
+                "is_grain": true,
+                "start_date": "2004-09-05T00:00:00Z",
+                "end_date": "2004-09-05T00:00:00Z",
+                "crop_yield": 39.0,
+                "stray_stover_hay_removal": "0"
+            }
+        ],
+        "tillages": [
+            {
+                "start_date": "2004-08-15T00:00:00Z",
+                "end_date": "2004-08-15T00:00:00Z",
+                "implement": "Reduced Tillage"
+            },
+            {
+                "start_date": "2004-05-27T00:00:00Z",
+                "end_date": "2004-05-27T00:00:00Z",
+                "implement": "Reduced Tillage"
+            },
+            {
+                "start_date": "2004-07-01T00:00:00Z",
+                "end_date": "2004-07-01T00:00:00Z",
+                "implement": "Reduced Tillage"
+            }
+        ],
+        "organic_amendments": [
+            {
+                "start_date": "2004-04-28T00:00:00Z",
+                "end_date": "2004-04-28T00:00:00Z",
+                "organic_amendment_type": "Soybean Meal",
+                "organic_amendment_amount": "100",
+                "organic_amendment_percent_nitrogen": "1",
+                "organic_amendment_carbon_nitrogen_ratio": "1.3"
+            }
+        ]
+    },
+    {
+        "id": "33f8180e-c2e4-4966-ae59-759c2a53d9db",
+        "time_range": [
+            "2005-02-15T00:00:00+00:00",
+            "2005-09-05T00:00:00+00:00"
+        ],
+        "bbox": [
+            -87.414918,
+            37.463251,
+            -87.393499,
+            37.479898
+        ],
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        -87.414918,
+                        37.463251
+                    ],
+                    [
+                        -87.399025,
+                        37.470226
+                    ],
+                    [
+                        -87.393499,
+                        37.472569
+                    ],
+                    [
+                        -87.39827,
+                        37.479898
+                    ],
+                    [
+                        -87.405993,
+                        37.478046
+                    ],
+                    [
+                        -87.407538,
+                        37.47761
+                    ],
+                    [
+                        -87.408122,
+                        37.477501
+                    ],
+                    [
+                        -87.408636,
+                        37.477092
+                    ],
+                    [
+                        -87.409048,
+                        37.476602
+                    ],
+                    [
+                        -87.414918,
+                        37.463251
+                    ]
+                ]
+            ]
+        },
+        "assets": [],
+        "crop_name": "Alfalfa",
+        "crop_type": "annual",
+        "properties": {
+            "pre_1980": "Lowland Non-Irrigated (Pre 1980s)",
+            "crp_type": "None",
+            "crp_start": "",
+            "crp_end": "",
+            "year_1980_2000": "Irrigated: Continuous Hay",
+            "year_1980_2000_tillage": "Intensive Tillage"
+        },
+        "fertilizers": [
+            {
+                "start_date": "2005-04-15T00:00:00Z",
+                "end_date": "2005-04-15T00:00:00Z",
+                "application_type": "Ammonium Nitrate (34-0-0)",
+                "total_nitrogen": 4.0,
+                "enhanced_efficiency_phosphorus": "None"
+            }
+        ],
+        "harvests": [
+            {
+                "is_grain": true,
+                "start_date": "2005-09-05T00:00:00Z",
+                "end_date": "2005-09-05T00:00:00Z",
+                "crop_yield": 39.0,
+                "stray_stover_hay_removal": "0"
+            },
+            {
+                "is_grain": true,
+                "start_date": "2005-09-05T00:00:00Z",
+                "end_date": "2005-09-05T00:00:00Z",
+                "crop_yield": 39.0,
+                "stray_stover_hay_removal": "0"
+            },
+            {
+                "is_grain": true,
+                "start_date": "2005-09-05T00:00:00Z",
+                "end_date": "2005-09-05T00:00:00Z",
+                "crop_yield": 39.0,
+                "stray_stover_hay_removal": "0"
+            }
+        ],
+        "tillages": [
+            {
+                "start_date": "2005-05-13T00:00:00Z",
+                "end_date": "2005-05-13T00:00:00Z",
+                "implement": "Reduced Tillage"
+            },
+            {
+                "start_date": "2005-06-29T00:00:00Z",
+                "end_date": "2005-06-29T00:00:00Z",
+                "implement": "Reduced Tillage"
+            },
+            {
+                "start_date": "2005-03-24T00:00:00Z",
+                "end_date": "2005-03-24T00:00:00Z",
+                "implement": "Reduced Tillage"
+            }
+        ],
+        "organic_amendments": [
+            {
+                "start_date": "2005-03-01T00:00:00Z",
+                "end_date": "2005-03-01T00:00:00Z",
+                "organic_amendment_type": "Soybean Meal",
+                "organic_amendment_amount": "100",
+                "organic_amendment_percent_nitrogen": "1",
+                "organic_amendment_carbon_nitrogen_ratio": "1.3"
+            }
+        ]
+    },
+    {
+        "id": "5bdca67f-d38a-41ab-adbc-87db21256e53",
+        "time_range": [
+            "2006-02-15T00:00:00+00:00",
+            "2006-09-05T00:00:00+00:00"
+        ],
+        "bbox": [
+            -87.414918,
+            37.463251,
+            -87.393499,
+            37.479898
+        ],
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        -87.414918,
+                        37.463251
+                    ],
+                    [
+                        -87.399025,
+                        37.470226
+                    ],
+                    [
+                        -87.393499,
+                        37.472569
+                    ],
+                    [
+                        -87.39827,
+                        37.479898
+                    ],
+                    [
+                        -87.405993,
+                        37.478046
+                    ],
+                    [
+                        -87.407538,
+                        37.47761
+                    ],
+                    [
+                        -87.408122,
+                        37.477501
+                    ],
+                    [
+                        -87.408636,
+                        37.477092
+                    ],
+                    [
+                        -87.409048,
+                        37.476602
+                    ],
+                    [
+                        -87.414918,
+                        37.463251
+                    ]
+                ]
+            ]
+        },
+        "assets": [],
+        "crop_name": "Alfalfa",
+        "crop_type": "annual",
+        "properties": {
+            "pre_1980": "Lowland Non-Irrigated (Pre 1980s)",
+            "crp_type": "None",
+            "crp_start": "",
+            "crp_end": "",
+            "year_1980_2000": "Irrigated: Continuous Hay",
+            "year_1980_2000_tillage": "Intensive Tillage"
+        },
+        "fertilizers": [
+            {
+                "start_date": "2006-04-26T00:00:00Z",
+                "end_date": "2006-04-26T00:00:00Z",
+                "application_type": "Ammonium Nitrate (34-0-0)",
+                "total_nitrogen": 4.0,
+                "enhanced_efficiency_phosphorus": "None"
+            }
+        ],
+        "harvests": [
+            {
+                "is_grain": true,
+                "start_date": "2006-09-05T00:00:00Z",
+                "end_date": "2006-09-05T00:00:00Z",
+                "crop_yield": 39.0,
+                "stray_stover_hay_removal": "0"
+            },
+            {
+                "is_grain": true,
+                "start_date": "2006-09-05T00:00:00Z",
+                "end_date": "2006-09-05T00:00:00Z",
+                "crop_yield": 39.0,
+                "stray_stover_hay_removal": "0"
+            },
+            {
+                "is_grain": true,
+                "start_date": "2006-09-05T00:00:00Z",
+                "end_date": "2006-09-05T00:00:00Z",
+                "crop_yield": 39.0,
+                "stray_stover_hay_removal": "0"
+            }
+        ],
+        "tillages": [
+            {
+                "start_date": "2006-03-15T00:00:00Z",
+                "end_date": "2006-03-15T00:00:00Z",
+                "implement": "Reduced Tillage"
+            },
+            {
+                "start_date": "2006-06-08T00:00:00Z",
+                "end_date": "2006-06-08T00:00:00Z",
+                "implement": "Reduced Tillage"
+            },
+            {
+                "start_date": "2006-04-22T00:00:00Z",
+                "end_date": "2006-04-22T00:00:00Z",
+                "implement": "Reduced Tillage"
+            }
+        ],
+        "organic_amendments": [
+            {
+                "start_date": "2006-03-17T00:00:00Z",
+                "end_date": "2006-03-17T00:00:00Z",
+                "organic_amendment_type": "Soybean Meal",
+                "organic_amendment_amount": "100",
+                "organic_amendment_percent_nitrogen": "1",
+                "organic_amendment_carbon_nitrogen_ratio": "1.3"
+            }
+        ]
+    },
+    {
+        "id": "57add272-0ba2-487f-9b21-da068b469eec",
+        "time_range": [
+            "2007-02-15T00:00:00+00:00",
+            "2007-09-05T00:00:00+00:00"
+        ],
+        "bbox": [
+            -87.414918,
+            37.463251,
+            -87.393499,
+            37.479898
+        ],
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        -87.414918,
+                        37.463251
+                    ],
+                    [
+                        -87.399025,
+                        37.470226
+                    ],
+                    [
+                        -87.393499,
+                        37.472569
+                    ],
+                    [
+                        -87.39827,
+                        37.479898
+                    ],
+                    [
+                        -87.405993,
+                        37.478046
+                    ],
+                    [
+                        -87.407538,
+                        37.47761
+                    ],
+                    [
+                        -87.408122,
+                        37.477501
+                    ],
+                    [
+                        -87.408636,
+                        37.477092
+                    ],
+                    [
+                        -87.409048,
+                        37.476602
+                    ],
+                    [
+                        -87.414918,
+                        37.463251
+                    ]
+                ]
+            ]
+        },
+        "assets": [],
+        "crop_name": "Alfalfa",
+        "crop_type": "annual",
+        "properties": {
+            "pre_1980": "Lowland Non-Irrigated (Pre 1980s)",
+            "crp_type": "None",
+            "crp_start": "",
+            "crp_end": "",
+            "year_1980_2000": "Irrigated: Continuous Hay",
+            "year_1980_2000_tillage": "Intensive Tillage"
+        },
+        "fertilizers": [
+            {
+                "start_date": "2007-07-20T00:00:00Z",
+                "end_date": "2007-07-20T00:00:00Z",
+                "application_type": "Ammonium Nitrate (34-0-0)",
+                "total_nitrogen": 4.0,
+                "enhanced_efficiency_phosphorus": "None"
+            }
+        ],
+        "harvests": [
+            {
+                "is_grain": true,
+                "start_date": "2007-09-05T00:00:00Z",
+                "end_date": "2007-09-05T00:00:00Z",
+                "crop_yield": 39.0,
+                "stray_stover_hay_removal": "0"
+            },
+            {
+                "is_grain": true,
+                "start_date": "2007-09-05T00:00:00Z",
+                "end_date": "2007-09-05T00:00:00Z",
+                "crop_yield": 39.0,
+                "stray_stover_hay_removal": "0"
+            },
+            {
+                "is_grain": true,
+                "start_date": "2007-09-05T00:00:00Z",
+                "end_date": "2007-09-05T00:00:00Z",
+                "crop_yield": 39.0,
+                "stray_stover_hay_removal": "0"
+            }
+        ],
+        "tillages": [
+            {
+                "start_date": "2007-04-11T00:00:00Z",
+                "end_date": "2007-04-11T00:00:00Z",
+                "implement": "Reduced Tillage"
+            },
+            {
+                "start_date": "2007-04-13T00:00:00Z",
+                "end_date": "2007-04-13T00:00:00Z",
+                "implement": "Reduced Tillage"
+            },
+            {
+                "start_date": "2007-06-11T00:00:00Z",
+                "end_date": "2007-06-11T00:00:00Z",
+                "implement": "Reduced Tillage"
+            }
+        ],
+        "organic_amendments": [
+            {
+                "start_date": "2007-06-19T00:00:00Z",
+                "end_date": "2007-06-19T00:00:00Z",
+                "organic_amendment_type": "Soybean Meal",
+                "organic_amendment_amount": "100",
+                "organic_amendment_percent_nitrogen": "1",
+                "organic_amendment_carbon_nitrogen_ratio": "1.3"
+            }
+        ]
+    },
+    {
+        "id": "cc7342e4-e738-45a8-90c4-7bacf8f72c60",
+        "time_range": [
+            "2008-02-15T00:00:00+00:00",
+            "2008-09-05T00:00:00+00:00"
+        ],
+        "bbox": [
+            -87.414918,
+            37.463251,
+            -87.393499,
+            37.479898
+        ],
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        -87.414918,
+                        37.463251
+                    ],
+                    [
+                        -87.399025,
+                        37.470226
+                    ],
+                    [
+                        -87.393499,
+                        37.472569
+                    ],
+                    [
+                        -87.39827,
+                        37.479898
+                    ],
+                    [
+                        -87.405993,
+                        37.478046
+                    ],
+                    [
+                        -87.407538,
+                        37.47761
+                    ],
+                    [
+                        -87.408122,
+                        37.477501
+                    ],
+                    [
+                        -87.408636,
+                        37.477092
+                    ],
+                    [
+                        -87.409048,
+                        37.476602
+                    ],
+                    [
+                        -87.414918,
+                        37.463251
+                    ]
+                ]
+            ]
+        },
+        "assets": [],
+        "crop_name": "Alfalfa",
+        "crop_type": "annual",
+        "properties": {
+            "pre_1980": "Lowland Non-Irrigated (Pre 1980s)",
+            "crp_type": "None",
+            "crp_start": "",
+            "crp_end": "",
+            "year_1980_2000": "Irrigated: Continuous Hay",
+            "year_1980_2000_tillage": "Intensive Tillage"
+        },
+        "fertilizers": [
+            {
+                "start_date": "2008-05-13T00:00:00Z",
+                "end_date": "2008-05-13T00:00:00Z",
+                "application_type": "Ammonium Nitrate (34-0-0)",
+                "total_nitrogen": 4.0,
+                "enhanced_efficiency_phosphorus": "None"
+            }
+        ],
+        "harvests": [
+            {
+                "is_grain": true,
+                "start_date": "2008-09-05T00:00:00Z",
+                "end_date": "2008-09-05T00:00:00Z",
+                "crop_yield": 39.0,
+                "stray_stover_hay_removal": "0"
+            },
+            {
+                "is_grain": true,
+                "start_date": "2008-09-05T00:00:00Z",
+                "end_date": "2008-09-05T00:00:00Z",
+                "crop_yield": 39.0,
+                "stray_stover_hay_removal": "0"
+            },
+            {
+                "is_grain": true,
+                "start_date": "2008-09-05T00:00:00Z",
+                "end_date": "2008-09-05T00:00:00Z",
+                "crop_yield": 39.0,
+                "stray_stover_hay_removal": "0"
+            }
+        ],
+        "tillages": [
+            {
+                "start_date": "2008-07-02T00:00:00Z",
+                "end_date": "2008-07-02T00:00:00Z",
+                "implement": "Reduced Tillage"
+            },
+            {
+                "start_date": "2008-07-16T00:00:00Z",
+                "end_date": "2008-07-16T00:00:00Z",
+                "implement": "Reduced Tillage"
+            },
+            {
+                "start_date": "2008-06-13T00:00:00Z",
+                "end_date": "2008-06-13T00:00:00Z",
+                "implement": "Reduced Tillage"
+            }
+        ],
+        "organic_amendments": [
+            {
+                "start_date": "2008-03-07T00:00:00Z",
+                "end_date": "2008-03-07T00:00:00Z",
+                "organic_amendment_type": "Soybean Meal",
+                "organic_amendment_amount": "100",
+                "organic_amendment_percent_nitrogen": "1",
+                "organic_amendment_carbon_nitrogen_ratio": "1.3"
+            }
+        ]
+    },
+    {
+        "id": "2706e96a-fdd8-4c28-9d62-0d82d3c07f4a",
+        "time_range": [
+            "2009-02-15T00:00:00+00:00",
+            "2009-09-05T00:00:00+00:00"
+        ],
+        "bbox": [
+            -87.414918,
+            37.463251,
+            -87.393499,
+            37.479898
+        ],
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        -87.414918,
+                        37.463251
+                    ],
+                    [
+                        -87.399025,
+                        37.470226
+                    ],
+                    [
+                        -87.393499,
+                        37.472569
+                    ],
+                    [
+                        -87.39827,
+                        37.479898
+                    ],
+                    [
+                        -87.405993,
+                        37.478046
+                    ],
+                    [
+                        -87.407538,
+                        37.47761
+                    ],
+                    [
+                        -87.408122,
+                        37.477501
+                    ],
+                    [
+                        -87.408636,
+                        37.477092
+                    ],
+                    [
+                        -87.409048,
+                        37.476602
+                    ],
+                    [
+                        -87.414918,
+                        37.463251
+                    ]
+                ]
+            ]
+        },
+        "assets": [],
+        "crop_name": "Alfalfa",
+        "crop_type": "annual",
+        "properties": {
+            "pre_1980": "Lowland Non-Irrigated (Pre 1980s)",
+            "crp_type": "None",
+            "crp_start": "",
+            "crp_end": "",
+            "year_1980_2000": "Irrigated: Continuous Hay",
+            "year_1980_2000_tillage": "Intensive Tillage"
+        },
+        "fertilizers": [
+            {
+                "start_date": "2009-08-28T00:00:00Z",
+                "end_date": "2009-08-28T00:00:00Z",
+                "application_type": "Ammonium Nitrate (34-0-0)",
+                "total_nitrogen": 4.0,
+                "enhanced_efficiency_phosphorus": "None"
+            }
+        ],
+        "harvests": [
+            {
+                "is_grain": true,
+                "start_date": "2009-09-05T00:00:00Z",
+                "end_date": "2009-09-05T00:00:00Z",
+                "crop_yield": 39.0,
+                "stray_stover_hay_removal": "0"
+            },
+            {
+                "is_grain": true,
+                "start_date": "2009-09-05T00:00:00Z",
+                "end_date": "2009-09-05T00:00:00Z",
+                "crop_yield": 39.0,
+                "stray_stover_hay_removal": "0"
+            },
+            {
+                "is_grain": true,
+                "start_date": "2009-09-05T00:00:00Z",
+                "end_date": "2009-09-05T00:00:00Z",
+                "crop_yield": 39.0,
+                "stray_stover_hay_removal": "0"
+            }
+        ],
+        "tillages": [
+            {
+                "start_date": "2009-08-21T00:00:00Z",
+                "end_date": "2009-08-21T00:00:00Z",
+                "implement": "Reduced Tillage"
+            },
+            {
+                "start_date": "2009-04-01T00:00:00Z",
+                "end_date": "2009-04-01T00:00:00Z",
+                "implement": "Reduced Tillage"
+            },
+            {
+                "start_date": "2009-06-06T00:00:00Z",
+                "end_date": "2009-06-06T00:00:00Z",
+                "implement": "Reduced Tillage"
+            }
+        ],
+        "organic_amendments": [
+            {
+                "start_date": "2009-02-19T00:00:00Z",
+                "end_date": "2009-02-19T00:00:00Z",
+                "organic_amendment_type": "Soybean Meal",
+                "organic_amendment_amount": "100",
+                "organic_amendment_percent_nitrogen": "1",
+                "organic_amendment_carbon_nitrogen_ratio": "1.3"
+            }
+        ]
+    },
+    {
+        "id": "4e3eb44d-f629-4efd-8e31-542992cbd453",
+        "time_range": [
+            "2010-02-15T00:00:00+00:00",
+            "2010-09-05T00:00:00+00:00"
+        ],
+        "bbox": [
+            -87.414918,
+            37.463251,
+            -87.393499,
+            37.479898
+        ],
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        -87.414918,
+                        37.463251
+                    ],
+                    [
+                        -87.399025,
+                        37.470226
+                    ],
+                    [
+                        -87.393499,
+                        37.472569
+                    ],
+                    [
+                        -87.39827,
+                        37.479898
+                    ],
+                    [
+                        -87.405993,
+                        37.478046
+                    ],
+                    [
+                        -87.407538,
+                        37.47761
+                    ],
+                    [
+                        -87.408122,
+                        37.477501
+                    ],
+                    [
+                        -87.408636,
+                        37.477092
+                    ],
+                    [
+                        -87.409048,
+                        37.476602
+                    ],
+                    [
+                        -87.414918,
+                        37.463251
+                    ]
+                ]
+            ]
+        },
+        "assets": [],
+        "crop_name": "Alfalfa",
+        "crop_type": "annual",
+        "properties": {
+            "pre_1980": "Lowland Non-Irrigated (Pre 1980s)",
+            "crp_type": "None",
+            "crp_start": "",
+            "crp_end": "",
+            "year_1980_2000": "Irrigated: Continuous Hay",
+            "year_1980_2000_tillage": "Intensive Tillage"
+        },
+        "fertilizers": [
+            {
+                "start_date": "2010-07-20T00:00:00Z",
+                "end_date": "2010-07-20T00:00:00Z",
+                "application_type": "Ammonium Nitrate (34-0-0)",
+                "total_nitrogen": 4.0,
+                "enhanced_efficiency_phosphorus": "None"
+            }
+        ],
+        "harvests": [
+            {
+                "is_grain": true,
+                "start_date": "2010-09-05T00:00:00Z",
+                "end_date": "2010-09-05T00:00:00Z",
+                "crop_yield": 39.0,
+                "stray_stover_hay_removal": "0"
+            },
+            {
+                "is_grain": true,
+                "start_date": "2010-09-05T00:00:00Z",
+                "end_date": "2010-09-05T00:00:00Z",
+                "crop_yield": 39.0,
+                "stray_stover_hay_removal": "0"
+            },
+            {
+                "is_grain": true,
+                "start_date": "2010-09-05T00:00:00Z",
+                "end_date": "2010-09-05T00:00:00Z",
+                "crop_yield": 39.0,
+                "stray_stover_hay_removal": "0"
+            }
+        ],
+        "tillages": [
+            {
+                "start_date": "2010-07-12T00:00:00Z",
+                "end_date": "2010-07-12T00:00:00Z",
+                "implement": "Reduced Tillage"
+            },
+            {
+                "start_date": "2010-06-20T00:00:00Z",
+                "end_date": "2010-06-20T00:00:00Z",
+                "implement": "Reduced Tillage"
+            },
+            {
+                "start_date": "2010-08-20T00:00:00Z",
+                "end_date": "2010-08-20T00:00:00Z",
+                "implement": "Reduced Tillage"
+            }
+        ],
+        "organic_amendments": [
+            {
+                "start_date": "2010-08-23T00:00:00Z",
+                "end_date": "2010-08-23T00:00:00Z",
+                "organic_amendment_type": "Soybean Meal",
+                "organic_amendment_amount": "100",
+                "organic_amendment_percent_nitrogen": "1",
+                "organic_amendment_carbon_nitrogen_ratio": "1.3"
+            }
+        ]
+    },
+    {
+        "id": "c3426004-5bda-41c1-b04c-6e5368924e66",
+        "time_range": [
+            "2011-02-15T00:00:00+00:00",
+            "2011-09-05T00:00:00+00:00"
+        ],
+        "bbox": [
+            -87.414918,
+            37.463251,
+            -87.393499,
+            37.479898
+        ],
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        -87.414918,
+                        37.463251
+                    ],
+                    [
+                        -87.399025,
+                        37.470226
+                    ],
+                    [
+                        -87.393499,
+                        37.472569
+                    ],
+                    [
+                        -87.39827,
+                        37.479898
+                    ],
+                    [
+                        -87.405993,
+                        37.478046
+                    ],
+                    [
+                        -87.407538,
+                        37.47761
+                    ],
+                    [
+                        -87.408122,
+                        37.477501
+                    ],
+                    [
+                        -87.408636,
+                        37.477092
+                    ],
+                    [
+                        -87.409048,
+                        37.476602
+                    ],
+                    [
+                        -87.414918,
+                        37.463251
+                    ]
+                ]
+            ]
+        },
+        "assets": [],
+        "crop_name": "Alfalfa",
+        "crop_type": "annual",
+        "properties": {
+            "pre_1980": "Lowland Non-Irrigated (Pre 1980s)",
+            "crp_type": "None",
+            "crp_start": "",
+            "crp_end": "",
+            "year_1980_2000": "Irrigated: Continuous Hay",
+            "year_1980_2000_tillage": "Intensive Tillage"
+        },
+        "fertilizers": [
+            {
+                "start_date": "2011-06-11T00:00:00Z",
+                "end_date": "2011-06-11T00:00:00Z",
+                "application_type": "Ammonium Nitrate (34-0-0)",
+                "total_nitrogen": 4.0,
+                "enhanced_efficiency_phosphorus": "None"
+            }
+        ],
+        "harvests": [
+            {
+                "is_grain": true,
+                "start_date": "2011-09-05T00:00:00Z",
+                "end_date": "2011-09-05T00:00:00Z",
+                "crop_yield": 39.0,
+                "stray_stover_hay_removal": "0"
+            },
+            {
+                "is_grain": true,
+                "start_date": "2011-09-05T00:00:00Z",
+                "end_date": "2011-09-05T00:00:00Z",
+                "crop_yield": 39.0,
+                "stray_stover_hay_removal": "0"
+            },
+            {
+                "is_grain": true,
+                "start_date": "2011-09-05T00:00:00Z",
+                "end_date": "2011-09-05T00:00:00Z",
+                "crop_yield": 39.0,
+                "stray_stover_hay_removal": "0"
+            }
+        ],
+        "tillages": [
+            {
+                "start_date": "2011-08-20T00:00:00Z",
+                "end_date": "2011-08-20T00:00:00Z",
+                "implement": "Reduced Tillage"
+            },
+            {
+                "start_date": "2011-03-31T00:00:00Z",
+                "end_date": "2011-03-31T00:00:00Z",
+                "implement": "Reduced Tillage"
+            },
+            {
+                "start_date": "2011-05-06T00:00:00Z",
+                "end_date": "2011-05-06T00:00:00Z",
+                "implement": "Reduced Tillage"
+            }
+        ],
+        "organic_amendments": [
+            {
+                "start_date": "2011-04-30T00:00:00Z",
+                "end_date": "2011-04-30T00:00:00Z",
+                "organic_amendment_type": "Soybean Meal",
+                "organic_amendment_amount": "100",
+                "organic_amendment_percent_nitrogen": "1",
+                "organic_amendment_carbon_nitrogen_ratio": "1.3"
+            }
+        ]
+    },
+    {
+        "id": "3f959f3e-06ca-4a30-80a9-af7480dbc140",
+        "time_range": [
+            "2012-02-15T00:00:00+00:00",
+            "2012-09-05T00:00:00+00:00"
+        ],
+        "bbox": [
+            -87.414918,
+            37.463251,
+            -87.393499,
+            37.479898
+        ],
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        -87.414918,
+                        37.463251
+                    ],
+                    [
+                        -87.399025,
+                        37.470226
+                    ],
+                    [
+                        -87.393499,
+                        37.472569
+                    ],
+                    [
+                        -87.39827,
+                        37.479898
+                    ],
+                    [
+                        -87.405993,
+                        37.478046
+                    ],
+                    [
+                        -87.407538,
+                        37.47761
+                    ],
+                    [
+                        -87.408122,
+                        37.477501
+                    ],
+                    [
+                        -87.408636,
+                        37.477092
+                    ],
+                    [
+                        -87.409048,
+                        37.476602
+                    ],
+                    [
+                        -87.414918,
+                        37.463251
+                    ]
+                ]
+            ]
+        },
+        "assets": [],
+        "crop_name": "Alfalfa",
+        "crop_type": "annual",
+        "properties": {
+            "pre_1980": "Lowland Non-Irrigated (Pre 1980s)",
+            "crp_type": "None",
+            "crp_start": "",
+            "crp_end": "",
+            "year_1980_2000": "Irrigated: Continuous Hay",
+            "year_1980_2000_tillage": "Intensive Tillage"
+        },
+        "fertilizers": [
+            {
+                "start_date": "2012-06-22T00:00:00Z",
+                "end_date": "2012-06-22T00:00:00Z",
+                "application_type": "Ammonium Nitrate (34-0-0)",
+                "total_nitrogen": 4.0,
+                "enhanced_efficiency_phosphorus": "None"
+            }
+        ],
+        "harvests": [
+            {
+                "is_grain": true,
+                "start_date": "2012-09-05T00:00:00Z",
+                "end_date": "2012-09-05T00:00:00Z",
+                "crop_yield": 39.0,
+                "stray_stover_hay_removal": "0"
+            },
+            {
+                "is_grain": true,
+                "start_date": "2012-09-05T00:00:00Z",
+                "end_date": "2012-09-05T00:00:00Z",
+                "crop_yield": 39.0,
+                "stray_stover_hay_removal": "0"
+            },
+            {
+                "is_grain": true,
+                "start_date": "2012-09-05T00:00:00Z",
+                "end_date": "2012-09-05T00:00:00Z",
+                "crop_yield": 39.0,
+                "stray_stover_hay_removal": "0"
+            }
+        ],
+        "tillages": [
+            {
+                "start_date": "2012-03-20T00:00:00Z",
+                "end_date": "2012-03-20T00:00:00Z",
+                "implement": "Reduced Tillage"
+            },
+            {
+                "start_date": "2012-04-18T00:00:00Z",
+                "end_date": "2012-04-18T00:00:00Z",
+                "implement": "Reduced Tillage"
+            },
+            {
+                "start_date": "2012-07-24T00:00:00Z",
+                "end_date": "2012-07-24T00:00:00Z",
+                "implement": "Reduced Tillage"
+            }
+        ],
+        "organic_amendments": [
+            {
+                "start_date": "2012-09-03T00:00:00Z",
+                "end_date": "2012-09-03T00:00:00Z",
+                "organic_amendment_type": "Soybean Meal",
+                "organic_amendment_amount": "100",
+                "organic_amendment_percent_nitrogen": "1",
+                "organic_amendment_carbon_nitrogen_ratio": "1.3"
+            }
+        ]
+    },
+    {
+        "id": "d570a8a0-d74a-4d91-af62-97e1becbaba9",
+        "time_range": [
+            "2013-02-15T00:00:00+00:00",
+            "2013-09-05T00:00:00+00:00"
+        ],
+        "bbox": [
+            -87.414918,
+            37.463251,
+            -87.393499,
+            37.479898
+        ],
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        -87.414918,
+                        37.463251
+                    ],
+                    [
+                        -87.399025,
+                        37.470226
+                    ],
+                    [
+                        -87.393499,
+                        37.472569
+                    ],
+                    [
+                        -87.39827,
+                        37.479898
+                    ],
+                    [
+                        -87.405993,
+                        37.478046
+                    ],
+                    [
+                        -87.407538,
+                        37.47761
+                    ],
+                    [
+                        -87.408122,
+                        37.477501
+                    ],
+                    [
+                        -87.408636,
+                        37.477092
+                    ],
+                    [
+                        -87.409048,
+                        37.476602
+                    ],
+                    [
+                        -87.414918,
+                        37.463251
+                    ]
+                ]
+            ]
+        },
+        "assets": [],
+        "crop_name": "Alfalfa",
+        "crop_type": "annual",
+        "properties": {
+            "pre_1980": "Lowland Non-Irrigated (Pre 1980s)",
+            "crp_type": "None",
+            "crp_start": "",
+            "crp_end": "",
+            "year_1980_2000": "Irrigated: Continuous Hay",
+            "year_1980_2000_tillage": "Intensive Tillage"
+        },
+        "fertilizers": [
+            {
+                "start_date": "2013-03-03T00:00:00Z",
+                "end_date": "2013-03-03T00:00:00Z",
+                "application_type": "Ammonium Nitrate (34-0-0)",
+                "total_nitrogen": 4.0,
+                "enhanced_efficiency_phosphorus": "None"
+            }
+        ],
+        "harvests": [
+            {
+                "is_grain": true,
+                "start_date": "2013-09-05T00:00:00Z",
+                "end_date": "2013-09-05T00:00:00Z",
+                "crop_yield": 39.0,
+                "stray_stover_hay_removal": "0"
+            },
+            {
+                "is_grain": true,
+                "start_date": "2013-09-05T00:00:00Z",
+                "end_date": "2013-09-05T00:00:00Z",
+                "crop_yield": 39.0,
+                "stray_stover_hay_removal": "0"
+            },
+            {
+                "is_grain": true,
+                "start_date": "2013-09-05T00:00:00Z",
+                "end_date": "2013-09-05T00:00:00Z",
+                "crop_yield": 39.0,
+                "stray_stover_hay_removal": "0"
+            }
+        ],
+        "tillages": [
+            {
+                "start_date": "2013-05-03T00:00:00Z",
+                "end_date": "2013-05-03T00:00:00Z",
+                "implement": "Reduced Tillage"
+            },
+            {
+                "start_date": "2013-09-01T00:00:00Z",
+                "end_date": "2013-09-01T00:00:00Z",
+                "implement": "Reduced Tillage"
+            },
+            {
+                "start_date": "2013-06-07T00:00:00Z",
+                "end_date": "2013-06-07T00:00:00Z",
+                "implement": "Reduced Tillage"
+            }
+        ],
+        "organic_amendments": [
+            {
+                "start_date": "2013-03-11T00:00:00Z",
+                "end_date": "2013-03-11T00:00:00Z",
+                "organic_amendment_type": "Soybean Meal",
+                "organic_amendment_amount": "100",
+                "organic_amendment_percent_nitrogen": "1",
+                "organic_amendment_carbon_nitrogen_ratio": "1.3"
+            }
+        ]
+    },
+    {
+        "id": "9d71af6c-882a-4041-80ae-5752d717020b",
+        "time_range": [
+            "2014-02-15T00:00:00+00:00",
+            "2014-09-05T00:00:00+00:00"
+        ],
+        "bbox": [
+            -87.414918,
+            37.463251,
+            -87.393499,
+            37.479898
+        ],
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        -87.414918,
+                        37.463251
+                    ],
+                    [
+                        -87.399025,
+                        37.470226
+                    ],
+                    [
+                        -87.393499,
+                        37.472569
+                    ],
+                    [
+                        -87.39827,
+                        37.479898
+                    ],
+                    [
+                        -87.405993,
+                        37.478046
+                    ],
+                    [
+                        -87.407538,
+                        37.47761
+                    ],
+                    [
+                        -87.408122,
+                        37.477501
+                    ],
+                    [
+                        -87.408636,
+                        37.477092
+                    ],
+                    [
+                        -87.409048,
+                        37.476602
+                    ],
+                    [
+                        -87.414918,
+                        37.463251
+                    ]
+                ]
+            ]
+        },
+        "assets": [],
+        "crop_name": "Alfalfa",
+        "crop_type": "annual",
+        "properties": {
+            "pre_1980": "Lowland Non-Irrigated (Pre 1980s)",
+            "crp_type": "None",
+            "crp_start": "",
+            "crp_end": "",
+            "year_1980_2000": "Irrigated: Continuous Hay",
+            "year_1980_2000_tillage": "Intensive Tillage"
+        },
+        "fertilizers": [
+            {
+                "start_date": "2014-06-30T00:00:00Z",
+                "end_date": "2014-06-30T00:00:00Z",
+                "application_type": "Ammonium Nitrate (34-0-0)",
+                "total_nitrogen": 4.0,
+                "enhanced_efficiency_phosphorus": "None"
+            }
+        ],
+        "harvests": [
+            {
+                "is_grain": true,
+                "start_date": "2014-09-05T00:00:00Z",
+                "end_date": "2014-09-05T00:00:00Z",
+                "crop_yield": 39.0,
+                "stray_stover_hay_removal": "0"
+            },
+            {
+                "is_grain": true,
+                "start_date": "2014-09-05T00:00:00Z",
+                "end_date": "2014-09-05T00:00:00Z",
+                "crop_yield": 39.0,
+                "stray_stover_hay_removal": "0"
+            },
+            {
+                "is_grain": true,
+                "start_date": "2014-09-05T00:00:00Z",
+                "end_date": "2014-09-05T00:00:00Z",
+                "crop_yield": 39.0,
+                "stray_stover_hay_removal": "0"
+            }
+        ],
+        "tillages": [
+            {
+                "start_date": "2014-04-15T00:00:00Z",
+                "end_date": "2014-04-15T00:00:00Z",
+                "implement": "Reduced Tillage"
+            },
+            {
+                "start_date": "2014-05-23T00:00:00Z",
+                "end_date": "2014-05-23T00:00:00Z",
+                "implement": "Reduced Tillage"
+            },
+            {
+                "start_date": "2014-06-03T00:00:00Z",
+                "end_date": "2014-06-03T00:00:00Z",
+                "implement": "Reduced Tillage"
+            }
+        ],
+        "organic_amendments": [
+            {
+                "start_date": "2014-06-10T00:00:00Z",
+                "end_date": "2014-06-10T00:00:00Z",
+                "organic_amendment_type": "Soybean Meal",
+                "organic_amendment_amount": "100",
+                "organic_amendment_percent_nitrogen": "1",
+                "organic_amendment_carbon_nitrogen_ratio": "1.3"
+            }
+        ]
+    },
+    {
+        "id": "c0649115-f50e-4204-89a5-0b1683b0afc2",
+        "time_range": [
+            "2015-02-15T00:00:00+00:00",
+            "2015-09-05T00:00:00+00:00"
+        ],
+        "bbox": [
+            -87.414918,
+            37.463251,
+            -87.393499,
+            37.479898
+        ],
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        -87.414918,
+                        37.463251
+                    ],
+                    [
+                        -87.399025,
+                        37.470226
+                    ],
+                    [
+                        -87.393499,
+                        37.472569
+                    ],
+                    [
+                        -87.39827,
+                        37.479898
+                    ],
+                    [
+                        -87.405993,
+                        37.478046
+                    ],
+                    [
+                        -87.407538,
+                        37.47761
+                    ],
+                    [
+                        -87.408122,
+                        37.477501
+                    ],
+                    [
+                        -87.408636,
+                        37.477092
+                    ],
+                    [
+                        -87.409048,
+                        37.476602
+                    ],
+                    [
+                        -87.414918,
+                        37.463251
+                    ]
+                ]
+            ]
+        },
+        "assets": [],
+        "crop_name": "Alfalfa",
+        "crop_type": "annual",
+        "properties": {
+            "pre_1980": "Lowland Non-Irrigated (Pre 1980s)",
+            "crp_type": "None",
+            "crp_start": "",
+            "crp_end": "",
+            "year_1980_2000": "Irrigated: Continuous Hay",
+            "year_1980_2000_tillage": "Intensive Tillage"
+        },
+        "fertilizers": [
+            {
+                "start_date": "2015-03-21T00:00:00Z",
+                "end_date": "2015-03-21T00:00:00Z",
+                "application_type": "Ammonium Nitrate (34-0-0)",
+                "total_nitrogen": 4.0,
+                "enhanced_efficiency_phosphorus": "None"
+            }
+        ],
+        "harvests": [
+            {
+                "is_grain": true,
+                "start_date": "2015-09-05T00:00:00Z",
+                "end_date": "2015-09-05T00:00:00Z",
+                "crop_yield": 39.0,
+                "stray_stover_hay_removal": "0"
+            },
+            {
+                "is_grain": true,
+                "start_date": "2015-09-05T00:00:00Z",
+                "end_date": "2015-09-05T00:00:00Z",
+                "crop_yield": 39.0,
+                "stray_stover_hay_removal": "0"
+            },
+            {
+                "is_grain": true,
+                "start_date": "2015-09-05T00:00:00Z",
+                "end_date": "2015-09-05T00:00:00Z",
+                "crop_yield": 39.0,
+                "stray_stover_hay_removal": "0"
+            }
+        ],
+        "tillages": [
+            {
+                "start_date": "2015-06-30T00:00:00Z",
+                "end_date": "2015-06-30T00:00:00Z",
+                "implement": "Reduced Tillage"
+            },
+            {
+                "start_date": "2015-04-03T00:00:00Z",
+                "end_date": "2015-04-03T00:00:00Z",
+                "implement": "Reduced Tillage"
+            },
+            {
+                "start_date": "2015-08-20T00:00:00Z",
+                "end_date": "2015-08-20T00:00:00Z",
+                "implement": "Reduced Tillage"
+            }
+        ],
+        "organic_amendments": [
+            {
+                "start_date": "2015-05-02T00:00:00Z",
+                "end_date": "2015-05-02T00:00:00Z",
+                "organic_amendment_type": "Soybean Meal",
+                "organic_amendment_amount": "100",
+                "organic_amendment_percent_nitrogen": "1",
+                "organic_amendment_carbon_nitrogen_ratio": "1.3"
+            }
+        ]
+    },
+    {
+        "id": "8508fd15-69da-4fd4-82aa-d742f5d64fdc",
+        "time_range": [
+            "2016-02-15T00:00:00+00:00",
+            "2016-09-05T00:00:00+00:00"
+        ],
+        "bbox": [
+            -87.414918,
+            37.463251,
+            -87.393499,
+            37.479898
+        ],
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        -87.414918,
+                        37.463251
+                    ],
+                    [
+                        -87.399025,
+                        37.470226
+                    ],
+                    [
+                        -87.393499,
+                        37.472569
+                    ],
+                    [
+                        -87.39827,
+                        37.479898
+                    ],
+                    [
+                        -87.405993,
+                        37.478046
+                    ],
+                    [
+                        -87.407538,
+                        37.47761
+                    ],
+                    [
+                        -87.408122,
+                        37.477501
+                    ],
+                    [
+                        -87.408636,
+                        37.477092
+                    ],
+                    [
+                        -87.409048,
+                        37.476602
+                    ],
+                    [
+                        -87.414918,
+                        37.463251
+                    ]
+                ]
+            ]
+        },
+        "assets": [],
+        "crop_name": "Alfalfa",
+        "crop_type": "annual",
+        "properties": {
+            "pre_1980": "Lowland Non-Irrigated (Pre 1980s)",
+            "crp_type": "None",
+            "crp_start": "",
+            "crp_end": "",
+            "year_1980_2000": "Irrigated: Continuous Hay",
+            "year_1980_2000_tillage": "Intensive Tillage"
+        },
+        "fertilizers": [
+            {
+                "start_date": "2016-02-22T00:00:00Z",
+                "end_date": "2016-02-22T00:00:00Z",
+                "application_type": "Ammonium Nitrate (34-0-0)",
+                "total_nitrogen": 4.0,
+                "enhanced_efficiency_phosphorus": "None"
+            }
+        ],
+        "harvests": [
+            {
+                "is_grain": true,
+                "start_date": "2016-09-05T00:00:00Z",
+                "end_date": "2016-09-05T00:00:00Z",
+                "crop_yield": 39.0,
+                "stray_stover_hay_removal": "0"
+            },
+            {
+                "is_grain": true,
+                "start_date": "2016-09-05T00:00:00Z",
+                "end_date": "2016-09-05T00:00:00Z",
+                "crop_yield": 39.0,
+                "stray_stover_hay_removal": "0"
+            },
+            {
+                "is_grain": true,
+                "start_date": "2016-09-05T00:00:00Z",
+                "end_date": "2016-09-05T00:00:00Z",
+                "crop_yield": 39.0,
+                "stray_stover_hay_removal": "0"
+            }
+        ],
+        "tillages": [
+            {
+                "start_date": "2016-03-31T00:00:00Z",
+                "end_date": "2016-03-31T00:00:00Z",
+                "implement": "Reduced Tillage"
+            },
+            {
+                "start_date": "2016-05-31T00:00:00Z",
+                "end_date": "2016-05-31T00:00:00Z",
+                "implement": "Reduced Tillage"
+            },
+            {
+                "start_date": "2016-06-23T00:00:00Z",
+                "end_date": "2016-06-23T00:00:00Z",
+                "implement": "Reduced Tillage"
+            }
+        ],
+        "organic_amendments": [
+            {
+                "start_date": "2016-07-01T00:00:00Z",
+                "end_date": "2016-07-01T00:00:00Z",
+                "organic_amendment_type": "Soybean Meal",
+                "organic_amendment_amount": "100",
+                "organic_amendment_percent_nitrogen": "1",
+                "organic_amendment_carbon_nitrogen_ratio": "1.3"
+            }
+        ]
+    },
+    {
+        "id": "289d9e6e-b366-4f3b-95bf-d8057ca58ea4",
+        "time_range": [
+            "2017-02-15T00:00:00+00:00",
+            "2017-09-05T00:00:00+00:00"
+        ],
+        "bbox": [
+            -87.414918,
+            37.463251,
+            -87.393499,
+            37.479898
+        ],
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        -87.414918,
+                        37.463251
+                    ],
+                    [
+                        -87.399025,
+                        37.470226
+                    ],
+                    [
+                        -87.393499,
+                        37.472569
+                    ],
+                    [
+                        -87.39827,
+                        37.479898
+                    ],
+                    [
+                        -87.405993,
+                        37.478046
+                    ],
+                    [
+                        -87.407538,
+                        37.47761
+                    ],
+                    [
+                        -87.408122,
+                        37.477501
+                    ],
+                    [
+                        -87.408636,
+                        37.477092
+                    ],
+                    [
+                        -87.409048,
+                        37.476602
+                    ],
+                    [
+                        -87.414918,
+                        37.463251
+                    ]
+                ]
+            ]
+        },
+        "assets": [],
+        "crop_name": "Alfalfa",
+        "crop_type": "annual",
+        "properties": {
+            "pre_1980": "Lowland Non-Irrigated (Pre 1980s)",
+            "crp_type": "None",
+            "crp_start": "",
+            "crp_end": "",
+            "year_1980_2000": "Irrigated: Continuous Hay",
+            "year_1980_2000_tillage": "Intensive Tillage"
+        },
+        "fertilizers": [
+            {
+                "start_date": "2017-05-14T00:00:00Z",
+                "end_date": "2017-05-14T00:00:00Z",
+                "application_type": "Ammonium Nitrate (34-0-0)",
+                "total_nitrogen": 4.0,
+                "enhanced_efficiency_phosphorus": "None"
+            }
+        ],
+        "harvests": [
+            {
+                "is_grain": true,
+                "start_date": "2017-09-05T00:00:00Z",
+                "end_date": "2017-09-05T00:00:00Z",
+                "crop_yield": 39.0,
+                "stray_stover_hay_removal": "0"
+            },
+            {
+                "is_grain": true,
+                "start_date": "2017-09-05T00:00:00Z",
+                "end_date": "2017-09-05T00:00:00Z",
+                "crop_yield": 39.0,
+                "stray_stover_hay_removal": "0"
+            },
+            {
+                "is_grain": true,
+                "start_date": "2017-09-05T00:00:00Z",
+                "end_date": "2017-09-05T00:00:00Z",
+                "crop_yield": 39.0,
+                "stray_stover_hay_removal": "0"
+            }
+        ],
+        "tillages": [
+            {
+                "start_date": "2017-02-22T00:00:00Z",
+                "end_date": "2017-02-22T00:00:00Z",
+                "implement": "Reduced Tillage"
+            },
+            {
+                "start_date": "2017-05-28T00:00:00Z",
+                "end_date": "2017-05-28T00:00:00Z",
+                "implement": "Reduced Tillage"
+            },
+            {
+                "start_date": "2017-07-09T00:00:00Z",
+                "end_date": "2017-07-09T00:00:00Z",
+                "implement": "Reduced Tillage"
+            }
+        ],
+        "organic_amendments": [
+            {
+                "start_date": "2017-08-03T00:00:00Z",
+                "end_date": "2017-08-03T00:00:00Z",
+                "organic_amendment_type": "Soybean Meal",
+                "organic_amendment_amount": "100",
+                "organic_amendment_percent_nitrogen": "1",
+                "organic_amendment_carbon_nitrogen_ratio": "1.3"
+            }
+        ]
+    },
+    {
+        "id": "4c3a608f-afaa-4216-a7f2-74e60012366c",
+        "time_range": [
+            "2018-02-15T00:00:00+00:00",
+            "2018-09-05T00:00:00+00:00"
+        ],
+        "bbox": [
+            -87.414918,
+            37.463251,
+            -87.393499,
+            37.479898
+        ],
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        -87.414918,
+                        37.463251
+                    ],
+                    [
+                        -87.399025,
+                        37.470226
+                    ],
+                    [
+                        -87.393499,
+                        37.472569
+                    ],
+                    [
+                        -87.39827,
+                        37.479898
+                    ],
+                    [
+                        -87.405993,
+                        37.478046
+                    ],
+                    [
+                        -87.407538,
+                        37.47761
+                    ],
+                    [
+                        -87.408122,
+                        37.477501
+                    ],
+                    [
+                        -87.408636,
+                        37.477092
+                    ],
+                    [
+                        -87.409048,
+                        37.476602
+                    ],
+                    [
+                        -87.414918,
+                        37.463251
+                    ]
+                ]
+            ]
+        },
+        "assets": [],
+        "crop_name": "Alfalfa",
+        "crop_type": "annual",
+        "properties": {
+            "pre_1980": "Lowland Non-Irrigated (Pre 1980s)",
+            "crp_type": "None",
+            "crp_start": "",
+            "crp_end": "",
+            "year_1980_2000": "Irrigated: Continuous Hay",
+            "year_1980_2000_tillage": "Intensive Tillage"
+        },
+        "fertilizers": [
+            {
+                "start_date": "2018-03-10T00:00:00Z",
+                "end_date": "2018-03-10T00:00:00Z",
+                "application_type": "Ammonium Nitrate (34-0-0)",
+                "total_nitrogen": 4.0,
+                "enhanced_efficiency_phosphorus": "None"
+            }
+        ],
+        "harvests": [
+            {
+                "is_grain": true,
+                "start_date": "2018-09-05T00:00:00Z",
+                "end_date": "2018-09-05T00:00:00Z",
+                "crop_yield": 39.0,
+                "stray_stover_hay_removal": "0"
+            },
+            {
+                "is_grain": true,
+                "start_date": "2018-09-05T00:00:00Z",
+                "end_date": "2018-09-05T00:00:00Z",
+                "crop_yield": 39.0,
+                "stray_stover_hay_removal": "0"
+            },
+            {
+                "is_grain": true,
+                "start_date": "2018-09-05T00:00:00Z",
+                "end_date": "2018-09-05T00:00:00Z",
+                "crop_yield": 39.0,
+                "stray_stover_hay_removal": "0"
+            }
+        ],
+        "tillages": [
+            {
+                "start_date": "2018-08-23T00:00:00Z",
+                "end_date": "2018-08-23T00:00:00Z",
+                "implement": "Reduced Tillage"
+            },
+            {
+                "start_date": "2018-04-10T00:00:00Z",
+                "end_date": "2018-04-10T00:00:00Z",
+                "implement": "Reduced Tillage"
+            },
+            {
+                "start_date": "2018-08-19T00:00:00Z",
+                "end_date": "2018-08-19T00:00:00Z",
+                "implement": "Reduced Tillage"
+            }
+        ],
+        "organic_amendments": [
+            {
+                "start_date": "2018-08-23T00:00:00Z",
+                "end_date": "2018-08-23T00:00:00Z",
+                "organic_amendment_type": "Soybean Meal",
+                "organic_amendment_amount": "100",
+                "organic_amendment_percent_nitrogen": "1",
+                "organic_amendment_carbon_nitrogen_ratio": "1.3"
+            }
+        ]
+    },
+    {
+        "id": "f7097852-9382-4021-ab36-9553030b2e51",
+        "time_range": [
+            "2019-02-15T00:00:00+00:00",
+            "2019-09-05T00:00:00+00:00"
+        ],
+        "bbox": [
+            -87.414918,
+            37.463251,
+            -87.393499,
+            37.479898
+        ],
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        -87.414918,
+                        37.463251
+                    ],
+                    [
+                        -87.399025,
+                        37.470226
+                    ],
+                    [
+                        -87.393499,
+                        37.472569
+                    ],
+                    [
+                        -87.39827,
+                        37.479898
+                    ],
+                    [
+                        -87.405993,
+                        37.478046
+                    ],
+                    [
+                        -87.407538,
+                        37.47761
+                    ],
+                    [
+                        -87.408122,
+                        37.477501
+                    ],
+                    [
+                        -87.408636,
+                        37.477092
+                    ],
+                    [
+                        -87.409048,
+                        37.476602
+                    ],
+                    [
+                        -87.414918,
+                        37.463251
+                    ]
+                ]
+            ]
+        },
+        "assets": [],
+        "crop_name": "Alfalfa",
+        "crop_type": "annual",
+        "properties": {
+            "pre_1980": "Lowland Non-Irrigated (Pre 1980s)",
+            "crp_type": "None",
+            "crp_start": "",
+            "crp_end": "",
+            "year_1980_2000": "Irrigated: Continuous Hay",
+            "year_1980_2000_tillage": "Intensive Tillage"
+        },
+        "fertilizers": [
+            {
+                "start_date": "2019-07-08T00:00:00Z",
+                "end_date": "2019-07-08T00:00:00Z",
+                "application_type": "Ammonium Nitrate (34-0-0)",
+                "total_nitrogen": 4.0,
+                "enhanced_efficiency_phosphorus": "None"
+            }
+        ],
+        "harvests": [
+            {
+                "is_grain": true,
+                "start_date": "2019-09-05T00:00:00Z",
+                "end_date": "2019-09-05T00:00:00Z",
+                "crop_yield": 39.0,
+                "stray_stover_hay_removal": "0"
+            },
+            {
+                "is_grain": true,
+                "start_date": "2019-09-05T00:00:00Z",
+                "end_date": "2019-09-05T00:00:00Z",
+                "crop_yield": 39.0,
+                "stray_stover_hay_removal": "0"
+            },
+            {
+                "is_grain": true,
+                "start_date": "2019-09-05T00:00:00Z",
+                "end_date": "2019-09-05T00:00:00Z",
+                "crop_yield": 39.0,
+                "stray_stover_hay_removal": "0"
+            }
+        ],
+        "tillages": [
+            {
+                "start_date": "2019-08-09T00:00:00Z",
+                "end_date": "2019-08-09T00:00:00Z",
+                "implement": "Reduced Tillage"
+            },
+            {
+                "start_date": "2019-07-10T00:00:00Z",
+                "end_date": "2019-07-10T00:00:00Z",
+                "implement": "Reduced Tillage"
+            },
+            {
+                "start_date": "2019-08-23T00:00:00Z",
+                "end_date": "2019-08-23T00:00:00Z",
+                "implement": "Reduced Tillage"
+            }
+        ],
+        "organic_amendments": [
+            {
+                "start_date": "2019-05-19T00:00:00Z",
+                "end_date": "2019-05-19T00:00:00Z",
+                "organic_amendment_type": "Soybean Meal",
+                "organic_amendment_amount": "100",
+                "organic_amendment_percent_nitrogen": "1",
+                "organic_amendment_carbon_nitrogen_ratio": "1.3"
+            }
+        ]
+    },
+    {
+        "id": "a56fa321-1e4d-4194-9f80-f51c2a773804",
+        "time_range": [
+            "2020-07-01T00:00:00+00:00",
+            "2020-11-11T00:00:00+00:00"
+        ],
+        "bbox": [
+            -87.414918,
+            37.463251,
+            -87.393499,
+            37.479898
+        ],
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        -87.414918,
+                        37.463251
+                    ],
+                    [
+                        -87.399025,
+                        37.470226
+                    ],
+                    [
+                        -87.393499,
+                        37.472569
+                    ],
+                    [
+                        -87.39827,
+                        37.479898
+                    ],
+                    [
+                        -87.405993,
+                        37.478046
+                    ],
+                    [
+                        -87.407538,
+                        37.47761
+                    ],
+                    [
+                        -87.408122,
+                        37.477501
+                    ],
+                    [
+                        -87.408636,
+                        37.477092
+                    ],
+                    [
+                        -87.409048,
+                        37.476602
+                    ],
+                    [
+                        -87.414918,
+                        37.463251
+                    ]
+                ]
+            ]
+        },
+        "assets": [],
+        "crop_name": "Barley",
+        "crop_type": "annual",
+        "properties": {
+            "pre_1980": "Lowland Non-Irrigated (Pre 1980s)",
+            "crp_type": "None",
+            "crp_start": "",
+            "crp_end": "",
+            "year_1980_2000": "Irrigated: Continuous Hay",
+            "year_1980_2000_tillage": "Intensive Tillage"
+        },
+        "fertilizers": [
+            {
+                "start_date": "2020-07-15T00:00:00Z",
+                "end_date": "2020-07-15T00:00:00Z",
+                "application_type": "Ammonium Nitrate (34-0-0)",
+                "total_nitrogen": 4.0,
+                "enhanced_efficiency_phosphorus": "None"
+            }
+        ],
+        "harvests": [
+            {
+                "is_grain": true,
+                "start_date": "2020-11-11T00:00:00Z",
+                "end_date": "2020-11-11T00:00:00Z",
+                "crop_yield": 30.0,
+                "stray_stover_hay_removal": "0"
+            },
+            {
+                "is_grain": true,
+                "start_date": "2020-11-11T00:00:00Z",
+                "end_date": "2020-11-11T00:00:00Z",
+                "crop_yield": 30.0,
+                "stray_stover_hay_removal": "0"
+            },
+            {
+                "is_grain": true,
+                "start_date": "2020-11-11T00:00:00Z",
+                "end_date": "2020-11-11T00:00:00Z",
+                "crop_yield": 30.0,
+                "stray_stover_hay_removal": "0"
+            }
+        ],
+        "tillages": [
+            {
+                "start_date": "2020-10-08T00:00:00Z",
+                "end_date": "2020-10-08T00:00:00Z",
+                "implement": "Zero Soil Disturbance"
+            },
+            {
+                "start_date": "2020-09-06T00:00:00Z",
+                "end_date": "2020-09-06T00:00:00Z",
+                "implement": "Zero Soil Disturbance"
+            },
+            {
+                "start_date": "2020-08-31T00:00:00Z",
+                "end_date": "2020-08-31T00:00:00Z",
+                "implement": "Zero Soil Disturbance"
+            }
+        ],
+        "organic_amendments": [
+            {
+                "start_date": "2020-08-05T00:00:00Z",
+                "end_date": "2020-08-05T00:00:00Z",
+                "organic_amendment_type": "Soybean Meal",
+                "organic_amendment_amount": "100",
+                "organic_amendment_percent_nitrogen": "1",
+                "organic_amendment_carbon_nitrogen_ratio": "1.3"
+            }
+        ]
+    },
+    {
+        "id": "9ee063c0-2568-4c23-868b-ae59e333cd3c",
+        "time_range": [
+            "2021-07-01T00:00:00+00:00",
+            "2021-11-11T00:00:00+00:00"
+        ],
+        "bbox": [
+            -87.414918,
+            37.463251,
+            -87.393499,
+            37.479898
+        ],
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        -87.414918,
+                        37.463251
+                    ],
+                    [
+                        -87.399025,
+                        37.470226
+                    ],
+                    [
+                        -87.393499,
+                        37.472569
+                    ],
+                    [
+                        -87.39827,
+                        37.479898
+                    ],
+                    [
+                        -87.405993,
+                        37.478046
+                    ],
+                    [
+                        -87.407538,
+                        37.47761
+                    ],
+                    [
+                        -87.408122,
+                        37.477501
+                    ],
+                    [
+                        -87.408636,
+                        37.477092
+                    ],
+                    [
+                        -87.409048,
+                        37.476602
+                    ],
+                    [
+                        -87.414918,
+                        37.463251
+                    ]
+                ]
+            ]
+        },
+        "assets": [],
+        "crop_name": "Barley",
+        "crop_type": "annual",
+        "properties": {
+            "pre_1980": "Lowland Non-Irrigated (Pre 1980s)",
+            "crp_type": "None",
+            "crp_start": "",
+            "crp_end": "",
+            "year_1980_2000": "Irrigated: Continuous Hay",
+            "year_1980_2000_tillage": "Intensive Tillage"
+        },
+        "fertilizers": [
+            {
+                "start_date": "2021-08-11T00:00:00Z",
+                "end_date": "2021-08-11T00:00:00Z",
+                "application_type": "Ammonium Nitrate (34-0-0)",
+                "total_nitrogen": 4.0,
+                "enhanced_efficiency_phosphorus": "None"
+            }
+        ],
+        "harvests": [
+            {
+                "is_grain": true,
+                "start_date": "2021-11-11T00:00:00Z",
+                "end_date": "2021-11-11T00:00:00Z",
+                "crop_yield": 30.0,
+                "stray_stover_hay_removal": "0"
+            },
+            {
+                "is_grain": true,
+                "start_date": "2021-11-11T00:00:00Z",
+                "end_date": "2021-11-11T00:00:00Z",
+                "crop_yield": 30.0,
+                "stray_stover_hay_removal": "0"
+            },
+            {
+                "is_grain": true,
+                "start_date": "2021-11-11T00:00:00Z",
+                "end_date": "2021-11-11T00:00:00Z",
+                "crop_yield": 30.0,
+                "stray_stover_hay_removal": "0"
+            }
+        ],
+        "tillages": [
+            {
+                "start_date": "2021-09-09T00:00:00Z",
+                "end_date": "2021-09-09T00:00:00Z",
+                "implement": "Zero Soil Disturbance"
+            },
+            {
+                "start_date": "2021-11-10T00:00:00Z",
+                "end_date": "2021-11-10T00:00:00Z",
+                "implement": "Zero Soil Disturbance"
+            },
+            {
+                "start_date": "2021-08-26T00:00:00Z",
+                "end_date": "2021-08-26T00:00:00Z",
+                "implement": "Zero Soil Disturbance"
+            }
+        ],
+        "organic_amendments": [
+            {
+                "start_date": "2021-08-24T00:00:00Z",
+                "end_date": "2021-08-24T00:00:00Z",
+                "organic_amendment_type": "Soybean Meal",
+                "organic_amendment_amount": "100",
+                "organic_amendment_percent_nitrogen": "1",
+                "organic_amendment_carbon_nitrogen_ratio": "1.3"
+            }
+        ]
+    },
+    {
+        "id": "8cc03a46-be36-470c-9f1a-b2ffd1583df6",
+        "time_range": [
+            "2022-07-01T00:00:00+00:00",
+            "2022-11-11T00:00:00+00:00"
+        ],
+        "bbox": [
+            -87.414918,
+            37.463251,
+            -87.393499,
+            37.479898
+        ],
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        -87.414918,
+                        37.463251
+                    ],
+                    [
+                        -87.399025,
+                        37.470226
+                    ],
+                    [
+                        -87.393499,
+                        37.472569
+                    ],
+                    [
+                        -87.39827,
+                        37.479898
+                    ],
+                    [
+                        -87.405993,
+                        37.478046
+                    ],
+                    [
+                        -87.407538,
+                        37.47761
+                    ],
+                    [
+                        -87.408122,
+                        37.477501
+                    ],
+                    [
+                        -87.408636,
+                        37.477092
+                    ],
+                    [
+                        -87.409048,
+                        37.476602
+                    ],
+                    [
+                        -87.414918,
+                        37.463251
+                    ]
+                ]
+            ]
+        },
+        "assets": [],
+        "crop_name": "Barley",
+        "crop_type": "annual",
+        "properties": {
+            "pre_1980": "Lowland Non-Irrigated (Pre 1980s)",
+            "crp_type": "None",
+            "crp_start": "",
+            "crp_end": "",
+            "year_1980_2000": "Irrigated: Continuous Hay",
+            "year_1980_2000_tillage": "Intensive Tillage"
+        },
+        "fertilizers": [
+            {
+                "start_date": "2022-08-17T00:00:00Z",
+                "end_date": "2022-08-17T00:00:00Z",
+                "application_type": "Ammonium Nitrate (34-0-0)",
+                "total_nitrogen": 4.0,
+                "enhanced_efficiency_phosphorus": "None"
+            }
+        ],
+        "harvests": [
+            {
+                "is_grain": true,
+                "start_date": "2022-11-11T00:00:00Z",
+                "end_date": "2022-11-11T00:00:00Z",
+                "crop_yield": 30.0,
+                "stray_stover_hay_removal": "0"
+            },
+            {
+                "is_grain": true,
+                "start_date": "2022-11-11T00:00:00Z",
+                "end_date": "2022-11-11T00:00:00Z",
+                "crop_yield": 30.0,
+                "stray_stover_hay_removal": "0"
+            },
+            {
+                "is_grain": true,
+                "start_date": "2022-11-11T00:00:00Z",
+                "end_date": "2022-11-11T00:00:00Z",
+                "crop_yield": 30.0,
+                "stray_stover_hay_removal": "0"
+            }
+        ],
+        "tillages": [
+            {
+                "start_date": "2022-07-08T00:00:00Z",
+                "end_date": "2022-07-08T00:00:00Z",
+                "implement": "Zero Soil Disturbance"
+            },
+            {
+                "start_date": "2022-07-26T00:00:00Z",
+                "end_date": "2022-07-26T00:00:00Z",
+                "implement": "Zero Soil Disturbance"
+            },
+            {
+                "start_date": "2022-07-08T00:00:00Z",
+                "end_date": "2022-07-08T00:00:00Z",
+                "implement": "Zero Soil Disturbance"
+            }
+        ],
+        "organic_amendments": [
+            {
+                "start_date": "2022-10-02T00:00:00Z",
+                "end_date": "2022-10-02T00:00:00Z",
+                "organic_amendment_type": "Soybean Meal",
+                "organic_amendment_amount": "100",
+                "organic_amendment_percent_nitrogen": "1",
+                "organic_amendment_carbon_nitrogen_ratio": "1.3"
+            }
+        ]
+    },
+    {
+        "id": "c0b86c2a-e993-4e9f-ac52-51cb9815b23d",
+        "time_range": [
+            "2000-02-15T00:00:00+00:00",
+            "2000-09-05T00:00:00+00:00"
+        ],
+        "bbox": [
+            -87.414918,
+            37.463251,
+            -87.393499,
+            37.479898
+        ],
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        -87.414918,
+                        37.463251
+                    ],
+                    [
+                        -87.399025,
+                        37.470226
+                    ],
+                    [
+                        -87.393499,
+                        37.472569
+                    ],
+                    [
+                        -87.39827,
+                        37.479898
+                    ],
+                    [
+                        -87.405993,
+                        37.478046
+                    ],
+                    [
+                        -87.407538,
+                        37.47761
+                    ],
+                    [
+                        -87.408122,
+                        37.477501
+                    ],
+                    [
+                        -87.408636,
+                        37.477092
+                    ],
+                    [
+                        -87.409048,
+                        37.476602
+                    ],
+                    [
+                        -87.414918,
+                        37.463251
+                    ]
+                ]
+            ]
+        },
+        "assets": [],
+        "crop_name": "Alfalfa",
+        "crop_type": "annual",
+        "properties": {
+            "pre_1980": "Lowland Non-Irrigated (Pre 1980s)",
+            "crp_type": "None",
+            "crp_start": "",
+            "crp_end": "",
+            "year_1980_2000": "Irrigated: Continuous Hay",
+            "year_1980_2000_tillage": "Intensive Tillage"
+        },
+        "fertilizers": [
+            {
+                "start_date": "2000-08-11T00:00:00Z",
+                "end_date": "2000-08-11T00:00:00Z",
+                "application_type": "Ammonium Nitrate (34-0-0)",
+                "total_nitrogen": 4.0,
+                "enhanced_efficiency_phosphorus": "None"
+            }
+        ],
+        "harvests": [
+            {
+                "is_grain": true,
+                "start_date": "2000-09-05T00:00:00Z",
+                "end_date": "2000-09-05T00:00:00Z",
+                "crop_yield": 39.0,
+                "stray_stover_hay_removal": "0"
+            },
+            {
+                "is_grain": true,
+                "start_date": "2000-09-05T00:00:00Z",
+                "end_date": "2000-09-05T00:00:00Z",
+                "crop_yield": 39.0,
+                "stray_stover_hay_removal": "0"
+            },
+            {
+                "is_grain": true,
+                "start_date": "2000-09-05T00:00:00Z",
+                "end_date": "2000-09-05T00:00:00Z",
+                "crop_yield": 39.0,
+                "stray_stover_hay_removal": "0"
+            }
+        ],
+        "tillages": [
+            {
+                "start_date": "2000-07-11T00:00:00Z",
+                "end_date": "2000-07-11T00:00:00Z",
+                "implement": "Reduced Tillage"
+            },
+            {
+                "start_date": "2000-05-18T00:00:00Z",
+                "end_date": "2000-05-18T00:00:00Z",
+                "implement": "Reduced Tillage"
+            },
+            {
+                "start_date": "2000-05-01T00:00:00Z",
+                "end_date": "2000-05-01T00:00:00Z",
+                "implement": "Reduced Tillage"
+            }
+        ],
+        "organic_amendments": [
+            {
+                "start_date": "2000-04-02T00:00:00Z",
+                "end_date": "2000-04-02T00:00:00Z",
+                "organic_amendment_type": "Soybean Meal",
+                "organic_amendment_amount": "100",
+                "organic_amendment_percent_nitrogen": "1",
+                "organic_amendment_carbon_nitrogen_ratio": "1.3"
+            }
+        ]
+    },
+    {
+        "id": "e80d9928-e926-40db-9492-76bcb4bcd691",
+        "time_range": [
+            "2001-02-15T00:00:00+00:00",
+            "2001-09-05T00:00:00+00:00"
+        ],
+        "bbox": [
+            -87.414918,
+            37.463251,
+            -87.393499,
+            37.479898
+        ],
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        -87.414918,
+                        37.463251
+                    ],
+                    [
+                        -87.399025,
+                        37.470226
+                    ],
+                    [
+                        -87.393499,
+                        37.472569
+                    ],
+                    [
+                        -87.39827,
+                        37.479898
+                    ],
+                    [
+                        -87.405993,
+                        37.478046
+                    ],
+                    [
+                        -87.407538,
+                        37.47761
+                    ],
+                    [
+                        -87.408122,
+                        37.477501
+                    ],
+                    [
+                        -87.408636,
+                        37.477092
+                    ],
+                    [
+                        -87.409048,
+                        37.476602
+                    ],
+                    [
+                        -87.414918,
+                        37.463251
+                    ]
+                ]
+            ]
+        },
+        "assets": [],
+        "crop_name": "Alfalfa",
+        "crop_type": "cover",
+        "properties": {
+            "pre_1980": "Lowland Non-Irrigated (Pre 1980s)",
+            "crp_type": "None",
+            "crp_start": "",
+            "crp_end": "",
+            "year_1980_2000": "Irrigated: Continuous Hay",
+            "year_1980_2000_tillage": "Intensive Tillage"
+        },
+        "fertilizers": [
+            {
+                "start_date": "2001-03-13T00:00:00Z",
+                "end_date": "2001-03-13T00:00:00Z",
+                "application_type": "Ammonium Nitrate (34-0-0)",
+                "total_nitrogen": 4.0,
+                "enhanced_efficiency_phosphorus": "None"
+            }
+        ],
+        "harvests": [
+            {
+                "is_grain": true,
+                "start_date": "2001-09-05T00:00:00Z",
+                "end_date": "2001-09-05T00:00:00Z",
+                "crop_yield": 39.0,
+                "stray_stover_hay_removal": "0"
+            },
+            {
+                "is_grain": true,
+                "start_date": "2001-09-05T00:00:00Z",
+                "end_date": "2001-09-05T00:00:00Z",
+                "crop_yield": 39.0,
+                "stray_stover_hay_removal": "0"
+            },
+            {
+                "is_grain": true,
+                "start_date": "2001-09-05T00:00:00Z",
+                "end_date": "2001-09-05T00:00:00Z",
+                "crop_yield": 39.0,
+                "stray_stover_hay_removal": "0"
+            }
+        ],
+        "tillages": [
+            {
+                "start_date": "2001-07-06T00:00:00Z",
+                "end_date": "2001-07-06T00:00:00Z",
+                "implement": "Reduced Tillage"
+            },
+            {
+                "start_date": "2001-05-08T00:00:00Z",
+                "end_date": "2001-05-08T00:00:00Z",
+                "implement": "Reduced Tillage"
+            },
+            {
+                "start_date": "2001-07-29T00:00:00Z",
+                "end_date": "2001-07-29T00:00:00Z",
+                "implement": "Reduced Tillage"
+            }
+        ],
+        "organic_amendments": [
+            {
+                "start_date": "2001-07-28T00:00:00Z",
+                "end_date": "2001-07-28T00:00:00Z",
+                "organic_amendment_type": "Soybean Meal",
+                "organic_amendment_amount": "100",
+                "organic_amendment_percent_nitrogen": "1",
+                "organic_amendment_carbon_nitrogen_ratio": "1.3"
+            }
+        ]
+    },
+    {
+        "id": "cbfe6000-b7bb-45da-af60-a9895f63c3da",
+        "time_range": [
+            "2002-02-15T00:00:00+00:00",
+            "2002-09-05T00:00:00+00:00"
+        ],
+        "bbox": [
+            -87.414918,
+            37.463251,
+            -87.393499,
+            37.479898
+        ],
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        -87.414918,
+                        37.463251
+                    ],
+                    [
+                        -87.399025,
+                        37.470226
+                    ],
+                    [
+                        -87.393499,
+                        37.472569
+                    ],
+                    [
+                        -87.39827,
+                        37.479898
+                    ],
+                    [
+                        -87.405993,
+                        37.478046
+                    ],
+                    [
+                        -87.407538,
+                        37.47761
+                    ],
+                    [
+                        -87.408122,
+                        37.477501
+                    ],
+                    [
+                        -87.408636,
+                        37.477092
+                    ],
+                    [
+                        -87.409048,
+                        37.476602
+                    ],
+                    [
+                        -87.414918,
+                        37.463251
+                    ]
+                ]
+            ]
+        },
+        "assets": [],
+        "crop_name": "Alfalfa",
+        "crop_type": "annual",
+        "properties": {
+            "pre_1980": "Lowland Non-Irrigated (Pre 1980s)",
+            "crp_type": "None",
+            "crp_start": "",
+            "crp_end": "",
+            "year_1980_2000": "Irrigated: Continuous Hay",
+            "year_1980_2000_tillage": "Intensive Tillage"
+        },
+        "fertilizers": [
+            {
+                "start_date": "2002-04-12T00:00:00Z",
+                "end_date": "2002-04-12T00:00:00Z",
+                "application_type": "Ammonium Nitrate (34-0-0)",
+                "total_nitrogen": 4.0,
+                "enhanced_efficiency_phosphorus": "None"
+            }
+        ],
+        "harvests": [
+            {
+                "is_grain": true,
+                "start_date": "2002-09-05T00:00:00Z",
+                "end_date": "2002-09-05T00:00:00Z",
+                "crop_yield": 39.0,
+                "stray_stover_hay_removal": "0"
+            },
+            {
+                "is_grain": true,
+                "start_date": "2002-09-05T00:00:00Z",
+                "end_date": "2002-09-05T00:00:00Z",
+                "crop_yield": 39.0,
+                "stray_stover_hay_removal": "0"
+            },
+            {
+                "is_grain": true,
+                "start_date": "2002-09-05T00:00:00Z",
+                "end_date": "2002-09-05T00:00:00Z",
+                "crop_yield": 39.0,
+                "stray_stover_hay_removal": "0"
+            }
+        ],
+        "tillages": [
+            {
+                "start_date": "2002-06-05T00:00:00Z",
+                "end_date": "2002-06-05T00:00:00Z",
+                "implement": "Reduced Tillage"
+            },
+            {
+                "start_date": "2002-06-17T00:00:00Z",
+                "end_date": "2002-06-17T00:00:00Z",
+                "implement": "Reduced Tillage"
+            },
+            {
+                "start_date": "2002-08-10T00:00:00Z",
+                "end_date": "2002-08-10T00:00:00Z",
+                "implement": "Reduced Tillage"
+            }
+        ],
+        "organic_amendments": [
+            {
+                "start_date": "2002-04-03T00:00:00Z",
+                "end_date": "2002-04-03T00:00:00Z",
+                "organic_amendment_type": "Soybean Meal",
+                "organic_amendment_amount": "100",
+                "organic_amendment_percent_nitrogen": "1",
+                "organic_amendment_carbon_nitrogen_ratio": "1.3"
+            }
+        ]
+    },
+    {
+        "id": "19c7c3f4-5385-4f6f-8f3c-70a0c732caab",
+        "time_range": [
+            "2003-02-15T00:00:00+00:00",
+            "2003-09-05T00:00:00+00:00"
+        ],
+        "bbox": [
+            -87.414918,
+            37.463251,
+            -87.393499,
+            37.479898
+        ],
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        -87.414918,
+                        37.463251
+                    ],
+                    [
+                        -87.399025,
+                        37.470226
+                    ],
+                    [
+                        -87.393499,
+                        37.472569
+                    ],
+                    [
+                        -87.39827,
+                        37.479898
+                    ],
+                    [
+                        -87.405993,
+                        37.478046
+                    ],
+                    [
+                        -87.407538,
+                        37.47761
+                    ],
+                    [
+                        -87.408122,
+                        37.477501
+                    ],
+                    [
+                        -87.408636,
+                        37.477092
+                    ],
+                    [
+                        -87.409048,
+                        37.476602
+                    ],
+                    [
+                        -87.414918,
+                        37.463251
+                    ]
+                ]
+            ]
+        },
+        "assets": [],
+        "crop_name": "Alfalfa",
+        "crop_type": "annual",
+        "properties": {
+            "pre_1980": "Lowland Non-Irrigated (Pre 1980s)",
+            "crp_type": "None",
+            "crp_start": "",
+            "crp_end": "",
+            "year_1980_2000": "Irrigated: Continuous Hay",
+            "year_1980_2000_tillage": "Intensive Tillage"
+        },
+        "fertilizers": [
+            {
+                "start_date": "2003-07-02T00:00:00Z",
+                "end_date": "2003-07-02T00:00:00Z",
+                "application_type": "Ammonium Nitrate (34-0-0)",
+                "total_nitrogen": 4.0,
+                "enhanced_efficiency_phosphorus": "None"
+            }
+        ],
+        "harvests": [
+            {
+                "is_grain": true,
+                "start_date": "2003-09-05T00:00:00Z",
+                "end_date": "2003-09-05T00:00:00Z",
+                "crop_yield": 39.0,
+                "stray_stover_hay_removal": "0"
+            },
+            {
+                "is_grain": true,
+                "start_date": "2003-09-05T00:00:00Z",
+                "end_date": "2003-09-05T00:00:00Z",
+                "crop_yield": 39.0,
+                "stray_stover_hay_removal": "0"
+            },
+            {
+                "is_grain": true,
+                "start_date": "2003-09-05T00:00:00Z",
+                "end_date": "2003-09-05T00:00:00Z",
+                "crop_yield": 39.0,
+                "stray_stover_hay_removal": "0"
+            }
+        ],
+        "tillages": [
+            {
+                "start_date": "2003-07-26T00:00:00Z",
+                "end_date": "2003-07-26T00:00:00Z",
+                "implement": "Reduced Tillage"
+            },
+            {
+                "start_date": "2003-07-08T00:00:00Z",
+                "end_date": "2003-07-08T00:00:00Z",
+                "implement": "Reduced Tillage"
+            },
+            {
+                "start_date": "2003-04-23T00:00:00Z",
+                "end_date": "2003-04-23T00:00:00Z",
+                "implement": "Reduced Tillage"
+            }
+        ],
+        "organic_amendments": [
+            {
+                "start_date": "2003-03-20T00:00:00Z",
+                "end_date": "2003-03-20T00:00:00Z",
+                "organic_amendment_type": "Soybean Meal",
+                "organic_amendment_amount": "100",
+                "organic_amendment_percent_nitrogen": "1",
+                "organic_amendment_carbon_nitrogen_ratio": "1.3"
+            }
+        ]
+    },
+    {
+        "id": "894f1d48-28a1-44a9-af00-c3e26b373ea9",
+        "time_range": [
+            "2004-02-15T00:00:00+00:00",
+            "2004-09-05T00:00:00+00:00"
+        ],
+        "bbox": [
+            -87.414918,
+            37.463251,
+            -87.393499,
+            37.479898
+        ],
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        -87.414918,
+                        37.463251
+                    ],
+                    [
+                        -87.399025,
+                        37.470226
+                    ],
+                    [
+                        -87.393499,
+                        37.472569
+                    ],
+                    [
+                        -87.39827,
+                        37.479898
+                    ],
+                    [
+                        -87.405993,
+                        37.478046
+                    ],
+                    [
+                        -87.407538,
+                        37.47761
+                    ],
+                    [
+                        -87.408122,
+                        37.477501
+                    ],
+                    [
+                        -87.408636,
+                        37.477092
+                    ],
+                    [
+                        -87.409048,
+                        37.476602
+                    ],
+                    [
+                        -87.414918,
+                        37.463251
+                    ]
+                ]
+            ]
+        },
+        "assets": [],
+        "crop_name": "Alfalfa",
+        "crop_type": "annual",
+        "properties": {
+            "pre_1980": "Lowland Non-Irrigated (Pre 1980s)",
+            "crp_type": "None",
+            "crp_start": "",
+            "crp_end": "",
+            "year_1980_2000": "Irrigated: Continuous Hay",
+            "year_1980_2000_tillage": "Intensive Tillage"
+        },
+        "fertilizers": [
+            {
+                "start_date": "2004-06-24T00:00:00Z",
+                "end_date": "2004-06-24T00:00:00Z",
+                "application_type": "Ammonium Nitrate (34-0-0)",
+                "total_nitrogen": 4.0,
+                "enhanced_efficiency_phosphorus": "None"
+            }
+        ],
+        "harvests": [
+            {
+                "is_grain": true,
+                "start_date": "2004-09-05T00:00:00Z",
+                "end_date": "2004-09-05T00:00:00Z",
+                "crop_yield": 39.0,
+                "stray_stover_hay_removal": "0"
+            },
+            {
+                "is_grain": true,
+                "start_date": "2004-09-05T00:00:00Z",
+                "end_date": "2004-09-05T00:00:00Z",
+                "crop_yield": 39.0,
+                "stray_stover_hay_removal": "0"
+            },
+            {
+                "is_grain": true,
+                "start_date": "2004-09-05T00:00:00Z",
+                "end_date": "2004-09-05T00:00:00Z",
+                "crop_yield": 39.0,
+                "stray_stover_hay_removal": "0"
+            }
+        ],
+        "tillages": [
+            {
+                "start_date": "2004-07-03T00:00:00Z",
+                "end_date": "2004-07-03T00:00:00Z",
+                "implement": "Reduced Tillage"
+            },
+            {
+                "start_date": "2004-06-27T00:00:00Z",
+                "end_date": "2004-06-27T00:00:00Z",
+                "implement": "Reduced Tillage"
+            },
+            {
+                "start_date": "2004-05-20T00:00:00Z",
+                "end_date": "2004-05-20T00:00:00Z",
+                "implement": "Reduced Tillage"
+            }
+        ],
+        "organic_amendments": [
+            {
+                "start_date": "2004-06-17T00:00:00Z",
+                "end_date": "2004-06-17T00:00:00Z",
+                "organic_amendment_type": "Soybean Meal",
+                "organic_amendment_amount": "100",
+                "organic_amendment_percent_nitrogen": "1",
+                "organic_amendment_carbon_nitrogen_ratio": "1.3"
+            }
+        ]
+    },
+    {
+        "id": "cc12fb0b-3995-4db1-a8fe-514cce712702",
+        "time_range": [
+            "2005-02-15T00:00:00+00:00",
+            "2005-09-05T00:00:00+00:00"
+        ],
+        "bbox": [
+            -87.414918,
+            37.463251,
+            -87.393499,
+            37.479898
+        ],
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        -87.414918,
+                        37.463251
+                    ],
+                    [
+                        -87.399025,
+                        37.470226
+                    ],
+                    [
+                        -87.393499,
+                        37.472569
+                    ],
+                    [
+                        -87.39827,
+                        37.479898
+                    ],
+                    [
+                        -87.405993,
+                        37.478046
+                    ],
+                    [
+                        -87.407538,
+                        37.47761
+                    ],
+                    [
+                        -87.408122,
+                        37.477501
+                    ],
+                    [
+                        -87.408636,
+                        37.477092
+                    ],
+                    [
+                        -87.409048,
+                        37.476602
+                    ],
+                    [
+                        -87.414918,
+                        37.463251
+                    ]
+                ]
+            ]
+        },
+        "assets": [],
+        "crop_name": "Alfalfa",
+        "crop_type": "annual",
+        "properties": {
+            "pre_1980": "Lowland Non-Irrigated (Pre 1980s)",
+            "crp_type": "None",
+            "crp_start": "",
+            "crp_end": "",
+            "year_1980_2000": "Irrigated: Continuous Hay",
+            "year_1980_2000_tillage": "Intensive Tillage"
+        },
+        "fertilizers": [
+            {
+                "start_date": "2005-04-12T00:00:00Z",
+                "end_date": "2005-04-12T00:00:00Z",
+                "application_type": "Ammonium Nitrate (34-0-0)",
+                "total_nitrogen": 4.0,
+                "enhanced_efficiency_phosphorus": "None"
+            }
+        ],
+        "harvests": [
+            {
+                "is_grain": true,
+                "start_date": "2005-09-05T00:00:00Z",
+                "end_date": "2005-09-05T00:00:00Z",
+                "crop_yield": 39.0,
+                "stray_stover_hay_removal": "0"
+            },
+            {
+                "is_grain": true,
+                "start_date": "2005-09-05T00:00:00Z",
+                "end_date": "2005-09-05T00:00:00Z",
+                "crop_yield": 39.0,
+                "stray_stover_hay_removal": "0"
+            },
+            {
+                "is_grain": true,
+                "start_date": "2005-09-05T00:00:00Z",
+                "end_date": "2005-09-05T00:00:00Z",
+                "crop_yield": 39.0,
+                "stray_stover_hay_removal": "0"
+            }
+        ],
+        "tillages": [
+            {
+                "start_date": "2005-07-24T00:00:00Z",
+                "end_date": "2005-07-24T00:00:00Z",
+                "implement": "Reduced Tillage"
+            },
+            {
+                "start_date": "2005-08-19T00:00:00Z",
+                "end_date": "2005-08-19T00:00:00Z",
+                "implement": "Reduced Tillage"
+            },
+            {
+                "start_date": "2005-05-16T00:00:00Z",
+                "end_date": "2005-05-16T00:00:00Z",
+                "implement": "Reduced Tillage"
+            }
+        ],
+        "organic_amendments": [
+            {
+                "start_date": "2005-06-26T00:00:00Z",
+                "end_date": "2005-06-26T00:00:00Z",
+                "organic_amendment_type": "Soybean Meal",
+                "organic_amendment_amount": "100",
+                "organic_amendment_percent_nitrogen": "1",
+                "organic_amendment_carbon_nitrogen_ratio": "1.3"
+            }
+        ]
+    },
+    {
+        "id": "7224ce4a-d004-4a75-8202-d92d249767ba",
+        "time_range": [
+            "2006-02-15T00:00:00+00:00",
+            "2006-09-05T00:00:00+00:00"
+        ],
+        "bbox": [
+            -87.414918,
+            37.463251,
+            -87.393499,
+            37.479898
+        ],
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        -87.414918,
+                        37.463251
+                    ],
+                    [
+                        -87.399025,
+                        37.470226
+                    ],
+                    [
+                        -87.393499,
+                        37.472569
+                    ],
+                    [
+                        -87.39827,
+                        37.479898
+                    ],
+                    [
+                        -87.405993,
+                        37.478046
+                    ],
+                    [
+                        -87.407538,
+                        37.47761
+                    ],
+                    [
+                        -87.408122,
+                        37.477501
+                    ],
+                    [
+                        -87.408636,
+                        37.477092
+                    ],
+                    [
+                        -87.409048,
+                        37.476602
+                    ],
+                    [
+                        -87.414918,
+                        37.463251
+                    ]
+                ]
+            ]
+        },
+        "assets": [],
+        "crop_name": "Alfalfa",
+        "crop_type": "annual",
+        "properties": {
+            "pre_1980": "Lowland Non-Irrigated (Pre 1980s)",
+            "crp_type": "None",
+            "crp_start": "",
+            "crp_end": "",
+            "year_1980_2000": "Irrigated: Continuous Hay",
+            "year_1980_2000_tillage": "Intensive Tillage"
+        },
+        "fertilizers": [
+            {
+                "start_date": "2006-08-13T00:00:00Z",
+                "end_date": "2006-08-13T00:00:00Z",
+                "application_type": "Ammonium Nitrate (34-0-0)",
+                "total_nitrogen": 4.0,
+                "enhanced_efficiency_phosphorus": "None"
+            }
+        ],
+        "harvests": [
+            {
+                "is_grain": true,
+                "start_date": "2006-09-05T00:00:00Z",
+                "end_date": "2006-09-05T00:00:00Z",
+                "crop_yield": 39.0,
+                "stray_stover_hay_removal": "0"
+            },
+            {
+                "is_grain": true,
+                "start_date": "2006-09-05T00:00:00Z",
+                "end_date": "2006-09-05T00:00:00Z",
+                "crop_yield": 39.0,
+                "stray_stover_hay_removal": "0"
+            },
+            {
+                "is_grain": true,
+                "start_date": "2006-09-05T00:00:00Z",
+                "end_date": "2006-09-05T00:00:00Z",
+                "crop_yield": 39.0,
+                "stray_stover_hay_removal": "0"
+            }
+        ],
+        "tillages": [
+            {
+                "start_date": "2006-07-29T00:00:00Z",
+                "end_date": "2006-07-29T00:00:00Z",
+                "implement": "Reduced Tillage"
+            },
+            {
+                "start_date": "2006-05-21T00:00:00Z",
+                "end_date": "2006-05-21T00:00:00Z",
+                "implement": "Reduced Tillage"
+            },
+            {
+                "start_date": "2006-02-20T00:00:00Z",
+                "end_date": "2006-02-20T00:00:00Z",
+                "implement": "Reduced Tillage"
+            }
+        ],
+        "organic_amendments": [
+            {
+                "start_date": "2006-08-28T00:00:00Z",
+                "end_date": "2006-08-28T00:00:00Z",
+                "organic_amendment_type": "Soybean Meal",
+                "organic_amendment_amount": "100",
+                "organic_amendment_percent_nitrogen": "1",
+                "organic_amendment_carbon_nitrogen_ratio": "1.3"
+            }
+        ]
+    },
+    {
+        "id": "4ec0f5c9-cbb9-48c8-89f9-b72f14ccd9f9",
+        "time_range": [
+            "2007-02-15T00:00:00+00:00",
+            "2007-09-05T00:00:00+00:00"
+        ],
+        "bbox": [
+            -87.414918,
+            37.463251,
+            -87.393499,
+            37.479898
+        ],
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        -87.414918,
+                        37.463251
+                    ],
+                    [
+                        -87.399025,
+                        37.470226
+                    ],
+                    [
+                        -87.393499,
+                        37.472569
+                    ],
+                    [
+                        -87.39827,
+                        37.479898
+                    ],
+                    [
+                        -87.405993,
+                        37.478046
+                    ],
+                    [
+                        -87.407538,
+                        37.47761
+                    ],
+                    [
+                        -87.408122,
+                        37.477501
+                    ],
+                    [
+                        -87.408636,
+                        37.477092
+                    ],
+                    [
+                        -87.409048,
+                        37.476602
+                    ],
+                    [
+                        -87.414918,
+                        37.463251
+                    ]
+                ]
+            ]
+        },
+        "assets": [],
+        "crop_name": "Alfalfa",
+        "crop_type": "annual",
+        "properties": {
+            "pre_1980": "Lowland Non-Irrigated (Pre 1980s)",
+            "crp_type": "None",
+            "crp_start": "",
+            "crp_end": "",
+            "year_1980_2000": "Irrigated: Continuous Hay",
+            "year_1980_2000_tillage": "Intensive Tillage"
+        },
+        "fertilizers": [
+            {
+                "start_date": "2007-08-21T00:00:00Z",
+                "end_date": "2007-08-21T00:00:00Z",
+                "application_type": "Ammonium Nitrate (34-0-0)",
+                "total_nitrogen": 4.0,
+                "enhanced_efficiency_phosphorus": "None"
+            }
+        ],
+        "harvests": [
+            {
+                "is_grain": true,
+                "start_date": "2007-09-05T00:00:00Z",
+                "end_date": "2007-09-05T00:00:00Z",
+                "crop_yield": 39.0,
+                "stray_stover_hay_removal": "0"
+            },
+            {
+                "is_grain": true,
+                "start_date": "2007-09-05T00:00:00Z",
+                "end_date": "2007-09-05T00:00:00Z",
+                "crop_yield": 39.0,
+                "stray_stover_hay_removal": "0"
+            },
+            {
+                "is_grain": true,
+                "start_date": "2007-09-05T00:00:00Z",
+                "end_date": "2007-09-05T00:00:00Z",
+                "crop_yield": 39.0,
+                "stray_stover_hay_removal": "0"
+            }
+        ],
+        "tillages": [
+            {
+                "start_date": "2007-05-09T00:00:00Z",
+                "end_date": "2007-05-09T00:00:00Z",
+                "implement": "Reduced Tillage"
+            },
+            {
+                "start_date": "2007-08-17T00:00:00Z",
+                "end_date": "2007-08-17T00:00:00Z",
+                "implement": "Reduced Tillage"
+            },
+            {
+                "start_date": "2007-06-15T00:00:00Z",
+                "end_date": "2007-06-15T00:00:00Z",
+                "implement": "Reduced Tillage"
+            }
+        ],
+        "organic_amendments": [
+            {
+                "start_date": "2007-05-28T00:00:00Z",
+                "end_date": "2007-05-28T00:00:00Z",
+                "organic_amendment_type": "Soybean Meal",
+                "organic_amendment_amount": "100",
+                "organic_amendment_percent_nitrogen": "1",
+                "organic_amendment_carbon_nitrogen_ratio": "1.3"
+            }
+        ]
+    },
+    {
+        "id": "1efa53b8-83ea-4fa2-b0bf-1d0a9ef32b0e",
+        "time_range": [
+            "2008-02-15T00:00:00+00:00",
+            "2008-09-05T00:00:00+00:00"
+        ],
+        "bbox": [
+            -87.414918,
+            37.463251,
+            -87.393499,
+            37.479898
+        ],
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        -87.414918,
+                        37.463251
+                    ],
+                    [
+                        -87.399025,
+                        37.470226
+                    ],
+                    [
+                        -87.393499,
+                        37.472569
+                    ],
+                    [
+                        -87.39827,
+                        37.479898
+                    ],
+                    [
+                        -87.405993,
+                        37.478046
+                    ],
+                    [
+                        -87.407538,
+                        37.47761
+                    ],
+                    [
+                        -87.408122,
+                        37.477501
+                    ],
+                    [
+                        -87.408636,
+                        37.477092
+                    ],
+                    [
+                        -87.409048,
+                        37.476602
+                    ],
+                    [
+                        -87.414918,
+                        37.463251
+                    ]
+                ]
+            ]
+        },
+        "assets": [],
+        "crop_name": "Alfalfa",
+        "crop_type": "annual",
+        "properties": {
+            "pre_1980": "Lowland Non-Irrigated (Pre 1980s)",
+            "crp_type": "None",
+            "crp_start": "",
+            "crp_end": "",
+            "year_1980_2000": "Irrigated: Continuous Hay",
+            "year_1980_2000_tillage": "Intensive Tillage"
+        },
+        "fertilizers": [
+            {
+                "start_date": "2008-05-12T00:00:00Z",
+                "end_date": "2008-05-12T00:00:00Z",
+                "application_type": "Ammonium Nitrate (34-0-0)",
+                "total_nitrogen": 4.0,
+                "enhanced_efficiency_phosphorus": "None"
+            }
+        ],
+        "harvests": [
+            {
+                "is_grain": true,
+                "start_date": "2008-09-05T00:00:00Z",
+                "end_date": "2008-09-05T00:00:00Z",
+                "crop_yield": 39.0,
+                "stray_stover_hay_removal": "0"
+            },
+            {
+                "is_grain": true,
+                "start_date": "2008-09-05T00:00:00Z",
+                "end_date": "2008-09-05T00:00:00Z",
+                "crop_yield": 39.0,
+                "stray_stover_hay_removal": "0"
+            },
+            {
+                "is_grain": true,
+                "start_date": "2008-09-05T00:00:00Z",
+                "end_date": "2008-09-05T00:00:00Z",
+                "crop_yield": 39.0,
+                "stray_stover_hay_removal": "0"
+            }
+        ],
+        "tillages": [
+            {
+                "start_date": "2008-04-09T00:00:00Z",
+                "end_date": "2008-04-09T00:00:00Z",
+                "implement": "Reduced Tillage"
+            },
+            {
+                "start_date": "2008-05-20T00:00:00Z",
+                "end_date": "2008-05-20T00:00:00Z",
+                "implement": "Reduced Tillage"
+            },
+            {
+                "start_date": "2008-03-03T00:00:00Z",
+                "end_date": "2008-03-03T00:00:00Z",
+                "implement": "Reduced Tillage"
+            }
+        ],
+        "organic_amendments": [
+            {
+                "start_date": "2008-03-28T00:00:00Z",
+                "end_date": "2008-03-28T00:00:00Z",
+                "organic_amendment_type": "Soybean Meal",
+                "organic_amendment_amount": "100",
+                "organic_amendment_percent_nitrogen": "1",
+                "organic_amendment_carbon_nitrogen_ratio": "1.3"
+            }
+        ]
+    },
+    {
+        "id": "9dae62d1-353b-4121-9afa-e4f37579f143",
+        "time_range": [
+            "2009-02-15T00:00:00+00:00",
+            "2009-09-05T00:00:00+00:00"
+        ],
+        "bbox": [
+            -87.414918,
+            37.463251,
+            -87.393499,
+            37.479898
+        ],
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        -87.414918,
+                        37.463251
+                    ],
+                    [
+                        -87.399025,
+                        37.470226
+                    ],
+                    [
+                        -87.393499,
+                        37.472569
+                    ],
+                    [
+                        -87.39827,
+                        37.479898
+                    ],
+                    [
+                        -87.405993,
+                        37.478046
+                    ],
+                    [
+                        -87.407538,
+                        37.47761
+                    ],
+                    [
+                        -87.408122,
+                        37.477501
+                    ],
+                    [
+                        -87.408636,
+                        37.477092
+                    ],
+                    [
+                        -87.409048,
+                        37.476602
+                    ],
+                    [
+                        -87.414918,
+                        37.463251
+                    ]
+                ]
+            ]
+        },
+        "assets": [],
+        "crop_name": "Alfalfa",
+        "crop_type": "annual",
+        "properties": {
+            "pre_1980": "Lowland Non-Irrigated (Pre 1980s)",
+            "crp_type": "None",
+            "crp_start": "",
+            "crp_end": "",
+            "year_1980_2000": "Irrigated: Continuous Hay",
+            "year_1980_2000_tillage": "Intensive Tillage"
+        },
+        "fertilizers": [
+            {
+                "start_date": "2009-05-02T00:00:00Z",
+                "end_date": "2009-05-02T00:00:00Z",
+                "application_type": "Ammonium Nitrate (34-0-0)",
+                "total_nitrogen": 4.0,
+                "enhanced_efficiency_phosphorus": "None"
+            }
+        ],
+        "harvests": [
+            {
+                "is_grain": true,
+                "start_date": "2009-09-05T00:00:00Z",
+                "end_date": "2009-09-05T00:00:00Z",
+                "crop_yield": 39.0,
+                "stray_stover_hay_removal": "0"
+            },
+            {
+                "is_grain": true,
+                "start_date": "2009-09-05T00:00:00Z",
+                "end_date": "2009-09-05T00:00:00Z",
+                "crop_yield": 39.0,
+                "stray_stover_hay_removal": "0"
+            },
+            {
+                "is_grain": true,
+                "start_date": "2009-09-05T00:00:00Z",
+                "end_date": "2009-09-05T00:00:00Z",
+                "crop_yield": 39.0,
+                "stray_stover_hay_removal": "0"
+            }
+        ],
+        "tillages": [
+            {
+                "start_date": "2009-08-27T00:00:00Z",
+                "end_date": "2009-08-27T00:00:00Z",
+                "implement": "Reduced Tillage"
+            },
+            {
+                "start_date": "2009-06-06T00:00:00Z",
+                "end_date": "2009-06-06T00:00:00Z",
+                "implement": "Reduced Tillage"
+            },
+            {
+                "start_date": "2009-06-12T00:00:00Z",
+                "end_date": "2009-06-12T00:00:00Z",
+                "implement": "Reduced Tillage"
+            }
+        ],
+        "organic_amendments": [
+            {
+                "start_date": "2009-04-12T00:00:00Z",
+                "end_date": "2009-04-12T00:00:00Z",
+                "organic_amendment_type": "Soybean Meal",
+                "organic_amendment_amount": "100",
+                "organic_amendment_percent_nitrogen": "1",
+                "organic_amendment_carbon_nitrogen_ratio": "1.3"
+            }
+        ]
+    },
+    {
+        "id": "574c788c-297d-4d01-aa7c-3ca88901f8f0",
+        "time_range": [
+            "2010-02-15T00:00:00+00:00",
+            "2010-09-05T00:00:00+00:00"
+        ],
+        "bbox": [
+            -87.414918,
+            37.463251,
+            -87.393499,
+            37.479898
+        ],
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        -87.414918,
+                        37.463251
+                    ],
+                    [
+                        -87.399025,
+                        37.470226
+                    ],
+                    [
+                        -87.393499,
+                        37.472569
+                    ],
+                    [
+                        -87.39827,
+                        37.479898
+                    ],
+                    [
+                        -87.405993,
+                        37.478046
+                    ],
+                    [
+                        -87.407538,
+                        37.47761
+                    ],
+                    [
+                        -87.408122,
+                        37.477501
+                    ],
+                    [
+                        -87.408636,
+                        37.477092
+                    ],
+                    [
+                        -87.409048,
+                        37.476602
+                    ],
+                    [
+                        -87.414918,
+                        37.463251
+                    ]
+                ]
+            ]
+        },
+        "assets": [],
+        "crop_name": "Alfalfa",
+        "crop_type": "annual",
+        "properties": {
+            "pre_1980": "Lowland Non-Irrigated (Pre 1980s)",
+            "crp_type": "None",
+            "crp_start": "",
+            "crp_end": "",
+            "year_1980_2000": "Irrigated: Continuous Hay",
+            "year_1980_2000_tillage": "Intensive Tillage"
+        },
+        "fertilizers": [
+            {
+                "start_date": "2010-07-04T00:00:00Z",
+                "end_date": "2010-07-04T00:00:00Z",
+                "application_type": "Ammonium Nitrate (34-0-0)",
+                "total_nitrogen": 4.0,
+                "enhanced_efficiency_phosphorus": "None"
+            }
+        ],
+        "harvests": [
+            {
+                "is_grain": true,
+                "start_date": "2010-09-05T00:00:00Z",
+                "end_date": "2010-09-05T00:00:00Z",
+                "crop_yield": 39.0,
+                "stray_stover_hay_removal": "0"
+            },
+            {
+                "is_grain": true,
+                "start_date": "2010-09-05T00:00:00Z",
+                "end_date": "2010-09-05T00:00:00Z",
+                "crop_yield": 39.0,
+                "stray_stover_hay_removal": "0"
+            },
+            {
+                "is_grain": true,
+                "start_date": "2010-09-05T00:00:00Z",
+                "end_date": "2010-09-05T00:00:00Z",
+                "crop_yield": 39.0,
+                "stray_stover_hay_removal": "0"
+            }
+        ],
+        "tillages": [
+            {
+                "start_date": "2010-09-01T00:00:00Z",
+                "end_date": "2010-09-01T00:00:00Z",
+                "implement": "Reduced Tillage"
+            },
+            {
+                "start_date": "2010-08-19T00:00:00Z",
+                "end_date": "2010-08-19T00:00:00Z",
+                "implement": "Reduced Tillage"
+            },
+            {
+                "start_date": "2010-06-03T00:00:00Z",
+                "end_date": "2010-06-03T00:00:00Z",
+                "implement": "Reduced Tillage"
+            }
+        ],
+        "organic_amendments": [
+            {
+                "start_date": "2010-05-29T00:00:00Z",
+                "end_date": "2010-05-29T00:00:00Z",
+                "organic_amendment_type": "Soybean Meal",
+                "organic_amendment_amount": "100",
+                "organic_amendment_percent_nitrogen": "1",
+                "organic_amendment_carbon_nitrogen_ratio": "1.3"
+            }
+        ]
+    },
+    {
+        "id": "8a855e69-ddab-4e7f-ab3a-e36b72b220ba",
+        "time_range": [
+            "2011-02-15T00:00:00+00:00",
+            "2011-09-05T00:00:00+00:00"
+        ],
+        "bbox": [
+            -87.414918,
+            37.463251,
+            -87.393499,
+            37.479898
+        ],
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        -87.414918,
+                        37.463251
+                    ],
+                    [
+                        -87.399025,
+                        37.470226
+                    ],
+                    [
+                        -87.393499,
+                        37.472569
+                    ],
+                    [
+                        -87.39827,
+                        37.479898
+                    ],
+                    [
+                        -87.405993,
+                        37.478046
+                    ],
+                    [
+                        -87.407538,
+                        37.47761
+                    ],
+                    [
+                        -87.408122,
+                        37.477501
+                    ],
+                    [
+                        -87.408636,
+                        37.477092
+                    ],
+                    [
+                        -87.409048,
+                        37.476602
+                    ],
+                    [
+                        -87.414918,
+                        37.463251
+                    ]
+                ]
+            ]
+        },
+        "assets": [],
+        "crop_name": "Alfalfa",
+        "crop_type": "annual",
+        "properties": {
+            "pre_1980": "Lowland Non-Irrigated (Pre 1980s)",
+            "crp_type": "None",
+            "crp_start": "",
+            "crp_end": "",
+            "year_1980_2000": "Irrigated: Continuous Hay",
+            "year_1980_2000_tillage": "Intensive Tillage"
+        },
+        "fertilizers": [
+            {
+                "start_date": "2011-05-10T00:00:00Z",
+                "end_date": "2011-05-10T00:00:00Z",
+                "application_type": "Ammonium Nitrate (34-0-0)",
+                "total_nitrogen": 4.0,
+                "enhanced_efficiency_phosphorus": "None"
+            }
+        ],
+        "harvests": [
+            {
+                "is_grain": true,
+                "start_date": "2011-09-05T00:00:00Z",
+                "end_date": "2011-09-05T00:00:00Z",
+                "crop_yield": 39.0,
+                "stray_stover_hay_removal": "0"
+            },
+            {
+                "is_grain": true,
+                "start_date": "2011-09-05T00:00:00Z",
+                "end_date": "2011-09-05T00:00:00Z",
+                "crop_yield": 39.0,
+                "stray_stover_hay_removal": "0"
+            },
+            {
+                "is_grain": true,
+                "start_date": "2011-09-05T00:00:00Z",
+                "end_date": "2011-09-05T00:00:00Z",
+                "crop_yield": 39.0,
+                "stray_stover_hay_removal": "0"
+            }
+        ],
+        "tillages": [
+            {
+                "start_date": "2011-07-23T00:00:00Z",
+                "end_date": "2011-07-23T00:00:00Z",
+                "implement": "Reduced Tillage"
+            },
+            {
+                "start_date": "2011-03-03T00:00:00Z",
+                "end_date": "2011-03-03T00:00:00Z",
+                "implement": "Reduced Tillage"
+            },
+            {
+                "start_date": "2011-03-20T00:00:00Z",
+                "end_date": "2011-03-20T00:00:00Z",
+                "implement": "Reduced Tillage"
+            }
+        ],
+        "organic_amendments": [
+            {
+                "start_date": "2011-04-21T00:00:00Z",
+                "end_date": "2011-04-21T00:00:00Z",
+                "organic_amendment_type": "Soybean Meal",
+                "organic_amendment_amount": "100",
+                "organic_amendment_percent_nitrogen": "1",
+                "organic_amendment_carbon_nitrogen_ratio": "1.3"
+            }
+        ]
+    },
+    {
+        "id": "8fb66395-2d75-4d78-85cd-97b5913ed152",
+        "time_range": [
+            "2012-02-15T00:00:00+00:00",
+            "2012-09-05T00:00:00+00:00"
+        ],
+        "bbox": [
+            -87.414918,
+            37.463251,
+            -87.393499,
+            37.479898
+        ],
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        -87.414918,
+                        37.463251
+                    ],
+                    [
+                        -87.399025,
+                        37.470226
+                    ],
+                    [
+                        -87.393499,
+                        37.472569
+                    ],
+                    [
+                        -87.39827,
+                        37.479898
+                    ],
+                    [
+                        -87.405993,
+                        37.478046
+                    ],
+                    [
+                        -87.407538,
+                        37.47761
+                    ],
+                    [
+                        -87.408122,
+                        37.477501
+                    ],
+                    [
+                        -87.408636,
+                        37.477092
+                    ],
+                    [
+                        -87.409048,
+                        37.476602
+                    ],
+                    [
+                        -87.414918,
+                        37.463251
+                    ]
+                ]
+            ]
+        },
+        "assets": [],
+        "crop_name": "Alfalfa",
+        "crop_type": "annual",
+        "properties": {
+            "pre_1980": "Lowland Non-Irrigated (Pre 1980s)",
+            "crp_type": "None",
+            "crp_start": "",
+            "crp_end": "",
+            "year_1980_2000": "Irrigated: Continuous Hay",
+            "year_1980_2000_tillage": "Intensive Tillage"
+        },
+        "fertilizers": [
+            {
+                "start_date": "2012-08-31T00:00:00Z",
+                "end_date": "2012-08-31T00:00:00Z",
+                "application_type": "Ammonium Nitrate (34-0-0)",
+                "total_nitrogen": 4.0,
+                "enhanced_efficiency_phosphorus": "None"
+            }
+        ],
+        "harvests": [
+            {
+                "is_grain": true,
+                "start_date": "2012-09-05T00:00:00Z",
+                "end_date": "2012-09-05T00:00:00Z",
+                "crop_yield": 39.0,
+                "stray_stover_hay_removal": "0"
+            },
+            {
+                "is_grain": true,
+                "start_date": "2012-09-05T00:00:00Z",
+                "end_date": "2012-09-05T00:00:00Z",
+                "crop_yield": 39.0,
+                "stray_stover_hay_removal": "0"
+            },
+            {
+                "is_grain": true,
+                "start_date": "2012-09-05T00:00:00Z",
+                "end_date": "2012-09-05T00:00:00Z",
+                "crop_yield": 39.0,
+                "stray_stover_hay_removal": "0"
+            }
+        ],
+        "tillages": [
+            {
+                "start_date": "2012-05-25T00:00:00Z",
+                "end_date": "2012-05-25T00:00:00Z",
+                "implement": "Reduced Tillage"
+            },
+            {
+                "start_date": "2012-04-28T00:00:00Z",
+                "end_date": "2012-04-28T00:00:00Z",
+                "implement": "Reduced Tillage"
+            },
+            {
+                "start_date": "2012-05-08T00:00:00Z",
+                "end_date": "2012-05-08T00:00:00Z",
+                "implement": "Reduced Tillage"
+            }
+        ],
+        "organic_amendments": [
+            {
+                "start_date": "2012-03-20T00:00:00Z",
+                "end_date": "2012-03-20T00:00:00Z",
+                "organic_amendment_type": "Soybean Meal",
+                "organic_amendment_amount": "100",
+                "organic_amendment_percent_nitrogen": "1",
+                "organic_amendment_carbon_nitrogen_ratio": "1.3"
+            }
+        ]
+    },
+    {
+        "id": "0c01f332-92c0-4d67-864e-ae3880d8e2cd",
+        "time_range": [
+            "2013-02-15T00:00:00+00:00",
+            "2013-09-05T00:00:00+00:00"
+        ],
+        "bbox": [
+            -87.414918,
+            37.463251,
+            -87.393499,
+            37.479898
+        ],
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        -87.414918,
+                        37.463251
+                    ],
+                    [
+                        -87.399025,
+                        37.470226
+                    ],
+                    [
+                        -87.393499,
+                        37.472569
+                    ],
+                    [
+                        -87.39827,
+                        37.479898
+                    ],
+                    [
+                        -87.405993,
+                        37.478046
+                    ],
+                    [
+                        -87.407538,
+                        37.47761
+                    ],
+                    [
+                        -87.408122,
+                        37.477501
+                    ],
+                    [
+                        -87.408636,
+                        37.477092
+                    ],
+                    [
+                        -87.409048,
+                        37.476602
+                    ],
+                    [
+                        -87.414918,
+                        37.463251
+                    ]
+                ]
+            ]
+        },
+        "assets": [],
+        "crop_name": "Alfalfa",
+        "crop_type": "annual",
+        "properties": {
+            "pre_1980": "Lowland Non-Irrigated (Pre 1980s)",
+            "crp_type": "None",
+            "crp_start": "",
+            "crp_end": "",
+            "year_1980_2000": "Irrigated: Continuous Hay",
+            "year_1980_2000_tillage": "Intensive Tillage"
+        },
+        "fertilizers": [
+            {
+                "start_date": "2013-05-15T00:00:00Z",
+                "end_date": "2013-05-15T00:00:00Z",
+                "application_type": "Ammonium Nitrate (34-0-0)",
+                "total_nitrogen": 4.0,
+                "enhanced_efficiency_phosphorus": "None"
+            }
+        ],
+        "harvests": [
+            {
+                "is_grain": true,
+                "start_date": "2013-09-05T00:00:00Z",
+                "end_date": "2013-09-05T00:00:00Z",
+                "crop_yield": 39.0,
+                "stray_stover_hay_removal": "0"
+            },
+            {
+                "is_grain": true,
+                "start_date": "2013-09-05T00:00:00Z",
+                "end_date": "2013-09-05T00:00:00Z",
+                "crop_yield": 39.0,
+                "stray_stover_hay_removal": "0"
+            },
+            {
+                "is_grain": true,
+                "start_date": "2013-09-05T00:00:00Z",
+                "end_date": "2013-09-05T00:00:00Z",
+                "crop_yield": 39.0,
+                "stray_stover_hay_removal": "0"
+            }
+        ],
+        "tillages": [
+            {
+                "start_date": "2013-08-06T00:00:00Z",
+                "end_date": "2013-08-06T00:00:00Z",
+                "implement": "Reduced Tillage"
+            },
+            {
+                "start_date": "2013-05-14T00:00:00Z",
+                "end_date": "2013-05-14T00:00:00Z",
+                "implement": "Reduced Tillage"
+            },
+            {
+                "start_date": "2013-06-09T00:00:00Z",
+                "end_date": "2013-06-09T00:00:00Z",
+                "implement": "Reduced Tillage"
+            }
+        ],
+        "organic_amendments": [
+            {
+                "start_date": "2013-06-02T00:00:00Z",
+                "end_date": "2013-06-02T00:00:00Z",
+                "organic_amendment_type": "Soybean Meal",
+                "organic_amendment_amount": "100",
+                "organic_amendment_percent_nitrogen": "1",
+                "organic_amendment_carbon_nitrogen_ratio": "1.3"
+            }
+        ]
+    },
+    {
+        "id": "df55f75a-06ed-441f-ab7b-802a1e9ad191",
+        "time_range": [
+            "2014-02-15T00:00:00+00:00",
+            "2014-09-05T00:00:00+00:00"
+        ],
+        "bbox": [
+            -87.414918,
+            37.463251,
+            -87.393499,
+            37.479898
+        ],
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        -87.414918,
+                        37.463251
+                    ],
+                    [
+                        -87.399025,
+                        37.470226
+                    ],
+                    [
+                        -87.393499,
+                        37.472569
+                    ],
+                    [
+                        -87.39827,
+                        37.479898
+                    ],
+                    [
+                        -87.405993,
+                        37.478046
+                    ],
+                    [
+                        -87.407538,
+                        37.47761
+                    ],
+                    [
+                        -87.408122,
+                        37.477501
+                    ],
+                    [
+                        -87.408636,
+                        37.477092
+                    ],
+                    [
+                        -87.409048,
+                        37.476602
+                    ],
+                    [
+                        -87.414918,
+                        37.463251
+                    ]
+                ]
+            ]
+        },
+        "assets": [],
+        "crop_name": "Alfalfa",
+        "crop_type": "annual",
+        "properties": {
+            "pre_1980": "Lowland Non-Irrigated (Pre 1980s)",
+            "crp_type": "None",
+            "crp_start": "",
+            "crp_end": "",
+            "year_1980_2000": "Irrigated: Continuous Hay",
+            "year_1980_2000_tillage": "Intensive Tillage"
+        },
+        "fertilizers": [
+            {
+                "start_date": "2014-08-24T00:00:00Z",
+                "end_date": "2014-08-24T00:00:00Z",
+                "application_type": "Ammonium Nitrate (34-0-0)",
+                "total_nitrogen": 4.0,
+                "enhanced_efficiency_phosphorus": "None"
+            }
+        ],
+        "harvests": [
+            {
+                "is_grain": true,
+                "start_date": "2014-09-05T00:00:00Z",
+                "end_date": "2014-09-05T00:00:00Z",
+                "crop_yield": 39.0,
+                "stray_stover_hay_removal": "0"
+            },
+            {
+                "is_grain": true,
+                "start_date": "2014-09-05T00:00:00Z",
+                "end_date": "2014-09-05T00:00:00Z",
+                "crop_yield": 39.0,
+                "stray_stover_hay_removal": "0"
+            },
+            {
+                "is_grain": true,
+                "start_date": "2014-09-05T00:00:00Z",
+                "end_date": "2014-09-05T00:00:00Z",
+                "crop_yield": 39.0,
+                "stray_stover_hay_removal": "0"
+            }
+        ],
+        "tillages": [
+            {
+                "start_date": "2014-06-15T00:00:00Z",
+                "end_date": "2014-06-15T00:00:00Z",
+                "implement": "Reduced Tillage"
+            },
+            {
+                "start_date": "2014-08-04T00:00:00Z",
+                "end_date": "2014-08-04T00:00:00Z",
+                "implement": "Reduced Tillage"
+            },
+            {
+                "start_date": "2014-04-04T00:00:00Z",
+                "end_date": "2014-04-04T00:00:00Z",
+                "implement": "Reduced Tillage"
+            }
+        ],
+        "organic_amendments": [
+            {
+                "start_date": "2014-06-16T00:00:00Z",
+                "end_date": "2014-06-16T00:00:00Z",
+                "organic_amendment_type": "Soybean Meal",
+                "organic_amendment_amount": "100",
+                "organic_amendment_percent_nitrogen": "1",
+                "organic_amendment_carbon_nitrogen_ratio": "1.3"
+            }
+        ]
+    },
+    {
+        "id": "8871bf55-78e7-42de-9172-f79fc83ff222",
+        "time_range": [
+            "2015-02-15T00:00:00+00:00",
+            "2015-09-05T00:00:00+00:00"
+        ],
+        "bbox": [
+            -87.414918,
+            37.463251,
+            -87.393499,
+            37.479898
+        ],
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        -87.414918,
+                        37.463251
+                    ],
+                    [
+                        -87.399025,
+                        37.470226
+                    ],
+                    [
+                        -87.393499,
+                        37.472569
+                    ],
+                    [
+                        -87.39827,
+                        37.479898
+                    ],
+                    [
+                        -87.405993,
+                        37.478046
+                    ],
+                    [
+                        -87.407538,
+                        37.47761
+                    ],
+                    [
+                        -87.408122,
+                        37.477501
+                    ],
+                    [
+                        -87.408636,
+                        37.477092
+                    ],
+                    [
+                        -87.409048,
+                        37.476602
+                    ],
+                    [
+                        -87.414918,
+                        37.463251
+                    ]
+                ]
+            ]
+        },
+        "assets": [],
+        "crop_name": "Alfalfa",
+        "crop_type": "annual",
+        "properties": {
+            "pre_1980": "Lowland Non-Irrigated (Pre 1980s)",
+            "crp_type": "None",
+            "crp_start": "",
+            "crp_end": "",
+            "year_1980_2000": "Irrigated: Continuous Hay",
+            "year_1980_2000_tillage": "Intensive Tillage"
+        },
+        "fertilizers": [
+            {
+                "start_date": "2015-03-31T00:00:00Z",
+                "end_date": "2015-03-31T00:00:00Z",
+                "application_type": "Ammonium Nitrate (34-0-0)",
+                "total_nitrogen": 4.0,
+                "enhanced_efficiency_phosphorus": "None"
+            }
+        ],
+        "harvests": [
+            {
+                "is_grain": true,
+                "start_date": "2015-09-05T00:00:00Z",
+                "end_date": "2015-09-05T00:00:00Z",
+                "crop_yield": 39.0,
+                "stray_stover_hay_removal": "0"
+            },
+            {
+                "is_grain": true,
+                "start_date": "2015-09-05T00:00:00Z",
+                "end_date": "2015-09-05T00:00:00Z",
+                "crop_yield": 39.0,
+                "stray_stover_hay_removal": "0"
+            },
+            {
+                "is_grain": true,
+                "start_date": "2015-09-05T00:00:00Z",
+                "end_date": "2015-09-05T00:00:00Z",
+                "crop_yield": 39.0,
+                "stray_stover_hay_removal": "0"
+            }
+        ],
+        "tillages": [
+            {
+                "start_date": "2015-06-05T00:00:00Z",
+                "end_date": "2015-06-05T00:00:00Z",
+                "implement": "Reduced Tillage"
+            },
+            {
+                "start_date": "2015-06-20T00:00:00Z",
+                "end_date": "2015-06-20T00:00:00Z",
+                "implement": "Reduced Tillage"
+            },
+            {
+                "start_date": "2015-08-06T00:00:00Z",
+                "end_date": "2015-08-06T00:00:00Z",
+                "implement": "Reduced Tillage"
+            }
+        ],
+        "organic_amendments": [
+            {
+                "start_date": "2015-06-13T00:00:00Z",
+                "end_date": "2015-06-13T00:00:00Z",
+                "organic_amendment_type": "Soybean Meal",
+                "organic_amendment_amount": "100",
+                "organic_amendment_percent_nitrogen": "1",
+                "organic_amendment_carbon_nitrogen_ratio": "1.3"
+            }
+        ]
+    },
+    {
+        "id": "df6213ab-6884-4b23-b05c-3a5095d6def9",
+        "time_range": [
+            "2016-02-15T00:00:00+00:00",
+            "2016-09-05T00:00:00+00:00"
+        ],
+        "bbox": [
+            -87.414918,
+            37.463251,
+            -87.393499,
+            37.479898
+        ],
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        -87.414918,
+                        37.463251
+                    ],
+                    [
+                        -87.399025,
+                        37.470226
+                    ],
+                    [
+                        -87.393499,
+                        37.472569
+                    ],
+                    [
+                        -87.39827,
+                        37.479898
+                    ],
+                    [
+                        -87.405993,
+                        37.478046
+                    ],
+                    [
+                        -87.407538,
+                        37.47761
+                    ],
+                    [
+                        -87.408122,
+                        37.477501
+                    ],
+                    [
+                        -87.408636,
+                        37.477092
+                    ],
+                    [
+                        -87.409048,
+                        37.476602
+                    ],
+                    [
+                        -87.414918,
+                        37.463251
+                    ]
+                ]
+            ]
+        },
+        "assets": [],
+        "crop_name": "Alfalfa",
+        "crop_type": "annual",
+        "properties": {
+            "pre_1980": "Lowland Non-Irrigated (Pre 1980s)",
+            "crp_type": "None",
+            "crp_start": "",
+            "crp_end": "",
+            "year_1980_2000": "Irrigated: Continuous Hay",
+            "year_1980_2000_tillage": "Intensive Tillage"
+        },
+        "fertilizers": [
+            {
+                "start_date": "2016-03-17T00:00:00Z",
+                "end_date": "2016-03-17T00:00:00Z",
+                "application_type": "Ammonium Nitrate (34-0-0)",
+                "total_nitrogen": 4.0,
+                "enhanced_efficiency_phosphorus": "None"
+            }
+        ],
+        "harvests": [
+            {
+                "is_grain": true,
+                "start_date": "2016-09-05T00:00:00Z",
+                "end_date": "2016-09-05T00:00:00Z",
+                "crop_yield": 39.0,
+                "stray_stover_hay_removal": "0"
+            },
+            {
+                "is_grain": true,
+                "start_date": "2016-09-05T00:00:00Z",
+                "end_date": "2016-09-05T00:00:00Z",
+                "crop_yield": 39.0,
+                "stray_stover_hay_removal": "0"
+            },
+            {
+                "is_grain": true,
+                "start_date": "2016-09-05T00:00:00Z",
+                "end_date": "2016-09-05T00:00:00Z",
+                "crop_yield": 39.0,
+                "stray_stover_hay_removal": "0"
+            }
+        ],
+        "tillages": [
+            {
+                "start_date": "2016-05-01T00:00:00Z",
+                "end_date": "2016-05-01T00:00:00Z",
+                "implement": "Reduced Tillage"
+            },
+            {
+                "start_date": "2016-07-03T00:00:00Z",
+                "end_date": "2016-07-03T00:00:00Z",
+                "implement": "Reduced Tillage"
+            },
+            {
+                "start_date": "2016-07-19T00:00:00Z",
+                "end_date": "2016-07-19T00:00:00Z",
+                "implement": "Reduced Tillage"
+            }
+        ],
+        "organic_amendments": [
+            {
+                "start_date": "2016-02-24T00:00:00Z",
+                "end_date": "2016-02-24T00:00:00Z",
+                "organic_amendment_type": "Soybean Meal",
+                "organic_amendment_amount": "100",
+                "organic_amendment_percent_nitrogen": "1",
+                "organic_amendment_carbon_nitrogen_ratio": "1.3"
+            }
+        ]
+    },
+    {
+        "id": "4da0c0c0-1743-4a66-aa5f-0f796e56ec3e",
+        "time_range": [
+            "2017-02-15T00:00:00+00:00",
+            "2017-09-05T00:00:00+00:00"
+        ],
+        "bbox": [
+            -87.414918,
+            37.463251,
+            -87.393499,
+            37.479898
+        ],
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        -87.414918,
+                        37.463251
+                    ],
+                    [
+                        -87.399025,
+                        37.470226
+                    ],
+                    [
+                        -87.393499,
+                        37.472569
+                    ],
+                    [
+                        -87.39827,
+                        37.479898
+                    ],
+                    [
+                        -87.405993,
+                        37.478046
+                    ],
+                    [
+                        -87.407538,
+                        37.47761
+                    ],
+                    [
+                        -87.408122,
+                        37.477501
+                    ],
+                    [
+                        -87.408636,
+                        37.477092
+                    ],
+                    [
+                        -87.409048,
+                        37.476602
+                    ],
+                    [
+                        -87.414918,
+                        37.463251
+                    ]
+                ]
+            ]
+        },
+        "assets": [],
+        "crop_name": "Alfalfa",
+        "crop_type": "annual",
+        "properties": {
+            "pre_1980": "Lowland Non-Irrigated (Pre 1980s)",
+            "crp_type": "None",
+            "crp_start": "",
+            "crp_end": "",
+            "year_1980_2000": "Irrigated: Continuous Hay",
+            "year_1980_2000_tillage": "Intensive Tillage"
+        },
+        "fertilizers": [
+            {
+                "start_date": "2017-02-28T00:00:00Z",
+                "end_date": "2017-02-28T00:00:00Z",
+                "application_type": "Ammonium Nitrate (34-0-0)",
+                "total_nitrogen": 4.0,
+                "enhanced_efficiency_phosphorus": "None"
+            }
+        ],
+        "harvests": [
+            {
+                "is_grain": true,
+                "start_date": "2017-09-05T00:00:00Z",
+                "end_date": "2017-09-05T00:00:00Z",
+                "crop_yield": 39.0,
+                "stray_stover_hay_removal": "0"
+            },
+            {
+                "is_grain": true,
+                "start_date": "2017-09-05T00:00:00Z",
+                "end_date": "2017-09-05T00:00:00Z",
+                "crop_yield": 39.0,
+                "stray_stover_hay_removal": "0"
+            },
+            {
+                "is_grain": true,
+                "start_date": "2017-09-05T00:00:00Z",
+                "end_date": "2017-09-05T00:00:00Z",
+                "crop_yield": 39.0,
+                "stray_stover_hay_removal": "0"
+            }
+        ],
+        "tillages": [
+            {
+                "start_date": "2017-03-17T00:00:00Z",
+                "end_date": "2017-03-17T00:00:00Z",
+                "implement": "Reduced Tillage"
+            },
+            {
+                "start_date": "2017-03-01T00:00:00Z",
+                "end_date": "2017-03-01T00:00:00Z",
+                "implement": "Reduced Tillage"
+            },
+            {
+                "start_date": "2017-08-16T00:00:00Z",
+                "end_date": "2017-08-16T00:00:00Z",
+                "implement": "Reduced Tillage"
+            }
+        ],
+        "organic_amendments": [
+            {
+                "start_date": "2017-04-03T00:00:00Z",
+                "end_date": "2017-04-03T00:00:00Z",
+                "organic_amendment_type": "Soybean Meal",
+                "organic_amendment_amount": "100",
+                "organic_amendment_percent_nitrogen": "1",
+                "organic_amendment_carbon_nitrogen_ratio": "1.3"
+            }
+        ]
+    },
+    {
+        "id": "19a2fa62-ad47-4ec0-9e84-9ba3d4593617",
+        "time_range": [
+            "2018-02-15T00:00:00+00:00",
+            "2018-09-05T00:00:00+00:00"
+        ],
+        "bbox": [
+            -87.414918,
+            37.463251,
+            -87.393499,
+            37.479898
+        ],
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        -87.414918,
+                        37.463251
+                    ],
+                    [
+                        -87.399025,
+                        37.470226
+                    ],
+                    [
+                        -87.393499,
+                        37.472569
+                    ],
+                    [
+                        -87.39827,
+                        37.479898
+                    ],
+                    [
+                        -87.405993,
+                        37.478046
+                    ],
+                    [
+                        -87.407538,
+                        37.47761
+                    ],
+                    [
+                        -87.408122,
+                        37.477501
+                    ],
+                    [
+                        -87.408636,
+                        37.477092
+                    ],
+                    [
+                        -87.409048,
+                        37.476602
+                    ],
+                    [
+                        -87.414918,
+                        37.463251
+                    ]
+                ]
+            ]
+        },
+        "assets": [],
+        "crop_name": "Alfalfa",
+        "crop_type": "annual",
+        "properties": {
+            "pre_1980": "Lowland Non-Irrigated (Pre 1980s)",
+            "crp_type": "None",
+            "crp_start": "",
+            "crp_end": "",
+            "year_1980_2000": "Irrigated: Continuous Hay",
+            "year_1980_2000_tillage": "Intensive Tillage"
+        },
+        "fertilizers": [
+            {
+                "start_date": "2018-04-30T00:00:00Z",
+                "end_date": "2018-04-30T00:00:00Z",
+                "application_type": "Ammonium Nitrate (34-0-0)",
+                "total_nitrogen": 4.0,
+                "enhanced_efficiency_phosphorus": "None"
+            }
+        ],
+        "harvests": [
+            {
+                "is_grain": true,
+                "start_date": "2018-09-05T00:00:00Z",
+                "end_date": "2018-09-05T00:00:00Z",
+                "crop_yield": 39.0,
+                "stray_stover_hay_removal": "0"
+            },
+            {
+                "is_grain": true,
+                "start_date": "2018-09-05T00:00:00Z",
+                "end_date": "2018-09-05T00:00:00Z",
+                "crop_yield": 39.0,
+                "stray_stover_hay_removal": "0"
+            },
+            {
+                "is_grain": true,
+                "start_date": "2018-09-05T00:00:00Z",
+                "end_date": "2018-09-05T00:00:00Z",
+                "crop_yield": 39.0,
+                "stray_stover_hay_removal": "0"
+            }
+        ],
+        "tillages": [
+            {
+                "start_date": "2018-05-31T00:00:00Z",
+                "end_date": "2018-05-31T00:00:00Z",
+                "implement": "Reduced Tillage"
+            },
+            {
+                "start_date": "2018-07-30T00:00:00Z",
+                "end_date": "2018-07-30T00:00:00Z",
+                "implement": "Reduced Tillage"
+            },
+            {
+                "start_date": "2018-08-25T00:00:00Z",
+                "end_date": "2018-08-25T00:00:00Z",
+                "implement": "Reduced Tillage"
+            }
+        ],
+        "organic_amendments": [
+            {
+                "start_date": "2018-04-29T00:00:00Z",
+                "end_date": "2018-04-29T00:00:00Z",
+                "organic_amendment_type": "Soybean Meal",
+                "organic_amendment_amount": "100",
+                "organic_amendment_percent_nitrogen": "1",
+                "organic_amendment_carbon_nitrogen_ratio": "1.3"
+            }
+        ]
+    },
+    {
+        "id": "b6ab01e1-2d21-457c-bbef-0f206bfc2453",
+        "time_range": [
+            "2019-02-15T00:00:00+00:00",
+            "2019-09-05T00:00:00+00:00"
+        ],
+        "bbox": [
+            -87.414918,
+            37.463251,
+            -87.393499,
+            37.479898
+        ],
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        -87.414918,
+                        37.463251
+                    ],
+                    [
+                        -87.399025,
+                        37.470226
+                    ],
+                    [
+                        -87.393499,
+                        37.472569
+                    ],
+                    [
+                        -87.39827,
+                        37.479898
+                    ],
+                    [
+                        -87.405993,
+                        37.478046
+                    ],
+                    [
+                        -87.407538,
+                        37.47761
+                    ],
+                    [
+                        -87.408122,
+                        37.477501
+                    ],
+                    [
+                        -87.408636,
+                        37.477092
+                    ],
+                    [
+                        -87.409048,
+                        37.476602
+                    ],
+                    [
+                        -87.414918,
+                        37.463251
+                    ]
+                ]
+            ]
+        },
+        "assets": [],
+        "crop_name": "Alfalfa",
+        "crop_type": "annual",
+        "properties": {
+            "pre_1980": "Lowland Non-Irrigated (Pre 1980s)",
+            "crp_type": "None",
+            "crp_start": "",
+            "crp_end": "",
+            "year_1980_2000": "Irrigated: Continuous Hay",
+            "year_1980_2000_tillage": "Intensive Tillage"
+        },
+        "fertilizers": [
+            {
+                "start_date": "2019-07-20T00:00:00Z",
+                "end_date": "2019-07-20T00:00:00Z",
+                "application_type": "Ammonium Nitrate (34-0-0)",
+                "total_nitrogen": 4.0,
+                "enhanced_efficiency_phosphorus": "None"
+            }
+        ],
+        "harvests": [
+            {
+                "is_grain": true,
+                "start_date": "2019-09-05T00:00:00Z",
+                "end_date": "2019-09-05T00:00:00Z",
+                "crop_yield": 39.0,
+                "stray_stover_hay_removal": "0"
+            },
+            {
+                "is_grain": true,
+                "start_date": "2019-09-05T00:00:00Z",
+                "end_date": "2019-09-05T00:00:00Z",
+                "crop_yield": 39.0,
+                "stray_stover_hay_removal": "0"
+            },
+            {
+                "is_grain": true,
+                "start_date": "2019-09-05T00:00:00Z",
+                "end_date": "2019-09-05T00:00:00Z",
+                "crop_yield": 39.0,
+                "stray_stover_hay_removal": "0"
+            }
+        ],
+        "tillages": [
+            {
+                "start_date": "2019-05-21T00:00:00Z",
+                "end_date": "2019-05-21T00:00:00Z",
+                "implement": "Reduced Tillage"
+            },
+            {
+                "start_date": "2019-03-14T00:00:00Z",
+                "end_date": "2019-03-14T00:00:00Z",
+                "implement": "Reduced Tillage"
+            },
+            {
+                "start_date": "2019-04-02T00:00:00Z",
+                "end_date": "2019-04-02T00:00:00Z",
+                "implement": "Reduced Tillage"
+            }
+        ],
+        "organic_amendments": [
+            {
+                "start_date": "2019-07-17T00:00:00Z",
+                "end_date": "2019-07-17T00:00:00Z",
+                "organic_amendment_type": "Soybean Meal",
+                "organic_amendment_amount": "100",
+                "organic_amendment_percent_nitrogen": "1",
+                "organic_amendment_carbon_nitrogen_ratio": "1.3"
+            }
+        ]
+    }
+]

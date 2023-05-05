@@ -16,25 +16,10 @@ from datasets import Image
 from bitsandbytes.optim import AdamW8bit
 
 
-# to use Fullyshardeddataparalle
-#from torch.distributed.dsdp import FullyShardedDataParalle, CPUOffload
-#from torch.distributed.fsdp.wrap import default_auto_wrap_policy
-
 
 from torch.nn.parallel import DataParallel, DistributedDataParallel
 import torch.distributed as dist
 
-# from torch.distributed.dsdp import (
-#     FullyShardedDataParallel,
-#     CPUOffload,
-# )
-# from torch.distributed.fsdp.wrap import (
-#     default_auto_wrap_policy,
-# )
-
-# from torch.nn.parallel import (
-#     DistributedDataParallel,
-# )
 
 #logging
 import boto3
@@ -64,27 +49,6 @@ def count_number_of_parameters(model, only_trainable: bool = True) -> int:
     return int(num_params)
 
 
-# def prep_sample(sample):
-#     question = sample["question"]
-#     answer = sample["answer"].split("|!+")[1]
-#     explanation = sample["explanation"]
-#     text = f"Question: {question} Answer: {answer} Explanation: {explanation}"
-#     image = sample["image"]
-#     return {
-#         "image": image,
-#         "target_text": text
-#     }
-
-# def prep_sample(sample):
-#     question = sample["question"]
-#     answer = sample["multiple_choice_answer"]
-#     # You may need to preprocess the image according to your model's requirements
-#     image = sample["image"]
-#     text = f"Question: {question} Answer: {answer}"
-#     return {
-#         "image": image,
-#         "target_text": text
-#     }
 
 def prep_sample(sample):
     question = sample["question"]
@@ -125,25 +89,6 @@ def train(args):
     if torch.cuda.device_count() > 1:
         print(f"Let's use ${torch.cuda.device_count()} GPUS")
 
-    # model = model.to(accelerator.device)
-
-    #V2 with FullyShardedData Parallel
-    # model = DistributedDataParallel(Kosmos())
-
-    # model = FullyShardedDataParallel(
-    #     model(),
-    #     fsdp_auto_wrap_policy=default_auto_wrap_policy,
-    #     cpu_offload=CPUOffload(offload_params=True),
-    # )
-
-    #v3
-    # model = Kosmos()
-    # model = FullyShardedDataParallel(
-    #     model,
-    #     fsdp_auto_wrap_policy=default_auto_wrap_policy,
-    #     cpu_offload=CPUOffload(offload_params=True),
-    # )
-
 
     optimizer = Lion(model.parameters(), lr=args.learning_rate / 3, weight_decay=args.weight_decay * 3)
     
@@ -156,22 +101,13 @@ def train(args):
     tokenizer = KosmosTokenizer()
 
     #====================> load data #====================> load data #====================> load data 
-    # dataset = load_dataset("bjoernp/vqax", split="test")
-    # #dataset = dataset.cast_column("URL", Image)
-    # dataset = dataset.map(prep_sample, num_proc=8)
-    # remove_columns = ['id', 'img_id', 'question', 'answer',
-    #                   'explanation', 'none', 'image', 'target_text']
 
-    dataset = load_dataset("HuggingFaceM4/VQAv2", split="train[:30000]")
+    # 
+    dataset = load_dataset("HuggingFaceM4/VQAv2", split="train[:40]")
 
     # dataset = dataset.map(prep_sample, num_proc=8)
     dataset = dataset.map(prep_sample, num_proc=8)
 
-    #old removed columns
-    # remove_columns = ['id', 'img_id', 'question', 'answer',
-    #                   'explanation', 'none', 'image', 'target_text']
-
-    #new removed columns
     remove_columns = ['question_type', 'multiple_choice_answer', 'answers', 'image_id', 'answer_type', 'question_id', 'question', 'image']
 
 
@@ -181,21 +117,6 @@ def train(args):
     train_dataloader = DataLoader(
         dataset, collate_fn=default_data_collator, batch_size=args.batch_size, pin_memory=True
     )
-
-    # dataset = load_dataset("bjoernp/vqax", split="test")
-    # #dataset = dataset.cast_column("URL", Image)
-    # dataset = dataset.map(prep_sample, num_proc=8)
-    # remove_columns = ['id', 'img_id', 'question', 'answer',
-    #                   'explanation', 'none', 'image', 'target_text']
-    # dataset = dataset.map(tokenizer.tokenize, batched=True,
-    #                       batch_size=128, remove_columns=remove_columns)
-
-    # train_dataloader = DataLoader(
-    #     dataset, collate_fn=default_data_collator, batch_size=args.batch_size, pin_memory=True
-    # )
-
-    # model, train_dataloader, optimizer, lr_scheduler = accelerator.prepare(model, train_dataloader, optimizer,
-    #                                                                        lr_scheduler)
 
     #====================> load data #====================> load data #====================> load data #====================> load data 
 
