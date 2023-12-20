@@ -55,7 +55,7 @@ torch-fidelity==0.3.0
 torchlibrosa
 torchmetrics==0.6.0
 torchvision==0.13.1
-transformers==4.26.1
+transformers==4.36.0
 typing-extensions==3.10.0.2
 uuid==1.30
 webdataset==0.2.5
