@@ -1,4 +1,4 @@
-#who fucking knows if this code will work 
+#who  knows if this code will work 
 
 import torch
 import numpy as np
